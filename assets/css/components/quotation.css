@@ -1,0 +1,80 @@
+#modulo1 {
+  --_quotation-mark: url(../../../media/templates/quotation-mark-1.svg);
+}
+#modulo2 {
+  --_quotation-mark: url(../../../media/templates/quotation-mark-2.svg);
+}
+#modulo3 {
+  --_quotation-mark: url(../../../media/templates/quotation-mark-3.svg);
+}
+#modulo4 {
+  --_quotation-mark: url(../../../media/templates/quotation-mark-4.svg);
+}
+#modulo5 {
+  --_quotation-mark: url(../../../media/templates/quotation-mark-5.svg);
+}
+
+.quotation {
+  --_border-radius: var(--fio-sys-size-radius-xl);
+  --_background-color: var(--fio-sys-gradient-background);
+  --_border-color: var(--fio-sys-color-accent-normal);
+  --_text-color: var(--fio-sys-color-text);
+
+  position: relative;
+}
+
+.quotation blockquote {
+  padding: 0 20px;
+  margin: 36px 0 20px;
+}
+
+.quotation blockquote .quotation-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--_border-radius);
+  background-image: var(--_background-color);
+  transition: 0.25s ease-out;
+}
+.quotation blockquote:hover .quotation-background {
+  transform: skewX(2deg) translateX(-8px);
+  background-size: 120%;
+}
+
+.quotation blockquote .quotation-body:before {
+  content: var(--_quotation-mark);
+  position: absolute;
+  left: -20px;
+  top: -55px;
+  width: 150px;
+  height: auto;
+}
+
+.quotation blockquote .quotation-body {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: var(--_border-radius);
+  border-color: var(--_border-color);
+  translate: 0 20px;
+  padding: 80px 40px 60px;
+}
+.quotation blockquote .quotation-body p {
+  font-family: "Parkinsans Bold";
+  font-size: var(--fio-sys-typography-size-1);
+  color: var(--_text-color);
+}
+.quotation blockquote .quotation-body .quotation-autor {
+  font-family: "Parkinsans Light";
+  font-size: var(--fio-sys-typography-size-0);
+  float: right;
+  color: var(--_text-color);
+}
+
+@media (min-width: 768px) {
+  .quotation blockquote:hover .quotation-background {
+    transform: skewX(5deg) translateX(-20px);
+    background-size: 120%;
+  }
+}

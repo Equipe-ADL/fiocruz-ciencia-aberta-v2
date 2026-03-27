@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 5 | Aula 3 - Inteligência Artificial: potencialidades e riscos para a educação </title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body id="modulo5">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal"
+					data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 5 <br /><br />
+							Aula 3</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 5</span>
+									<span class="title">Educação Aberta e Recursos Educacionais Abertos</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 1: O que é Educação Aberta: modelos, desafios e perspectivas. </a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 2: Inteligência Artificial: potencialidades e riscos para a educação. </a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 3: Inteligência Artificial: concepções pedagógicas e suas implicações para a educação. </a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 4: O que são Recursos Educacionais Abertos? </a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 5: Software Livre e REAs.</a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Como encontrar, usar e compartilhar REA.</a>
+										<a href="aula7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 7: Criar REA</a>
+										<a href="aula8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 8: Monitoramento e avaliação do REA</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod5-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 5</strong> . Aula 3</span>
+								<span class="title-bold">Inteligência Artificial: </span> potencialidades e riscos para a educação
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="card objetivos">
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Nesta aula você compreenderá criticamente o papel da Inteligência Artificial Generativa (IAGen) na educação, reconhecendo seu potencial para ampliar a criação, a colaboração e a aprendizagem, promovendo uma educação aberta, ética e humanizadora. </p>
+
+										<p>Ao final desta aula você deverá ser capaz de:</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Caracterizar as finalidades da IAGen no contexto educacional.</li>
+												<li class="list-group-item">Defender que a IAGen não é uma máquina de ensinar.</li>
+												<li class="list-group-item">Avaliar o potencial pedagógico da IAGen para a conversação e a coautoria.</li>
+												<li class="list-group-item">Explicar a emergência de um novo perfil cognitivo decorrente do uso da IAGen.</li>
+												<li class="list-group-item">Discutir possíveis reconfigurações da educação decorrentes do uso da IAGen.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Finalidades da <span class="dualcolor">IAGen na educação</span></h3>
+								</div>
+
+								<p>A Inteligência Artificial Generativa (IA Generativa, IAGen ou IAG), tecnologia capaz de gerar conteúdo a partir de descrições textuais, também chamadas de <em>prompts</em>, vem sendo utilizada para diferentes finalidades no contexto educacional: estudar-aprender, ensinar, escrever, pesquisar, imaginar, entre outras. Essas finalidades são relevantes para os diferentes níveis e modalidades educacionais, do Ensino Fundamental à Pós-graduação, da educação presencial à educação a distância. </p>
+
+								<p>A seguir apresentamos alguns exemplos práticos de como a IAGen tem sido integrada às rotinas de estudo e produção textual, promovendo novas experiências de aprendizagem e autoria.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="aula3-accordion1">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Perguntar</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>É possível utilizar a IA gerativa de texto para conhecer, perguntar, pedir exemplos, tirar dúvidas, questionar determinadas afirmações etc. Por exemplo, ao pedirmos ao <a href='https://chatgpt.com/' target='_blank' rel='noopener noreferrer'>ChatGPT</a> que explique as diferenças entre as teorias comportamentais e cognitivas, ele gerou uma caracterização resumida de cada teoria e apresentou as principais diferenças entre elas. Quando perguntamos quais eram os conceitos-chave da Teoria Ator-Rede, ele elaborou um quadro com a definição dos principais termos. Quando queremos investigar o significado ou a etimologia de uma palavra, perguntamos primeiro a uma IAGen, como o ChatGPT ou o <a href='https://gemini.google.com/' target='_blank' rel='noopener noreferrer'>Gemini</a>, e depois, se necessário, investigamos em outras fontes de informação. A IAGen se tornou uma aliada da nossa aprendizagem cotidiana.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Apoiar os estudos</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>É possível pedir que a IAGen dê uma aula sobre um determinado assunto, crie um roteiro de estudo, faça um questionário sobre os pontos mais importantes do conteúdo em estudo, proponha exercícios, corrija os exercícios feitos etc. A IAGen gera conteúdo em função das solicitações do estudante, possibilitando aprendizagem dialogada, interativa e contextualizada, o que vem modificando a rotina de estudo e aprendizagem.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Escrever</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>A IAGen reconfigurou as práticas de escrita. Antes, a escrita costumava ser um processo solitário; agora é possível escrevermos na companhia da IAGen, em um processo de parceria. O bloqueio criativo não existe mais; basta pedir a essa tecnologia para gerar um roteiro ou um primeiro rascunho do texto que se deseja produzir, e talvez um segundo, terceiro e quantos rascunhos mais forem necessários. Os textos gerados nos ajudam a refletir sobre o conteúdo que desejamos escrever, fornecem ideias e diferentes pontos de vista que ampliam nossa criatividade. Às vezes apresentamos apenas uma ideia ou argumento e pedimos que ela construa um parágrafo sobre o assunto. Podemos pedir que ela termine a frase ou o parágrafo que estamos escrevendo. Quando nos falta uma palavra, pedimos sugestões para preencher a lacuna que deixamos na frase.</p>
+
+												<p>É possível utilizar a IAGen como uma parceira para a escrita de textos acadêmicos, mas sem deixá-la pensar e escrever por nós. Quando produzimos um texto, podemos pedir à IAGen um feedback e, em seguida, revisamos o texto com ela.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item10">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Revisar</button>
+										</h5>
+										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p>O ChatGPT corrige erros e oferece sugestões para a melhoria da redação — obviamente, não acatamos todas as sugestões, mas esse trabalho de revisão nos ajuda a repensar o texto que desejamos escrever. Para nos ajudar a visualizar as modificações que o ChatGPT propõe, utilizamos a extensão do navegador editGPT.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item5">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Traduzir</button>
+										</h5>
+										<div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
+											<div class="accordion-body">
+												<p>A IAGen é capaz de fazer boas traduções. Ela adapta o texto ao contexto cultural do idioma de destino, o que é especialmente útil para textos acadêmicos que serão publicados em revistas internacionais, para as quais a precisão e a fluidez da linguagem são fundamentais.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item6">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item6" aria-expanded="false" aria-controls="collapse1-item6">Planejar aulas</button>
+										</h5>
+										<div id="collapse1-item6" class="accordion-collapse collapse" aria-labelledby="heading1-item6" data-bs-parent="">
+											<div class="accordion-body">
+												<p>A IAGen tem se mostrado útil para apoiar a planejar uma aula, gerando apresentações, situações didáticas, exemplos, casos, exercícios, questões de múltipla escolha, avaliações, critérios e rubricas de avaliação etc. Ela também pode ser útil para apoiar a correção de exercícios simples e sugerir revisões em redações. Contudo, não recomendamos a completa automação da avaliação, pois esse processo precisa ser efetivado por especialistas humanos, que têm conhecimento, experiência, discernimento e sensibilidade necessários para uma avaliação adequada, especialmente quando as respostas não são binárias ou estritamente corretas/incorretas.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A IAGen pode apoiar a realização de pesquisas científicas, não só na etapa da escrita de um relatório, mas em todo o processo. Ela pode ser útil para apoiar na elaboração do desenho da pesquisa, na construção de documentos auxiliares (projeto de pesquisa, TCLE etc.), na elaboração de instrumentos de pesquisa (questionários e roteiros de entrevista), na análise dos dados, entre outras atividades. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais Toggle -->
+								<div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="saiba-mais__header">
+										<button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span> Saiba mais</button>
+									</div>
+									<div class="saiba-mais__content collapse" id="saiba-mais1">
+										<p>Durante uma pesquisa científica, é possível anexar ao <em>prompt</em> uma planilha com dados e pedir visualizações e análises. Durante a etapa de revisão de literatura, podemos demandar que a IAGen compare dois artigos. Assim como os mecanismos de busca na web e nas bases de artigos científicos transformaram o modo como revisamos a literatura, a IAGen irá reconfigurar várias práticas do fazer científico.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>“Imaginar” vem do latim <em>imaginari</em> e significa formar uma imagem mentalmente; a IAGen tem a capacidade de imaginar, de gerar imagens computacionalmente. No contexto educacional, a geração de imagens pode ser útil para ilustrar uma apresentação, representar um conceito, ilustrar um conteúdo, criar personagens e cenas de uma história, fazer um meme, entre outras produções visuais de interesse de estudantes, docentes e conteudistas. Por exemplo, digitamos o <em>prompt</em> “crie uma imagem sobre Educação e Inteligência Artificial”, e o GPT-4o respondeu:</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Destaque Parallax -->
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container aos-animate aos-init" data-aos="fade" data-aos-easing="ease-out" data-aos-duration="800">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>“Aqui está a imagem que você solicitou sobre Educação e Inteligência Artificial. Ela mostra uma sala de aula moderna onde os alunos interagem com ferramentas alimentadas por IA, exibindo um ambiente futurista e realista que destaca como a IA aprimora a experiência educacional.”</p>
+
+										<!-- Imagem -->
+										<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula3-img1.jpg" alt="" title="Fonte: Os autores, criada com o GPT-4º (2026).">
+											<figcaption class="figure-caption fonte">Fonte: Os autores, criada com o GPT-4º (2026).</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Além da capacidade da IAGen de gerar imagens, alguns modelos têm a habilidade de lidar com múltiplas linguagens, como texto, vídeos, mapas mentais, história em quadrinhos, planilhas, páginas web etc. A multimodalidade da IAGen amplia as possibilidades de uso na educação. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Concepções pedagógicas <span class="dualcolor">do uso da IAGen na educação</span></h3>
+								</div>
+
+								<p>As tecnologias são projetadas e usadas em educação com intencionalidade pedagógica. Antes da IAGen, reconhecíamos três principais concepções didático-pedagógicas para o desenvolvimento e uso de sistemas computacionais em educação: como máquina de ensinar, como ferramenta para a construção de conhecimentos e como meio de comunicação. Com a IAGen, consolidaram-se duas novas concepções para o uso do computador na educação: como conversador e como coautor.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<p class="text-center h6 mb-5"><strong>Diferentes concepções pedagógicas para o uso da computação na educação</strong></p>
+							</div>
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula3-img2.jpg" alt="" title="Fonte: Ilustrações de Monica Lopes (Pimentel; Carvalho, 2023, n. p.).">
+									<figcaption class="figure-caption fonte">Fonte: Ilustrações de Monica Lopes (Pimentel; Carvalho, 2023, n. p.).</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Máquina de Ensinar é qualquer tecnologia com algum nível de automação desenvolvida para ensinar algo explicitamente a alguém, apresentando conteúdos e dando feedback sobre as ações do estudante.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800">
+									<p>Uma máquina de ensinar atua como se fosse um professor. Esse tipo de máquina é resultante de um esforço para a automação do ensino, um modo de efetivar a arte de ensinar sem professores.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Os primeiros esforços para criar uma máquina de ensinar datam do início da Revolução Industrial, que incitou a automatização de todos os processos de trabalho com base na racionalidade técnico-científica visando produzir mais rapidamente, com menor custo e o mínimo de interferência humana. Poucos anos depois de os computadores serem desenvolvidos, já começaram a utilizá-los como máquinas de ensinar em universidades e escolas dos Estados Unidos nas décadas de 1950 e 1960.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“Essa modalidade pode ser caracterizada como uma versão computadorizada dos métodos tradicionais de ensino. As categorias mais comuns dessa modalidade são os tutoriais, exercício-prática, jogos e simulação.” </p>
+											<span class="quotation-autor">(Valente, 1993, p. 7) </span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A IAGen não é uma “máquina de ensinar”, pois não quer ensinar algo explicitamente a seu usuário, não foi projetada para esse propósito, não tem intencionalidade pedagógica. Por exemplo, a IAGen difere-se do Duolingo, que foi projetado para ensinar línguas; também se difere de um tutorial, que segue um roteiro para a apresentação de conteúdos e propõe exercícios de fixação que são corrigidos automaticamente para dar <em>feedback</em> e controlar o andamento da aprendizagem. A IAGen não foi desenvolvida para seguir um currículo, não tem um plano de ensino a cumprir, não decidirá quais conteúdos serão apresentados na próxima interação, não testará o usuário, não dará nota nem dirá palavras de incentivo pelo que o usuário demonstra ter aprendido. Entretanto, é possível criar sistemas computacionais baseados na IAGen que tenham o objetivo de ensinar, sendo caracterizados como máquinas de ensinar, mas essa será uma aplicação da IAGen entre inúmeras outras possíveis. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800">
+									<p>A IAGen, por si, não foi desenvolvida para ser especificamente uma máquina de ensinar.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Na década de 1960, Seymour Papert ousou propor que crianças programassem computadores, tarefa que era realizada apenas por cientistas da computação, engenheiros e matemáticos. Ele desenvolveu a <a href='https://pt.wikipedia.org/wiki/Logo' target='_blank' rel='noopener noreferrer'>linguagem de programação Logo</a> para que crianças comandassem uma representação de tartaruga na tela. Essa linguagem serviu de base para o desenvolvimento do <a href='https://pt.wikipedia.org/wiki/Scratch' target='_blank' rel='noopener noreferrer'>Scratch</a>, que é adotado em diversas escolas de todo o mundo para o ensino de programação voltado a crianças e jovens.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Papert foi orientado por Jean Piaget e, inspirado pelo construtivismo, propôs o construcionismo considerando que as crianças aprendem melhor quando estão engajadas na construção de artefatos significativos, como um programa de computador, uma peça de arte ou outra coisa de seu próprio interesse. A abordagem pedagógica de Papert está alinhada à pedagogia de projetos, baseada na aprendizagem ativa, exploratória e contextualizada, diferindo-se da aprendizagem baseada na assimilação e repetição de informações descontextualizadas. Nessa situação, o computador é caracterizado como uma “ferramenta educacional”, usado para apoiar a resolução de problemas e o desenvolvimento de projetos:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“O computador não é mais o instrumento que ensina o aprendiz, mas a ferramenta com a qual o aluno desenvolve algo.” </p>
+											<span class="quotation-autor">(Valente, 1993, p. 12)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A IAGen não é uma espécie de ferramenta utilitária, como um editor que faz exatamente o que o usuário comandou, cujo resultado para cada ação pode ser previsto; a IAGen gera conteúdo novo como resposta ao <em>prompt</em>. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init aos-animate card--in" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>IAGen não é auxiliar, não é mera ferramenta, mas sim é ativa e propositiva no processo de desenvolvimento de novas obras com seu usuário. Temos considerado essa tecnologia como uma “coautora” quando suas respostas influenciam significativamente o conceito e o resultado da obra que o usuário está produzindo.</p>
+											</div>
+										</div>
+
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O uso pedagógico dos computadores como um meio de comunicação e interação entre as pessoas se tornou possível com o desenvolvimento das redes de computadores, o que se consolidou especialmente após a abertura da internet para uso comercial em meados da década de 1990. A IAGen não é uma tecnologia de comunicação pela internet, não é um suporte à interação social, não é um meio para conversar com outro humano. Ela própria conversa conosco, é um agente de conversação que interage com cada estudante ou professor.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800">
+									<p>O uso do computador como meio de interação social alavancou a educação não presencial (a distância, remota, híbrida, aberta, massiva etc.), sendo que a Educação a Distância se tornou hegemônica no ensino superior brasileiro. </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Assim como a internet, a IAGen é uma tecnologia inovadora e um fenômeno cultural que pode disparar reconfigurações significativas em nosso sistema educacional, conforme discutiremos nas próximas seções.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">IAGen como <span class="dualcolor">tecnologia da conversação</span></h3>
+								</div>
+
+								<p>A IAGen pode ser utilizada para estabelecer conversas com humanos, como fazem o ChatGPT e o Gemini, que estão sempre disponíveis para conversar, dispostos a explicar quase tudo e a tirar nossas dúvidas. Ao nos responder, apresentam detalhes como se estivessem nos ensinando algo. Ao resolver um problema, explicam os passos que devem ser seguidos, como se quisessem nos explicar ou mostrar o raciocínio a ser empregado. Que mudanças na educação serão decorrentes da existência dessa tecnologia de conversação, disponível 24/7, gratuita, sempre disposta a nos ajudar a compreender (quase) tudo sobre o que temos curiosidade ou que nos obrigam a aprender? </p>
+
+								<p>Para o fundador da Khan Academy, o advento do ChatGPT representa o início da “maior transformação positiva que a educação já viu”:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“Estamos no limite de usar a IA para, provavelmente, a maior transformação positiva que a educação já viu. A forma como estamos fazendo isso é dando, a cada estudante do planeta, uma inteligência artificial, que é um professor particular extraordinário. […] Isso poderia transformar um aluno mediano em um aluno excepcional, pode transformar um estudante abaixo da média num estudante acima da média.”</p>
+											<span class="quotation-autor">(Khan, 2023, 0:33 - 2:01)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Sabemos que um professor particular pode ajudar no processo de aprendizagem, mas o problema é o custo da hora-aula. Com a IAGen, todos poderão ter, gratuitamente, uma tecnologia que desempenha parte do papel realizado por um professor particular. Entretanto, as vantagens da IAGen só podem ser obtidas por quem estiver disposto a interagir proativamente com essa tecnologia. É diferente de chegar a uma aula e ficar ouvindo o que um professor preparou para a turma, pois a IAGen não reage ao silêncio. Essa tecnologia não quer nos agenciar, não passa exercícios ou atividades, não passa dever de casa, não planeja os conteúdos que serão ensinados em cada aula, não demanda que prestemos atenção, não quer nos fazer resolver um problema ou debater um assunto. Podemos até identificar alguma semelhança com a docência pelo “tom professoral” de suas respostas, mas essa tecnologia não foi projetada para atuar no lugar de um professor particular. Ela se assemelha mais a uma pessoa esperta em muitos assuntos e sempre disposta para a conversação. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A interação com a IAGen pode ser caracterizada como um tipo de conversação com potencial para disparar em nós, humanos, processos formativos intensos, pois as respostas geradas podem nos fazer aprender algo, provocar reflexões e reformulações, o que pode provocar novas dúvidas e nos levar a fazer novas perguntas, retroalimentando a conversação com a máquina.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox mb-3">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula3-img3.jpg" alt="" title="Fonte: Os autores, em coautoria com DALL-E ">
+									<figcaption class="figure-caption fonte">Fonte: (Pimentel; Azevedo; Carvalho, 2023, n. p.).</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p><p>Na educação tradicional, a conversação nem sempre é bem-vinda; às vezes é inibida, tratada como perda de tempo, coisa de pouca importância. A tradição é o docente deter a palavra pela maior parte do tempo, mantendo-se na centralidade da conversação durante a aula, não deixando muito espaço para os estudantes falarem. Essa centralidade docente é parte de resquícios do ideal pedagógico da escola moderna que nos formou e que ainda se faz presente em muitas das nossas aulas na atualidade.</p></p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<p class="text-center h6 mb-5"><strong>O silenciamento dos estudantes durante a aula</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula3-img4.jpg" alt="" title="Fonte: Harper et al. (1980, p. 46), colorido pelos autores.">
+									<figcaption class="figure-caption fonte">Fonte: Harper<em> et al.</em> (1980, p. 46), colorido pelos autores.</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Promove-se o silenciamento dos estudantes quando se acredita que eles não têm algo a contribuir e que suas falas irão atrapalhar a exposição dos conteúdos, deixarão a turma dispersa e impossibilitarão que a aula transcorra como havia sido planejada (geralmente se planeja uma aula expositiva, com pouca ou nenhuma conversação com a turma e dos estudantes entre si). A não conversação é o desperdício de toda uma experiência de encontro com o outro, como ele pensa, se apresenta, se constitui, se compreende e compreende o mundo, atribui sentidos e reflete sobre as coisas. </p>
+
+								<p>Queremos desconstruir essa ideia da conversação como “perda de tempo” no processo formativo, seja com o professor, com os colegas de turma ou mesmo com a IAGen. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800">
+									<p>Conversar é renunciar ao egocentrismo intelectual para experimentar outras formas de pensar e conhecer, o que demanda negociar sentidos, que, por sua vez, leva a uma aprendizagem profunda, complexa e significativa. </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Durante a conversação, as palavras do outro têm o potencial de produzir deslocamentos no nosso maquinário subjetivo, acionam gatilhos e fazem pulsar reflexões, estranhamentos e incertezas, que às vezes nos colocam em suspensão, em um espaço desconhecido, de inquietude diante do qual nos fazem parar um instante. Aí está a riqueza da conversação: o intercâmbio com o outro, com a diferença, que nos afeta e nos faz ver aquela realidade de outro modo.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init aos-animate card--in" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+								
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>Paulo Freire (1970) já havia nos ensinado que a educação autêntica se faz pelo diálogo de “A” com “B”, dos professores com os alunos. Não pode ser reduzida a meros comunicados de um professor para os alunos (de “A” para “B”); nessa condição, os alunos só podem receber pacientemente o conteúdo, memorizá-lo e repeti-lo, o que é uma visão equivocada e distorcida de educação. A educação autêntica é dialógica.</p>
+											</div>
+										</div>
+								
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Será que a IAGen, com sua capacidade conversacional, promoverá uma educação mais dialógica? Será que a conversação entre os humanos será mais valorizada em nossas aulas? Ou será o contrário: a conversação com a IAGen, de tão interessante, fará as pessoas renunciarem às conversas com professores e colegas de turma? Será que essa tecnologia promoverá a educação domiciliar (<em>homeschooling</em>) em nosso país? Será que a IAGen promoverá a educação aberta? </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<p class="text-center h6 mb-5"><strong>Possibilidade de conversação com a IAGen em contextos formacionais</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula3-img5.jpg" alt="" title="Fonte: Ilustração de Monica Lopes (Vicari, 2021, n. p.).">
+									<figcaption class="figure-caption fonte">Fonte: Ilustração de Monica Lopes (Vicari, 2021, n. p.).</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Essas questões estão em aberto. Torcemos para que a IAGen seja usada para somar às possibilidades de conversação e não para isolar as pessoas em conversas exclusivas com as máquinas. Consideramos importantes todas as possíveis combinações de conversação que um estudante pode estabelecer: com professores, com outros estudantes, grupos, turmas e com a IAGen. Esperamos que a IAGen seja utilizada para somar e não para substituir.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">IAGen como <span class="dualcolor">tecnologia de coautoria</span></h3>
+								</div>
+
+								<p>A IAGen não pode ser considerada autora, pois ela não tem autonomia, nunca age sozinha, sempre depende do <em>prompt</em> humano para gerar algo. No máximo, ela pode ser caracterizada como uma coautora, porque sempre atua em parceria com um autor humano. Essa ação conjunta é o que denominamos autoria híbrida humano-IA.</p>
+
+								<p>O processo de autoria híbrida é interativo. Nós, humanos, podemos ter a ideia de um texto, imagem, música etc. Com uma ideia em mente, demandamos que a IAGen gere algo sobre aquela ideia. O conteúdo gerado pela IAGen pode conter informações não pensadas anteriormente por nós, o que nos leva a conhecer, refletir e reformular nossas compreensões, por isso aprendemos com esse processo.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="https://placehold.co/1280x720" alt="Imagem aleatória de exmplo" title="Fonte: unsplash.com">
+									<figcaption class="figure-caption">Imagem com tamanho 1280x720</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: unsplash.com</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Em função do resultado gerado, podemos editar a obra ou fazer novos pedidos, seja para a IA gerar variações, revisões ou mesmo outra coisa. O novo resultado será novamente reconsiderado por nós, que lhe atribuiremos sentido, podendo ser editado, revisado ou reformulado. Esse processo segue com a ação ativa tanto do humano quanto da IAGen em uma parceria que exige interações, atuação conjunta de uma pessoa com a IA.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Para refletir -->
+								<div class="box" data-box="Para Refletir">
+									<div class="card card--in">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Refletir</span>
+										</div>
+										<div class="card-body">
+											<p>Com o avanço das tecnologias de IAGen, iniciamos a era da autoria híbrida humano-IA. Como esse novo cenário sociotécnico poderá reconfigurar a educação?</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O sistema educacional, tradicionalmente, não valoriza a autoria dos estudantes. Estamos acostumados a passar atividades para o estudante responder sobre um determinado assunto de acordo com o conteúdo do livro-texto ou resolver um problema seguindo uma fórmula, sem muito espaço para a criação. Para superar as atividades não autorais de reprodução e releitura dos conhecimentos acumulados pela sociedade, precisamos arquitetar situações de aprendizagem para que o discente se autorize a criar e se tornar autor. Podemos arquitetar atividades que levem o estudante a se posicionar criticamente e a criar, narrando o próprio cotidiano, suas próprias experiências pessoais, explicitando sua compreensão, seus modos de ver e sentir o mundo, de (re)significá-lo à sua maneira, a seu modo singular. Formar para a autoria é autorizar a manifestação da subjetividade de pensamentos, sentimentos e lembranças.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800">
+									<p>A autoria é um processo de investigação e descoberta de nós mesmos, de quem somos, de como queremos nos posicionar no mundo e o que desejamos dizer.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Autoria híbrida não é assumir a autoria apenas para si, invisibilizando a influência da IAGen sobre o conceito, o processo e o resultado da obra. Autoria híbrida também não é simplesmente reproduzir o que a IA gerou, o que se caracterizaria em uma espécie de plágio. Para fazermos um uso ético da IAGen, precisamos reconhecer que a autoria da obra é resultante da parceria entre humano e IA. Usar a tecnologia para a cocriação, sem entregar a mente e a voz para a IA pensar e se expressar por nós, é fazer um uso responsável dessa tecnologia. Aprender com o processo de coautoria com a IAGen é fazer uso proveitoso dessa tecnologia para a formação de si. Saber coautorar com a IAGen de maneira ética, responsável e proveitosa para a formação requer letramento em IA — o que podemos apoiar nossos estudantes para desenvolver. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init aos-animate card--in" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+								
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>Para trabalhar em coautoria com a IAGen é preciso aprender a fazer boas perguntas, refinar o <em>prompt</em>, demandar tarefas, avaliar e fazer a curadoria dos resultados, editá-los, verificar as informações e fundamentá-las em fontes confiáveis, atribuir sentido e nos responsabilizarmos pelo uso da obra resultante da autoria híbrida.</p>
+											</div>
+										</div>
+								
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Refletindo sobre como a IAGen impacta a criatividade humana, foram identificados quatro cenários:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="aula3-accordion2">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item7">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item7" aria-expanded="true" aria-controls="collapse1-item7">1 - CocrIAção</button>
+										</h5>
+										<div id="collapse1-item7" class="accordion-collapse collapse" aria-labelledby="heading1-item7" data-bs-parent="">
+											<div class="accordion-body">
+												<p>É quando ocorre uma parceria entre a inteligência humana e a IA generativa, com reconhecimento das contribuições de cada parte. Essa configuração vem sendo chamada de criatividade aumentada, porque produz resultados que não seriam possíveis apenas por humanos ou por IAGen. Esse cenário é o que denominamos de autoria híbrida humano-IA.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item8">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item8" aria-expanded="false" aria-controls="collapse1-item8">2 - Orgânico</button>
+										</h5>
+										<div id="collapse1-item8" class="accordion-collapse collapse" aria-labelledby="heading1-item8" data-bs-parent="">
+											<div class="accordion-body">
+												<p>É a criação de obras sem fazer uso de tecnologias de IAGen. O processo criativo puramente humano poderá ser reconhecido como uma marca da qualidade da obra em função de sua singularidade e autenticidade, chamada de “efeito artesanal” ou “criatividade antiquada”.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item9">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item9" aria-expanded="false" aria-controls="collapse1-item9">3 - Plágio 3.0</button>
+										</h5>
+										<div id="collapse1-item9" class="accordion-collapse collapse" aria-labelledby="heading1-item9" data-bs-parent="">
+											<div class="accordion-body">
+												<p>É quando a IAGen é utilizada sem ser citada, para que a própria pessoa pareça produtiva e criativa. O caráter ético dessa forma de criação necessita ser debatido pela sociedade.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item10">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item10" aria-expanded="false" aria-controls="collapse1-item10">4 - Desistência</button>
+										</h5>
+										<div id="collapse1-item10" class="accordion-collapse collapse" aria-labelledby="heading1-item10" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Algumas pessoas poderão ficar desmotivadas para realizar ações criativas por não se sentirem capazes de criar no mesmo nível que a IA e, assim, terceirizarão a criação de conteúdo para a IAGen. Esse é o cenário em que as pessoas entregam suas mentes e vozes para a IAGen pensar e se expressar por elas.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Nossa aposta é em uma formação para autoria híbrida entre humanos e IAGen, na perspectiva da cocriação, parceria, fazer junto, como caracterizado pelo cenário 1. Cabe à educação formar para a autoria de modo hibridizado com as tecnologias geradoras de conteúdo, atentando para o fato de que plágio e desistência (cenários 3 e 4) também são possíveis, mas não são potencializadores do desenvolvimento humano. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Novo perfil <span class="dualcolor">cognitivo</span></h3>
+								</div>
+
+								<p>A IAGen já começou a transformar nosso sistema educacional, nossa cultura e possivelmente até nossa cognição. Lucia Santaella (2004; 2013) reconhece uma mudança no perfil cognitivo das pessoas em função das tecnologias utilizadas em determinados períodos de nossa história. Para Santaella, as tecnologias de produção de signos e linguagens típicas de cada época, como livro, jornal, cinema, televisão e computadores, forjam leitores com diferentes perfis cognitivos. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<p class="text-center h6 mb-5"><strong>Evolução do perfil cognitivo dos leitores</strong></p>
+							</div>
+
+							<div class="col-12 col-md-11 col-lg-10 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula3-img6.jpg" alt="" title="Fonte: Ilustração de Mônica Lopes (2026).">
+									<figcaption class="figure-caption fonte">Fonte: Ilustração de Mônica Lopes (2026).</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Compreendendo que a cognição humana se modifica pelo uso das tecnologias semióticas, hoje já nos questionamos sobre a possibilidade da emergência de um novo perfil cognitivo de leitor em decorrência do uso da IAGen. Os estudantes relatam que estão utilizando muito a IAGen como uma extensão da própria inteligência; passaram a utilizá-la para pensar junto, de modo hibridizado. O uso “rotineiro”, “constante”, inventando “novas rotinas com o ChatGPT” a ponto de “não estudar sem o ChatGPT” — conforme declarado por muitos estudantes — nos levou a reconhecer a emergência do perfil cognitivo que denominamos “leitor generativo”, ou seja, aquele que lê os textos que gera com a IAGen, assim como também as imagens, vídeos e sons, entre outras linguagens utilizadas na geração de obras.</p>
+
+								<p>Um estudante de Computação nos declarou: “Uso o Copilot, hoje codifico igual a um deus e aprendo demais com o GPT-4.” Compreendemos que esse estudante, ao afirmar que codifica “igual a um deus”, já se tornou um programador-híbrido, e não desistirá de programar em parceria com a IAGen porque reconhece que se tornou capaz de programar muito melhor com ela do que se estivesse programando sozinho, reconhecendo os benefícios dessa parceria para sua aprendizagem. Esse novo perfil cognitivo foi rebatizado por Santaella como “leitor iterativo”:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“Um novo tipo de leitor está nascendo, seguindo a teoria que foi desenvolvida sobre os perfis semiótico-cognitivos dos quatro tipos anteriores de leitores — contemplativo, em movimento, imersivo e ubíquo.”</p>
+											<span class="quotation-autor">(Santaella 2004, 2018) </span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“[...] um quinto tipo de leitor agora emerge, o qual estou chamando de ITERATIVO.”</p>
+											<span class="quotation-autor">(Santaella, 2024, n.p., tradução nossa)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A educação está sendo reconfigurada em tempos de cibercultura. Nas últimas décadas, temos acompanhado a emergência e a consolidação de novas modalidades educacionais possibilitadas pelo digital em rede, como a educação a distância, remota, híbrida, massiva e aberta. Não podemos ignorar as reconfigurações que estão em curso ou que ainda serão promovidas pela popularização da IAGen. Independentemente da modalidade ou nível de ensino, a IAGen mostra-se útil em diversas atividades relacionadas ao processo formacional, seja na aprendizagem, na mediação docente, na elaboração dos conteúdos didáticos, na gestão educacional ou nas políticas públicas de educação.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800">
+									<p>Essa tecnologia já começou a transformar nosso sistema educacional, nossa cultura como um todo e até mesmo nossa cognição.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Promover educação para o uso da IAGen e efetivar a educação com o uso dessa tecnologia são desafios importantes do nosso tempo. A inserção da IAGen na educação, nas múltiplas modalidades e contextos formativos, ainda está em curso. Nesta aula buscamos teorizar o uso da IAGen na educação, considerando suas múltiplas finalidades, especialmente como uma tecnologia para conversação e coautoria, e alguns de seus possíveis desdobramentos. </p>
+
+								<p>Não pretendemos apresentar respostas definitivas, mas tecemos algumas reflexões considerando que a realidade é complexa e o futuro da educação está sendo forjado por cada um de nós e pelas relações que estabelecemos com essa nova tecnologia digital.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+											<p>PIMENTEL, Mariano; CARVALHO, Felipe. Inteligência Artificial Generativa na Educação Aberta: potencialidades e riscos. <strong>Programa de Formação Modular em Ciência Aberta. Módulo 5. Educação Aberta e Recursos Educacionais Abertos Aula 3.</strong> 1. ed. Rio de Janeiro: Fiocruz, 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo5/aula3.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo5/aula3.html</a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula2.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 2</a>
+								<a class="fio-button fio-button-primary" href="aula4.html" rel="next">Aula 4 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+
+</html>

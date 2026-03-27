@@ -1,0 +1,102 @@
+/* --- FOOTER --- */
+
+footer {
+  --_logo-space: 20px;
+  --_footer-logos-size-default: 120px;
+
+  background-color: inherit;
+  background-image: url(../../../media/templates/bg-footer.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-top: 1px solid var(--fio-sys-color-neutral-light);
+  /* border-bottom: 20px solid var(--fio-sys-color-primary-dark); */
+  padding: 60px 0 80px;
+  position: relative;
+  z-index: 99;
+}
+
+footer .col-auto {
+  border-bottom: 1px solid var(--fio-sys-color-neutral-light);
+  width: 50%;
+}
+
+footer .logos {
+  padding: 20px 0;
+  display: flex;
+  gap: var(--_logo-space);
+  list-style: none;
+  margin: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer .logos li {
+  text-align: center;
+  position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .logos li.realizacao::before {
+  content: "Realização:";
+  text-align: center;
+  display: block;
+  font-size: 0.75rem;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+footer .logos.principais {
+  /* border-top: 1px solid var(--fio-sys-color-neutral-light); */
+  display: flex;
+  margin-top: var(--logo-space);
+}
+
+footer .logos img {
+  height: var(--_footer-logos-size-default);
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 60px 0 120px;
+  }
+  footer .col-auto {
+    width: auto;
+    border-right: 1px solid var(--fio-sys-color-neutral-light);
+    border-bottom: none;
+  }
+
+  footer .logos {
+    flex-direction: row;
+  }
+
+  footer .logos.principais {
+    border: none;
+    /* border-left: 1px solid var(--fio-sys-color-neutral-light); */
+    /* padding-left: var(--logo-space); */
+    /* margin-left: var(--logo-space); */
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    --logo-space: 20px;
+    --_footer-logos-size-default: 120px;
+    margin-left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    --_footer-logos-size-default: 150px;
+    margin-left: 120px;
+  }
+}
+@media (min-width: 1320px) {
+  footer {
+    --_footer-logos-size-default: 180px;
+    padding: 60px 0 250px;
+  }
+}

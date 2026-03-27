@@ -1,0 +1,422 @@
+/* SYSTEM UI VARIABLES */
+
+@import "-reference.css";
+
+:root {
+  /* ---------- COLORS ---------- */
+
+  /* Primary - 60% layout*/
+  --fio-sys-color-primary-light: #e9ebee;
+  --fio-sys-color-primary-light-hover: #dee1e5;
+  --fio-sys-color-primary-light-active: #bcc1cb;
+  --fio-sys-color-primary-normal: #293653;
+  --fio-sys-color-primary-normal-hover: #293653;
+  --fio-sys-color-primary-normal-active: #152741;
+  --fio-sys-color-primary-dark: #13243c;
+  --fio-sys-color-primary-dark-hover: #0e1a2f;
+  --fio-sys-color-primary-dark-active: #061120;
+  --fio-sys-color-primary-darker: #030b17;
+
+  /* Secondary 1 - Modulo 1*/
+  --fio-sys-color-secondary1-light: #f7eef5;
+  --fio-sys-color-secondary1-light-hover: #f3e6f0;
+  --fio-sys-color-secondary1-light-active: #e5cce0;
+  --fio-sys-color-secondary1-normal: #ac599c;
+  --fio-sys-color-secondary1-normal-hover: #9b508c;
+  --fio-sys-color-secondary1-normal-active: #8a477d;
+  --fio-sys-color-secondary1-dark: #814375;
+  --fio-sys-color-secondary1-dark-hover: #67355e;
+  --fio-sys-color-secondary1-dark-active: #562345;
+  --fio-sys-color-secondary1-darker: #3c1f37;
+
+  /* Secondary 2 - Modulo 2*/
+  --fio-sys-color-secondary2-light: #edf4f7;
+  --fio-sys-color-secondary2-light-hover: #e5eef5;
+  --fio-sys-color-secondary2-light-active: #c9deea;
+  --fio-sys-color-secondary2-normal: #4296be;
+  --fio-sys-color-secondary2-normal-hover: #3b87ab;
+  --fio-sys-color-secondary2-normal-active: #337998;
+  --fio-sys-color-secondary2-dark: #2f728e;
+  --fio-sys-color-secondary2-dark-hover: #245a72;
+  --fio-sys-color-secondary2-dark-active: #184255;
+  --fio-sys-color-secondary2-darker: #103240;
+
+  /* Secondary 3 - Modulo 3*/
+  --fio-sys-color-secondary3-light: #dff5f1;
+  --fio-sys-color-secondary3-light-hover: #cff0ea;
+  --fio-sys-color-secondary3-light-active: #96e3d6;
+  --fio-sys-color-secondary3-normal: #00a47a;
+  --fio-sys-color-secondary3-normal-hover: #00946c;
+  --fio-sys-color-secondary3-normal-active: #008360;
+  --fio-sys-color-secondary3-dark: #007c5a;
+  --fio-sys-color-secondary3-dark-hover: #006246;
+  --fio-sys-color-secondary3-dark-active: #004933;
+  --fio-sys-color-secondary3-darker: #003626;
+
+  /* Secondary 4 - Modulo 4*/
+  --fio-sys-color-secondary4-light: #fdf8e8;
+  --fio-sys-color-secondary4-light-hover: #fcf4dd;
+  --fio-sys-color-secondary4-light-active: #f9e8b8;
+  --fio-sys-color-secondary4-normal: #ebb41a;
+  --fio-sys-color-secondary4-normal-hover: #d4a217;
+  --fio-sys-color-secondary4-normal-active: #bc9015;
+  --fio-sys-color-secondary4-dark: #b08714;
+  --fio-sys-color-secondary4-dark-hover: #8d6c10;
+  --fio-sys-color-secondary4-dark-active: #6a510c;
+  --fio-sys-color-secondary4-darker: #523f09;
+
+  /* Secondary 5 - Modulo 5*/
+  --fio-sys-color-secondary5-light: #fcf0ef;
+  --fio-sys-color-secondary5-light-hover: #ffe8e7;
+  --fio-sys-color-secondary5-light-active: #f7cfcd;
+  --fio-sys-color-secondary5-normal: #e4645e;
+  --fio-sys-color-secondary5-normal-hover: #cd5a55;
+  --fio-sys-color-secondary5-normal-active: #b6504b;
+  --fio-sys-color-secondary5-dark: #ab4b47;
+  --fio-sys-color-secondary5-dark-hover: #9d3935;
+  --fio-sys-color-secondary5-dark-active: #762925;
+  --fio-sys-color-secondary5-darker: #5b1e1b;
+
+  /* Tertiary - Baixa ênfase na interface */
+  --fio-sys-color-tertiary-light: #ecfaf7;
+  --fio-sys-color-tertiary-light-hover: #e3f8f4;
+  --fio-sys-color-tertiary-light-active: #c6f2ea;
+  --fio-sys-color-tertiary-normal: #73d8bd;
+  --fio-sys-color-tertiary-normal-hover: #00c2a9;
+  --fio-sys-color-tertiary-normal-active: #00ae96;
+  --fio-sys-color-tertiary-dark: #00a28d;
+  --fio-sys-color-tertiary-dark-hover: #008271;
+  --fio-sys-color-tertiary-dark-active: #006154;
+  --fio-sys-color-tertiary-darker: #004b3f;
+
+  /* Neutral - Texto Corrido */
+  --fio-sys-color-neutral-light: #ebebeb;
+  --fio-sys-color-neutral-light-hover: #e0e0e0;
+  --fio-sys-color-neutral-light-active: #c0c0c0;
+  --fio-sys-color-neutral-normal: #303030;
+  --fio-sys-color-neutral-normal-hover: #2a2a2a;
+  --fio-sys-color-neutral-normal-active: #242424;
+  --fio-sys-color-neutral-dark: #212121;
+  --fio-sys-color-neutral-dark-hover: #191919;
+  --fio-sys-color-neutral-dark-active: #101010;
+  --fio-sys-color-neutral-darker: #0a0a0a;
+
+  --fio-sys-color-neutral-white: #fff;
+  --fio-sys-color-neutral-black: #000;
+
+  /* Accent (cor de interação) */
+  --fio-sys-color-accent-light: var(--fio-sys-color-primary-light-active);
+  --fio-sys-color-accent-normal: var(--fio-sys-color-primary-normal);
+  --fio-sys-color-accent-dark: var(--fio-sys-color-primary-dark);
+  --fio-sys-color-accent-contrast: var(--fio-sys-color-neutral-white);
+
+    /* --fio-sys-color-primary-light: #e9ebee;
+  --fio-sys-color-primary-light-hover: #dee1e5;
+  --fio-sys-color-primary-light-active: #bcc1cb;
+  --fio-sys-color-primary-normal: #293653;
+  --fio-sys-color-primary-normal-hover: #293653;
+  --fio-sys-color-primary-normal-active: #152741;
+  --fio-sys-color-primary-dark: #13243c;
+  --fio-sys-color-primary-dark-hover: #0e1a2f;
+  --fio-sys-color-primary-dark-active: #061120;
+  --fio-sys-color-primary-darker: #030b17; */
+
+  /* Success */
+  --fio-sys-color-success-light: var(--fio-ref-color-success-90);
+  --fio-sys-color-success-medium: var(--fio-ref-color-success-40);
+  --fio-sys-color-success-dark: var(--fio-ref-color-success-20);
+
+  /* Warning */
+  --fio-sys-color-warning-light: var(--fio-ref-color-warning-50);
+  --fio-sys-color-warning-light: var(--fio-ref-color-warning-50);
+  --fio-sys-color-warning-dark: var(--fio-ref-color-warning-20);
+
+  /* Error */
+  --fio-sys-color-error-light: var(--fio-ref-color-error-90);
+  --fio-sys-color-error-medium: var(--fio-ref-color-error-40);
+  --fio-sys-color-error-dark: var(--fio-ref-color-error-20);
+
+  /* Gradient */
+  --fio-sys-gradient-background: linear-gradient(
+    90deg,
+    rgba(244, 224, 223, 1) 0%,
+    rgba(234, 222, 234, 1) 100%
+  );
+
+  /* ---------- SIZE ---------- */
+
+  /* Vertical size */
+  --fio-sys-size-vertical-multiplier: 1; /* Caso necessário */
+
+  --fio-sys-size-vertical-0: var(--fio-ref-size-0);
+  --fio-sys-size-vertical-xs: var(--fio-ref-size-8);
+  --fio-sys-size-vertical-sm: var(--fio-ref-size-12);
+  --fio-sys-size-vertical-md: var(--fio-ref-size-20);
+  --fio-sys-size-vertical-lg: var(--fio-ref-size-40);
+  --fio-sys-size-vertical-xl: var(--fio-ref-size-80);
+  --fio-sys-size-vertical-xxl: var(--fio-ref-size-160);
+
+  /* Padding */
+  --fio-sys-size-padding-multiplier: 1; /* Caso necessário */
+
+  --fio-sys-size-padding-0: var(--fio-ref-size-0);
+  --fio-sys-size-padding-xs: var(--fio-ref-size-8);
+  --fio-sys-size-padding-sm: var(--fio-ref-size-16);
+  --fio-sys-size-padding-md: var(--fio-ref-size-24);
+  --fio-sys-size-padding-lg: var(--fio-ref-size-32);
+  --fio-sys-size-padding-xl: var(--fio-ref-size-40);
+  --fio-sys-size-padding-xxl: var(--fio-ref-size-48);
+
+  /* Margin */
+  --fio-sys-size-margin-multiplier: 1; /* Caso necessário */
+
+  --fio-sys-size-margin-0: var(--fio-ref-size-0);
+  --fio-sys-size-margin-xs: var(--fio-ref-size-8);
+  --fio-sys-size-margin-sm: var(--fio-ref-size-16);
+  --fio-sys-size-margin-md: var(--fio-ref-size-24);
+  --fio-sys-size-margin-lg: var(--fio-ref-size-32);
+  --fio-sys-size-margin-xl: var(--fio-ref-size-40);
+  --fio-sys-size-margin-xxl: var(--fio-ref-size-48);
+
+  /* Border radius */
+  --fio-sys-size-radius-multiplier: 1; /* Caso necessário */
+
+  --fio-sys-size-radius-0: var(--fio-ref-size-0);
+  --fio-sys-size-radius-xs: var(--fio-ref-size-4);
+  --fio-sys-size-radius-sm: var(--fio-ref-size-8);
+  --fio-sys-size-radius-md: var(--fio-ref-size-12);
+  --fio-sys-size-radius-lg: var(--fio-ref-size-16);
+  --fio-sys-size-radius-xl: var(--fio-ref-size-24);
+  --fio-sys-size-radius-full: var(--fio-ref-size-160);
+
+  /* Border width */
+  --fio-sys-size-stroke-multiplier: 1; /* Caso necessário */
+
+  --fio-sys-size-stroke-0: var(--fio-ref-size-0);
+  --fio-sys-size-stroke-xs: var(--fio-ref-size-1);
+  --fio-sys-size-stroke-sm: var(--fio-ref-size-2);
+  --fio-sys-size-stroke-md: var(--fio-ref-size-3);
+  --fio-sys-size-stroke-lg: var(--fio-ref-size-4);
+  --fio-sys-size-stroke-xl: var(--fio-ref-size-8);
+
+  /* Opacity */
+  --fio-sys-size-opacity-xs: 0%;
+  --fio-sys-size-opacity-sm: var(--fio-ref-size-opacity-16) %;
+  --fio-sys-size-opacity-md: var(--fio-ref-size-opacity-32) %;
+  --fio-sys-size-opacity-lg: var(--fio-ref-size-opacity-64) %;
+  --fio-sys-size-opacity-full: 100%;
+
+  /* Shadow */
+  /* --fio-sys-elevation-color: hsl(var(--fio-sys-color-neutral-medium) / 50%); */
+  --fio-sys-shadow-color: hsla(var(--fio-ref-color-neutral), 30%, 40%);
+
+  --fio-sys-size-shadow-0: 0;
+  --fio-sys-size-shadow-sm: 0 var(--fio-ref-size-2) var(--fio-ref-size-4)
+    var(--fio-sys-shadow-color);
+  --fio-sys-size-shadow-md: 0 var(--fio-ref-size-4) var(--fio-ref-size-8)
+    var(--fio-sys-shadow-color);
+  --fio-sys-size-shadow-lg: 0 var(--fio-ref-size-8) var(--fio-ref-size-16)
+    var(--fio-sys-shadow-color);
+  --fio-sys-size-shadow-xl: 0 var(--fio-ref-size-16) var(--fio-ref-size-32)
+    var(--fio-sys-shadow-color);
+
+  /* ---------- TYPOGRAPHY ---------- */
+
+  --fio-sys-typography-family-primary-light: var(
+        --fio-ref-typography-family-primary
+      )
+      Light,
+    sans-serif;
+  --fio-sys-typography-family-primary-regular: var(
+        --fio-ref-typography-family-primary
+      )
+      Regular,
+    sans-serif;
+  --fio-sys-typography-family-primary-medium: var(
+        --fio-ref-typography-family-primary
+      )
+      Medium,
+    sans-serif;
+  --fio-sys-typography-family-primary-semi-bold: var(
+        --fio-ref-typography-family-primary
+      )
+      SemiBold,
+    sans-serif;
+  --fio-sys-typography-family-primary-bold: var(
+        --fio-ref-typography-family-primary
+      )
+      Bold,
+    sans-serif;
+  --fio-sys-typography-family-primary-extra-bold: var(
+        --fio-ref-typography-family-primary
+      )
+      ExtraBold,
+    sans-serif;
+
+  /* Size */
+  --fio-sys-typography-multiplier: 1; /* Caso necessário */
+
+  /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1440,20,1.25,6,2,1200-1366-1440&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  /* Step -2: 12.5px → 12.8px */
+  --fio-sys-typography-size--2: clamp(0.7813rem, 0.7759rem + 0.0268vi, 0.8rem);
+  /* Step -1: 15px → 16px */
+  --fio-sys-typography-size--1: clamp(0.9375rem, 0.9196rem + 0.0893vi, 1rem);
+  /* Step 0: 18px → 20px */
+  --fio-sys-typography-size-0: clamp(1.125rem, 1.0893rem + 0.1786vi, 1.25rem);
+  /* Step 1: 21.6px → 25px */
+  --fio-sys-typography-size-1: clamp(1.35rem, 1.2893rem + 0.3036vi, 1.5625rem);
+  /* Step 2: 25.92px → 31.25px */
+  --fio-sys-typography-size-2: clamp(1.62rem, 1.5248rem + 0.4759vi, 1.9531rem);
+  /* Step 3: 31.104px → 39.0625px */
+  --fio-sys-typography-size-3: clamp(1.944rem, 1.8019rem + 0.7106vi, 2.4414rem);
+  /* Step 4: 37.3248px → 48.8281px */
+  --fio-sys-typography-size-4: clamp(
+    2.3328rem,
+    2.1274rem + 1.0271vi,
+    3.0518rem
+  );
+  /* Step 5: 44.7898px → 61.0352px */
+  --fio-sys-typography-size-5: clamp(2.4rem, 2.4093rem + 1.4vi, 3.8147rem);
+  /* Step 6: 53.7477px → 76.2939px */
+  --fio-sys-typography-size-6: clamp(
+    3.3592rem,
+    2.9566rem + 2.0131vi,
+    4.7684rem
+  );
+
+  /* Line height */
+  --fio-sys-typography-height-100: 1;
+  --fio-sys-typography-height-110: 1.1;
+  --fio-sys-typography-height-125: 1.25;
+  --fio-sys-typography-height-150: 1.5;
+
+  /* Font weight */
+  --fio-sys-typography-weight-lighter: 200;
+  --fio-sys-typography-weight-light: 300;
+  --fio-sys-typography-weight-normal: 400;
+  --fio-sys-typography-weight-bold: 700;
+  --fio-sys-typography-weight-bolder: 900;
+
+  /* Letter Spacing */
+  --fio-sys-typography-spacing-dense: -4px;
+  --fio-sys-typography-spacing-normal: 0;
+  --fio-sys-typography-spacing-wide: 4px;
+
+  --fio-sys-typography-size-xxs: var(--fio-ref-size-8;);
+  --fio-sys-typography-size-xs: var(--fio-ref-size-12);
+  --fio-sys-typography-size-sm: var(--fio-ref-size-16);
+  --fio-sys-typography-size-md: var(--fio-ref-size-20);
+  --fio-sys-typography-size-lg: var(--fio-ref-size-24);
+  --fio-sys-typography-size-xl: var(--fio-ref-size-32);
+  --fio-sys-typography-size-xxl: var(--fio-ref-size-48);
+  --fio-sys-typography-size-: calc(var(--fio-ref-typography-size-base) * 3.5);
+  --fio-sys-typography-size-: calc(var(--fio-ref-typography-size-base) * 4);
+  --fio-sys-typography-size-: calc(var(--fio-ref-typography-size-base) * 5);
+
+  /* ELEMENTS */
+
+  /* Hr line */
+  --fio-sys-hr-color: var(--fio-sys-color-neutral-light);
+  --fio-sys-hr-color-contrast: var(--fio-sys-color-neutral-dark);
+
+  --fio-sys-hr-color-primary: var(--fio-sys-color-primary-light);
+  --fio-sys-hr-color-primary-contrast: var(--fio-sys-color-primary-dark);
+
+  --fio-sys-hr-border-width-normal: var(--fio-ref-shape-border-1);
+  --fio-sys-hr-border-width-bold: var(--fio-ref-shape-border-2);
+}
+
+/* CORES POR MÓDULOS */
+
+#modulo1 {
+  --fio-sys-color-accent-extra-light: var(
+    --fio-sys-color-secondary1-light-hover
+  );
+  --fio-sys-color-accent-light: var(--fio-sys-color-secondary1-light-active);
+  --fio-sys-color-accent-normal: var(--fio-sys-color-secondary1-normal);
+  --fio-sys-color-accent-dark: var(--fio-sys-color-secondary1-dark);
+  --fio-sys-color-accent-contrast: var(--fio-sys-color-neutral-white);
+  --fio-sys-color-text: var(--fio-sys-color-secondary1-normal);
+  --fio-sys-color-link: var(--fio-sys-color-accent-contrast);
+
+  --fio-sys-gradient-background: linear-gradient(
+    90deg,
+    var(--fio-sys-color-secondary5-light-hover) 0%,
+    var(--fio-sys-color-secondary1-light-hover) 100%
+  );
+}
+
+#modulo2 {
+  --fio-sys-color-accent-extra-light: var(
+    --fio-sys-color-secondary2-light-hover
+  );
+  --fio-sys-color-accent-light: var(--fio-sys-color-secondary2-light-active);
+  --fio-sys-color-accent-normal: var(--fio-sys-color-secondary2-normal);
+  --fio-sys-color-accent-dark: var(--fio-sys-color-secondary2-dark);
+  --fio-sys-color-accent-contrast: var(--fio-sys-color-neutral-white);
+  --fio-sys-color-text: var(--fio-sys-color-secondary2-normal);
+  --fio-sys-color-link: var(--fio-sys-color-accent-contrast);
+
+  --fio-sys-gradient-background: linear-gradient(
+    90deg,
+    var(--fio-sys-color-secondary1-light-hover) 0%,
+    var(--fio-sys-color-secondary2-light-hover) 100%
+  );
+}
+
+#modulo3 {
+  --fio-sys-color-accent-extra-light: var(
+    --fio-sys-color-secondary3-light-hover
+  );
+  --fio-sys-color-accent-light: var(--fio-sys-color-secondary3-light-active);
+  --fio-sys-color-accent-normal: var(--fio-sys-color-secondary3-normal);
+  --fio-sys-color-accent-dark: var(--fio-sys-color-secondary3-dark-active);
+  --fio-sys-color-accent-contrast: var(--fio-sys-color-neutral-white);
+  --fio-sys-color-text: var(--fio-sys-color-secondary3-normal);
+  --fio-sys-color-link: var(--fio-sys-color-accent-contrast);
+
+  --fio-sys-gradient-background: linear-gradient(
+    90deg,
+    var(--fio-sys-color-secondary3-light-hover) 0%,
+    var(--fio-sys-color-secondary1-light-hover) 100%
+  );
+}
+
+#modulo4 {
+  --fio-sys-color-accent-extra-light: var(
+    --fio-sys-color-secondary4-light-hover
+  );
+  --fio-sys-color-accent-light: var(--fio-sys-color-secondary4-light-active);
+  --fio-sys-color-accent-normal: var(--fio-sys-color-secondary4-normal);
+  /* --fio-sys-color-accent-normal: var(--fio-sys-color-secondary4-dark); */
+  --fio-sys-color-accent-dark: var(--fio-sys-color-secondary4-dark);
+  --fio-sys-color-accent-contrast: var(--fio-sys-color-neutral-white);
+  --fio-sys-color-text: var(--fio-sys-color-primary-normal);
+  --fio-sys-color-link: var(--fio-sys-color-accent-contrast);
+
+  --fio-sys-gradient-background: linear-gradient(
+    90deg,
+    var(--fio-sys-color-secondary1-light-hover) 0%,
+    var(--fio-sys-color-secondary4-light-hover) 100%
+  );
+}
+
+#modulo5 {
+  --fio-sys-color-accent-extra-light: var(
+    --fio-sys-color-secondary5-light-hover
+  );
+  --fio-sys-color-accent-light: var(--fio-sys-color-secondary5-light-active);
+  --fio-sys-color-accent-normal: var(--fio-sys-color-secondary5-normal);
+  --fio-sys-color-accent-dark: var(--fio-sys-color-secondary5-dark);
+  --fio-sys-color-accent-extradark: var(--fio-sys-color-secondary5-darker);
+  --fio-sys-color-accent-contrast: var(--fio-sys-color-neutral-white);
+  --fio-sys-color-text: var(--fio-sys-color-secondary5-normal);
+  --fio-sys-color-link: var(--fio-sys-color-accent-contrast);
+
+  --fio-sys-gradient-background: linear-gradient(
+    90deg,
+    var(--fio-sys-color-secondary5-light-hover) 0%,
+    var(--fio-sys-color-secondary4-light-hover) 100%
+  );
+}

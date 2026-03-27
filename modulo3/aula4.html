@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 3 | Aula 4 - Preprints</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<link rel="stylesheet" href="aula1-info1.css" />
+</head>
+
+<body id="modulo3">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button class="d-block d-lg-none" type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 3 <br /><br />
+							Aula 4</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 3</span>
+									<span class="title">Acesso Aberto</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 1: O que é Acesso Aberto?</a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 2: Implicações na Comunicação Científica</a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 3: Revisão aberta por pares</a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 4: <em>Preprints</em></a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 5: Experiências latino-americanas do Acesso Aberto </a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Acesso Aberto na Fiocruz</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod2-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 3</strong> . Aula 4</span>
+								<span class="title-bold"><em>Preprints</em></span>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="card objetivos">
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Nesta aula, você conhecerá os <em>preprints</em>, versões preliminares de artigos científicos disponibilizadas antes da revisão por pares formal. Eles são amplamente usados para acelerar a comunicação científica, especialmente em áreas como Física e Biologia. Ao final da aula, você será capaz de:</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Compreender o conceito de <em>preprints</em> e identificar sua contribuição para a comunicação científica.</li>
+
+												<li class="list-group-item">Diferenciar a revisão por pares, geralmente anônima, adotada pelas revistas científicas da revisão aberta por pares adotada como padrão nas plataformas de <em>preprints</em>.</li>
+
+												<li class="list-group-item">Conhecer os principais benefícios, desafios e implicações éticas do uso de <em>preprints</em> na comunicação científica.</li>
+
+												<li class="list-group-item">Conhecer as especificidades das principais plataformas de <em>preprints</em>, incluindo aquelas mantidas por financiadores privados de pesquisa.</li>
+
+												<li class="list-group-item">Conhecer um exemplo de ferramenta que busca aprimorar o processo de revisão por pares aberta realizada nas plataformas de <em>preprints</em>.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">O que são <span class="dualcolor"><em>preprints</em></span></h3>
+								</div>
+
+								<p><em>Preprints</em> são manuscritos científicos disponibilizados de maneira aberta em plataformas (de <em>preprints</em>) antes da revisão por pares. Esse formato permite que pesquisadores compartilhem suas descobertas rapidamente, promovendo disseminação ágil do conhecimento sem ter que esperar pelos longos processos de revisão e de publicação das revistas científicas.</p>
+
+								<p>Como inovação na comunicação científica, é comum que os <em>preprints</em> sejam utilizados pelos pesquisadores como “vitrines” de suas pesquisas, cujos resultados pretendem submeter posteriormente a revistas científicas de excelência. Nessa perspectiva, eles são uma espécie de "prévia" e podem ser melhorados a partir dos comentários e correções sugeridas por leitores que, geralmente, também são especialistas na área. A ideia é que, no futuro, uma nova versão, aprimorada, seja submetida para uma revista. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Box Cor -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Exemplo</h4>
+										</div>
+										<div class="base-body">
+											<p>Na física, o <em>preprint</em> é um formato consolidado e considerado uma publicação em si, sem grandes expectativas de gerar uma versão para submissão para revistas. Esse campo científico prioriza a rapidez da comunicação. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Origem dos <span class="dualcolor"><em>preprints</em></span></h3>
+								</div>
+
+								<p>Os <em>preprints</em> têm suas origens na comunidade científica da Física e surgiram como uma forma de compartilhar descobertas antes da publicação formal em revistas científicas. O uso de <em>preprints</em> ganhou força especialmente nas décadas de 1960 e 1970, quando pesquisadores da área de Física de Altas Energias começaram a circular cópias de seus manuscritos não revisados por pares entre outros cientistas interessados. Essa prática informal permitia a rápida disseminação de novos resultados e promovia o debate científico antes que os artigos fossem aceitos por periódicos.</p>
+
+								<p>No início dos anos 1990, a troca de manuscritos foi formalizada com o lançamento do <a href='https://arxiv.org/' target='_blank'>arXiv.org</a> por Paul Ginsparg.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center align-items-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais Toggle -->
+								<div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="saiba-mais__header">
+										<button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span> Saiba mais</button>
+									</div>
+									<div class="saiba-mais__content collapse" id="saiba-mais1">
+										<p>O repositório digital atlix foi criado por Paul Ginspatg no início dos anos 1990, inicialmente para os físicos teóricos. Revolucionou o acesso à pesquisa científica ao permitir que manuscritos fossem disponibilizados online de forma aberta e gratuita. Isso não só acelerou a comunicação científica, como também estabeleceu uma nova cultura de compartilhamento de conhecimento em outras áreas, como a Matemática, a Ciência da Computação e, eventualmente, a Biologia e as Ciências Sociais.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Outras iniciativas de preprints em diferentes áreas são o <a href='https://www.biorxiv.org/' target='_blank'>bioRxiv</a>, o <a href='https://socopen.org/' target='_blank'>SocArXiv</a> e o <a href='https://osf.io/preprints/' target='_blank'>OSF Preprints</a> (multidisciplinar).</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Relação entre <em>preprints</em> <span class="dualcolor">e o Acesso Aberto</span>
+									</h3>
+								</div>
+
+								<p>Atualmente, os <em>preprints</em> já são populares em diversas áreas, especialmente em ciências exatas e biológicas, e estão se tornando cada vez mais importantes para a comunicação científica global.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto">
+									<p>Ao utilizar plataformas de <em>preprints</em>, os pesquisadores podem disponibilizar seus trabalhos gratuitamente, permitindo acesso imediato ao conteúdo sem os custos associados à publicação em revistas que cobram taxas de publicação.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Os <em>preprints</em> oferecem uma alternativa para pesquisadores que desejam compartilhar seus resultados de forma aberta, sem depender do modelo de pagamento por publicação adotado pelas editoras comerciais na chamada via dourada do Acesso Aberto.</p>
+
+								<p>Além disso, o uso de <em>preprints</em> promove uma cultura de ciência aberta e fomenta a colaboração aberta ao adotar a avaliação por pares aberta, assunto estudado na aula anterior deste curso. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Box de Para Assistir -->
+								<div class="box" data-box="Para Assistir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Assistir</span>
+										</div>
+										<div class="card-body">
+											<p><strong><em>“What are preprint?”</em></strong></p>
+
+											<div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/2zMgY8Dx9co" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Diferença entre <em>preprints</em> <span class="dualcolor">e artigos publicados em revistas</span></h3>
+								</div>
+
+								<p>As principais diferenças entre preprints e artigos publicados em revistas científicas estão na maneira como os manuscritos são revisados e na velocidade com que são publicados. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Abas -->
+								<div class="aba">
+									<ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="nav-link active" id="pills-atores-tab" data-bs-toggle="pill" data-bs-target="#pills-atores" type="button" role="tab" aria-controls="pills-atores" aria-selected="true">Revistas científicas</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-seguranca-tab" data-bs-toggle="pill" data-bs-target="#pills-seguranca" type="button" role="tab" aria-controls="pills-seguranca" aria-selected="false"><em>Preprints</em></button>
+										</li>
+									</ul>
+									<div class="tab-content p-0" id="pills-tabContent">
+										<!-- Aba 1 -->
+										<div class="tab-pane fade show active" id="pills-atores" role="tabpanel" aria-labelledby="pills-atores-tab">
+											<div class="tab-pane-content">
+												<p>Um manuscrito é revisado pelo editor do periódico e, por pelo menos, dois revisores, cujas identidades não são de conhecimento do autor (revisão por duplo cego). Esse processo pode levar meses (até anos) com muitas idas e vindas de solicitações de complementação e respostas dos autores até a sua publicação.</p>
+											</div>
+										</div>
+										<!-- Aba 2-->
+										<div class="tab-pane fade" id="pills-seguranca" role="tabpanel" aria-labelledby="pills-seguranca-tab">
+											<div class="tab-pane-content">
+												<p>Os manuscritos são disponibilizados diretamente pelos autores em servidores de preprints, geralmente em poucos dias, sem passar pela revisão por pares tradicional. Dependendo da plataforma, pode haver uma verificação básica para garantir conformidade com as diretrizes do repositório, mas não há um processo editorial formal como nas revistas científicas. Em alguns casos, os autores podem indicar o link do preprint ao submeterem o artigo a uma revista científica, permitindo que o manuscrito receba comentários da comunidade antes da avaliação formal.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Além de acelerar a disseminação do conhecimento, essas plataformas funcionam como espaços de troca entre especialistas e outros interessados na temática, que acessam os <em>preprints</em> para acompanhar avanços científicos, contribuir com discussões e estabelecer possíveis colaborações.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-10 mb-5 pb-5">
+								<!-- Tabela -->
+								<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="text-center" colspan="3">Principais diferenças entre <em>preprints</em> e artigos publicados em revistas</th>
+											</tr>
+
+											<tr>
+												<th class="text-center">Aspectos</th>
+												<th class="text-center"><em>Preprints</em></th>
+												<th class="text-center">Artigos publicados em revistas científicas</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr class="text-left">
+												<td><strong>Revisão</strong></td>
+												<td>Editor realiza uma revisão inicial. A revisão por pares é realizada de maneira aberta pela comunidade científica na própria plataforma.</td>
+												<td>Revisados e aprovados por, pelo menos, dois especialistas na área, cuja identidade é anônima.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><strong>Publicação</strong></td>
+												<td>Disponibilizados rapidamente na plataforma após a submissão do manuscrito.</td>
+												<td>Publicados pela revista após processo de revisão por pares — mais demorado.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><strong>Principal vantagem</strong></td>
+												<td>Facilita a troca imediata de ideias e fomenta novas colaborações.</td>
+												<td>Aceitos como "validados" pela comunidade científica.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><strong>Principal desvantagem</strong></td>
+												<td>A ausência de revisão prévia por pares pode resultar na publicação de pesquisas de baixa qualidade, que podem ser mal utilizadas ou ainda disseminar <em>fake news</em>.</td>
+												<td>O processo é mais lento e menos transparente pelo anonimato da identidade de pareceristas e possíveis conflitos de interesse.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Duas rotas distintas <span class="dualcolor">para revisão e publicação</span></h3>
+								</div>
+
+								<!-- <p>A imagem a seguir ilustra os dois principais caminhos para a publicação de um manuscrito científico: a rota tradicional, por meio de revistas científicas com revisão por pares, e o uso de <em>preprints</em> em repositórios de <em>preprints</em>. Esses dois métodos não competem, mas se complementam, e cada um apresenta características únicas. Observe a imagem e ouça o áudio para entender os processos.</p> -->
+
+								<p>Agora, vamos conhecer os dois principais caminhos para a publicação de um manuscrito científico: a rota tradicional, por meio de revistas científicas com revisão por pares, e o uso de <em>preprints</em> em repositórios de <em>preprints</em>. Esses dois métodos não competem, mas se complementam, e cada um apresenta características únicas.</p>
+
+								<p>No fluxo tradicional, o processo começa com a pesquisa, que resulta em um manuscrito elaborado pelo autor. Este é enviado para uma revista científica, na qual passa por uma triagem inicial realizada pelo editor. O editor avalia se o texto está adequado ao escopo da revista e, caso positivo, o encaminha para a revisão por pares. Aqui, os especialistas da área analisam a validade científica, a metodologia e a relevância do trabalho. A revisão pode levar meses, já que, muitas vezes, os revisores solicitam revisões ou ajustes. Após essas idas e vindas, o manuscrito pode ser aceito ou rejeitado. Se aceito, ele é finalmente publicado na revista. Contudo, muitas dessas publicações só se tornam efetivamente disponíveis mediante pagamento de assinatura, restringindo o acesso a uma grande parte do público em potencial.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12">
+								<p class="text-muted text-center mb-5"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique no botão e arraste</span> <span class="d-inline-block d-lg-none">Toque e arraste</span> para visualizar as imagens</p>
+							</div>
+
+							<div class="col-12 col-md-12 col-lg-12">
+								<!-- Antes e depois -->
+								<div class="antes-e-depois aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="antes-e-depois--container">
+										<div class="image-container">
+											<img class="image-before slider-image img-fluid" src="../media/modulo3/aula4-img1.jpg" alt="Fluxo tradicional do processo (revisão por pares)" />
+											<img class="image-after slider-image img-fluid" src="../media/modulo3/aula4-img2.jpg" alt="Fluxo de preprints" />
+										</div>
+
+
+										<input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="antes-e-depois--slider" />
+										<div class="slider-line" aria-hidden="true"></div>
+										<div class="slider-button" aria-hidden="true">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256">
+												<rect width="256" height="256" fill="none"></rect>
+												<line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+												<line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+												<polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+												<line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+												<polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-12 col-lg-8 mb-5">
+								<span class="figure-caption text-center d-block">Comparativo entre o fluxo tradicional e o fluxo de <em>preprints</em></span>
+								<span class="figure-caption text-center d-block">Fonte: Campus Virtual Fiocruz, adaptado de BERG.J.M. <em>et al</em> (2016)</span>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Já no fluxo de <em>preprints</em>, o processo é mais ágil. Após realizar sua pesquisa e escrever o manuscrito, o autor deposita o trabalho em um repositório de <em>preprints</em>. Após uma breve conferência inicial pelo editor, o conteúdo se torna imediatamente acessível a toda a comunidade científica e ao público em geral, sem custos ou atrasos. Os leitores, geralmente cientistas, podem oferecer feedback sobre o trabalho. Essa troca possibilita que o autor atualize ou melhore o manuscrito com base nessas contribuições. Posteriormente, o autor pode submeter novamente versões melhoradas do seu preprint ou ainda optar por enviar o manuscrito revisado para uma revista científica, iniciando o processo de revisão por pares por especialistas escolhidos pela equipe editorial, agora realizado de forma anônima.</p>
+
+								<p>Quando comparamos as duas rotas, vemos que o modelo tradicional oferece uma chancela de qualidade por meio da revisão por pares, porém é mais lento e menos acessível. Já o <em>preprint</em> acelera a disseminação do conhecimento e promove um modelo de ciência aberta, mas em muitos campos disciplinares não substitui a validação formal de uma revista científica. O <em>preprint</em> pode ser especialmente vantajoso em situações em que a rapidez é fundamental, como emergências de saúde. </p>
+
+								<p>Essas duas abordagens podem ajudar a equilibrar a necessidade de validação científica rigorosa com a urgência de compartilhar conhecimentos, permitindo que os pesquisadores escolham o caminho mais adequado para suas descobertas. Seja garantindo a validação formal de uma revista ou priorizando a rápida disseminação a partir de <em>preprints</em>. Um sistema híbrido poderá refletir os avanços e as novas demandas da comunicação científica contemporânea.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Plataforma de <span class="dualcolor"><em>preprints</em></span></h3>
+								</div>
+
+								<p>Diversas plataformas online hospedam <em>preprints</em>, atendendo a áreas específicas do conhecimento ou com acervos multidisciplinares.</p>
+
+								<p>Confira a seguir.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-10 mb-5 pb-5">
+								<!-- Tabela -->
+								<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="text-center">Plataforma</th>
+												<th class="text-center">Áreas de conhecimento</th>
+												<th class="text-center">Descrição</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr class="text-left">
+												<td><a href='https://arxiv.org/' target='_blank'><strong>arXiv</strong></a></td>
+												<td>Física, Matemática, Ciência da Computação, Biologia Quantitativa, Finanças Quantitativas, Estatística, Economia, Engenharia Elétrica e Ciência de Sistemas.</td>
+												<td>Criado em 1991, é pioneiro no modelo de <em>preprints</em>. É amplamente utilizado por pesquisadores em Física Teórica e Matemática, destacando-se como um dos repositórios mais influentes.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://www.authorea.com' target='_blank'><strong>Authorea</strong></a></td>
+												<td>Multidisciplinar</td>
+												<td>Focado em <em>preprints</em> colaborativos e interativos, permite integração com dados, gráficos e visualizações diretamente no texto. Ideal para trabalhos multidisciplinares.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://www.biorxiv.org/' target='_blank'><strong>bioRxiv</strong></a></td>
+												<td>Biologia</td>
+												<td>Especializado em Biologia, inclui subcampos como Biologia Molecular, Genética, Ecologia e Neurociência. Popular entre pesquisadores que buscam visibilidade rápida para seus trabalhos.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://cds.cern.ch/' target='_blank'><strong>CERN Document Server</strong></a></td>
+												<td>Física</td>
+												<td>Hospedado pelo Cern, é utilizado principalmente por físicos de partículas. Reúne não apenas <em>preprints</em>, mas também documentos históricos do Cern.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://chemrxiv.org/' target='_blank'><strong>ChemRxiv</strong></a></td>
+												<td>Química</td>
+												<td>Repositório voltado para publicações prévias na área de Química, incluindo Química Orgânica, Analítica, Bioquímica e Ciência dos Materiais.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://www.medrxiv.org/' target='_blank'><strong>medRxiv</strong></a></td>
+												<td>Saúde, com foco em Medicina e Epidemiologia</td>
+												<td>Criado durante a pandemia de Covid-19, tornou-se essencial para a rápida disseminação de descobertas médicas e estudos epidemiológicos.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://osf.io/preprints/' target='_blank'><strong>OSF Preprints</strong></a></td>
+												<td>Multidisciplinar</td>
+												<td>Plataforma aberta que permite que pesquisadores de diversas áreas compartilhem <em>preprints</em>. Suporta repositórios específicos como PsyArXiv e SocArXiv.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://peerj.com/preprints' target='_blank'><strong>PeerJ Preprints</strong></a></td>
+												<td>Ciências Biológicas, Médicas, Ambientais e da Computação</td>
+												<td>Oferece uma plataforma aberta e revisada por pares para disciplinas relacionadas às ciências naturais e tecnológicas. A publicação foi interrompida em 2020, mas o conteúdo permanece acessível.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://preprints.scielo.org' target='_blank'><strong>SciELO Preprints</strong></a></td>
+												<td>Multidisciplinar</td>
+												<td>Voltado para países da América Latina, promove <em>preprints</em> em português, espanhol e inglês. Abrange diversas áreas, com foco em pesquisa científica e humanística.</td>
+											</tr>
+
+											<tr class="text-left">
+												<td><a href='https://www.ssrn.co' target='_blank'><strong>Social Science Research Network (SSRN)</strong></a></td>
+												<td>Ciências Sociais, Economia, Direito, Ciências Políticas, Administração e Psicologia</td>
+												<td>Focado em Ciências Sociais e Econômicas, é amplamente utilizado por acadêmicos que publicam estudos jurídicos, econômicos e sociais. A plataforma também é um espaço para análises políticas.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Plataformas de <em>preprints</em> <span class="dualcolor">de financiadores privados de pesquisa</span></h3>
+								</div>
+
+								<p>As plataformas Wellcome Open Research e Gates Open Research foram criadas por dois dos maiores financiadores privados de pesquisa, a Wellcome Trust e a Fundação Bill e Melinda Gates, respectivamente. Observe o comparativo a seguir.</p>
+							</div>
+						</div>
+
+						<!--Comparação-->
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-5 mb-5">
+								<div class="card h-100 ">
+									<div class="card-header">
+										<span class="h6"><em>Wellcome Open Research</em></span>
+									</div>
+									<div class="card-body">
+										<p>É voltada para pesquisas nas áreas de Ciências da Saúde, Biomedicina e Ciências Sociais aplicadas à saúde, com foco em pesquisas de impacto que abordam temas como doenças infecciosas, neurociência e genética; e áreas relacionadas às pesquisas financiadas pela Wellcome Trust. Nessa plataforma, os resultados são disponibilizados rapidamente e passam por um processo de revisão por pares aberta, no qual os pareceres e revisões são publicadas junto com o trabalho.</p>
+
+										<p><a href='https://wellcomeopenresearch.org/' target='_blank'>Confira esta plataforma</a></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-1 align-self-center mb-5 compare-symbol">
+								<span class="d-block text-center mx-auto">&</span>
+							</div>
+
+							<div class="col-12 col-md-5 mb-5">
+								<div class="card ">
+									<div class="card-header">
+										<span class="h6"><em>Gates Open Research</em></span>
+									</div>
+									<div class="card-body">
+										<p>Tem como objetivo principal disseminar resultados de pesquisas em áreas como saúde global, desenvolvimento sustentável, agricultura e inovação educacional e áreas alinhadas aos objetivos da Fundação Bill e Melinda Gates. A plataforma visa oferecer informações confiáveis para cientistas, formuladores de políticas e organizações ao redor do mundo. Adota uma abordagem de revisão aberta, permitindo maior colaboração e interação entre os pesquisadores.</p>
+
+										<p><a href='https://gatesopenresearch.org/' target='_blank'>Confira esta plataforma</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Ambas são iniciativas estratégicas que refletem o compromisso dessas instituições em promover o Acesso Aberto e acelerar a disseminação de descobertas científicas financiadas por elas.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Benefícios dos <span class="dualcolor"><em>preprints</em></span></h3>
+								</div>
+
+								<p>Veja a seguir os benefícios que os preprints oferecem para a comunicação científica.</p>
+							</div>
+						</div>
+
+						<!-- Accordion com imagens-->
+						<div class="row justify-content-center aos-init aos-animate pb-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+							<div class="col-12">
+								<p class="text-muted text-center mb-5"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span> <span class="d-inline-block d-lg-none">Toque</span> nas imagens para visualizar as
+									informações.</p>
+							</div>
+
+							<div class="col-10 col-md-5 col-lg-4 col-xxl-3 mb-5">
+								<div class="image-dropdown">
+									<a class="image-button" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+										<div class="image-button-thumb">
+											<img class="mx-auto img-fluid" src="../media/modulo3/aula4-ic1.svg" alt="" />
+											<span class="pic-behind pic--1"></span>
+											<span class="pic-behind pic--2"></span>
+										</div>
+										<span class="image-button-label">Aceleração da comunicação científicA</span>
+									</a>
+									<div class="image-content collapse" id="collapse1">
+										<div class="">
+											<p>A publicação de <em>preprints</em> permite que os resultados de pesquisa sejam compartilhados rapidamente, contrastando com os longos períodos de espera das revistas científicas.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-10 col-md-5 col-lg-4 col-xxl-3 mb-5">
+								<div class="image-dropdown">
+									<a class="image-button" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+										<div class="image-button-thumb">
+											<img class="mx-auto img-fluid" src="../media/modulo3/aula4-ic2.svg" alt="" />
+											<span class="pic-behind pic--1"></span>
+											<span class="pic-behind pic--2"></span>
+										</div>
+
+										<span class="image-button-label">Colaboração científica</span>
+									</a>
+									<div class="image-content collapse" id="collapse2">
+										<div class="">
+											<p>Pesquisadores podem receber sugestões e comentários imediatos de outros cientistas, o que pode ajudar a melhorar a qualidade do estudo.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-10 col-md-5 col-lg-4 col-xxl-3 mb-5">
+								<div class="image-dropdown">
+									<a class="image-button" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+										<div class="image-button-thumb">
+											<img class="mx-auto img-fluid" src="../media/modulo3/aula4-ic3.svg" alt="" />
+											<span class="pic-behind pic--1"></span>
+											<span class="pic-behind pic--2"></span>
+										</div>
+
+										<span class="image-button-label">Transparência e reprodutibilidade</span>
+									</a>
+									<div class="image-content collapse" id="collapse3">
+										<div class="">
+											<p>Os manuscritos são geralmente acompanhados dos dados que subsidiam os resultados apresentados, favorecendo a reprodutibilidade de resultados.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center aos-init aos-animate pb-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+							<div class="col-10 col-md-5 col-lg-4 col-xxl-3 mb-5">
+								<div class="image-dropdown">
+									<a class="image-button" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+										<div class="image-button-thumb">
+											<img class="mx-auto img-fluid" src="../media/modulo3/aula4-ic4.svg" alt="" />
+											<span class="pic-behind pic--1"></span>
+											<span class="pic-behind pic--2"></span>
+										</div>
+										<span class="image-button-label">Primazia da descoberta</span>
+									</a>
+									<div class="image-content collapse" id="collapse4">
+										<div class="">
+											<p>O trabalho dos autores pode ser conhecido rapidamente — o que é essencial para determinar a autoria de um trabalho, especialmente em áreas competitivas como Biologia, em que a priorização dos achados é fundamental.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-10 col-md-5 col-lg-4 col-xxl-3 mb-5">
+								<div class="image-dropdown">
+									<a class="image-button" data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+										<div class="image-button-thumb">
+											<img class="mx-auto img-fluid" src="../media/modulo3/aula4-ic5.svg" alt="" />
+											<span class="pic-behind pic--1"></span>
+											<span class="pic-behind pic--2"></span>
+										</div>
+										<span class="image-button-label">Acesso Aberto Diamante</span>
+									</a>
+									<div class="image-content collapse" id="collapse5">
+										<div class="">
+											<p>Oferecem um modelo de publicação gratuito, tanto para os autores quanto para os leitores promovendo uma ciência mais inclusiva e acessível a todos.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Box de Para Assistir -->
+								<div class="box" data-box="Para Assistir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Assistir</span>
+										</div>
+										<div class="card-body">
+											<p>Quer saber mais sobre prós e contras dos preprints? Assista ao vídeo a seguir (em espanhol):</p>
+
+											<p><strong>“Preprints pros & cons | Descubriendo la Ciencia Abierta”</strong></p>
+											<div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/53SVMLcSvXA?si=gon0q7qSZJUh6VsP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Desafios e <span class="dualcolor">considerações éticas</span></h3>
+								</div>
+
+								<p>Embora os <em>preprints</em> apresentem muitas vantagens para a comunicação científica, há desafios e considerações éticas. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush" id="accordion1-aula4">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Disseminação de informações não verificadas ou incorretas</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Os <em>preprints</em> são revisados inicialmente apenas por editores e a ausência de um processo de revisão mais estruturado pode levar à disseminação de informações não verificadas ou incorretas.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Implicações em áreas sensíveis</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Em áreas como Saúde Pública, a divulgação de resultados preliminares pode causar percepções equivocadas por público leigo, especialmente quando mal interpretados ou usados fora de contexto, como em campanhas de desinformação.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Competitividade acadêmica <em>versus</em> qualidade</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>A rapidez da publicação de <em>preprints</em> pode criar pressões adicionais para a divulgação imediata de resultados, o que pode prejudicar a qualidade da pesquisa.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Uso inadequado por terceiros</button>
+										</h5>
+										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Suas informações e dados podem ser usados de forma equivocada por jornalistas ou outros profissionais pelo fato de desconhecerem as dinâmicas da comunicação científica.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>O uso dessas plataformas exige responsabilidade, critérios, atenção às implicações éticas de um sistema que aposta na validação do conhecimento por meio da revisão por pares, agora realizada de maneira aberta.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Plaudit: uma inovação <span class="dualcolor">para certificação de avaliações de <em>preprints</em></span></h3>
+								</div>
+
+								<p>Para mitigar problemas da revisão por pares aberta e a possibilidade de mau uso dos preprints para difusão de resultados prematuros, incipientes ou de baixa qualidade, foram desenvolvidas ferramentas como o <a href='https://plaudit.pub/' target='_blank'>Plaudit</a>, com o objetivo de fortalecer a credibilidade do processo avaliativo sem atrasar a disseminação de resultados científicos. O Plaudit é uma espécie de selo que oferece uma certificação inicial, realizada por pesquisadores experientes e reconhecidos como especialistas na área. Ele não substitui a revisão por pares formal, mas oferece uma camada adicional de verificação, o que é especialmente útil em momentos de crise, como foi a pandemia de covid-19. Mas como funciona? Qualquer pesquisador com afiliação institucional verificada pode deixar uma "aprovação" em preprints publicados. Um selo indica a outros leitores que o conteúdo é relevante, incentivando-os a ler e avaliar.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Terminamos essa aula com duas reflexões. Pense e avalie.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Para refletir -->
+								<div class="box" data-box="Para Refletir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Refletir</span>
+										</div>
+										<div class="card-body">
+											<p>A partir da sua experiência, você acredita que <em>preprints</em> devem ser amplamente utilizados em todas as áreas da ciência? Quais seriam os possíveis benefícios e riscos associados?</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+											<p>SILVA, Fabiano Couto Corrêa da. Preprint. <em>In:</em> JORGE, Vanessa; CLINIO, Anne (Coord.). Programa de Formação Modular em Ciência Aberta. Módulo 2. Acesso Aberto. Rio de Janeiro: Fiocruz, 2025. Aula 4 (2a versão). Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo3/aula4.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo3/aula4.html</a>. Acesso em: 14 nov. 2025.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula3.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 3</a>
+								<a class="fio-button fio-button-primary" href="aula5.html" rel="next">Aula 5 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+
+</body>
+
+</html>

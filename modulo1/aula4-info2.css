@@ -1,0 +1,46 @@
+                            .st0 {
+                              fill: #293653;
+                            }
+
+                            .st1, .st2 {
+                              fill: #995999;
+                            }
+
+                            .st3 {
+                              fill: url(#Gradiente_sem_nome_77);
+                              opacity: .4;
+                            }
+
+                            .st4 {
+                              fill: #fff;
+                            }
+
+                            .st2 {
+                              opacity: .6;
+                            }
+               
+
+                          .button-info2 {
+                            animation: move2 1s ease-out infinite alternate;
+                          }
+
+                          .button-info2:hover {
+                        	cursor: pointer;
+                          }
+
+                          .button-info2:hover ellipse.st4 {
+                            transition: .5s;
+                            fill:var(--fio-sys-color-accent-light);
+                          }
+
+                          @keyframes move2 {
+                        	from {
+                        		transform: translateY(0);
+                        		filter: drop-shadow(0 1px 1px #5c7277);
+                        	}
+
+                        	to {
+                        		transform: translateY(-10px);
+                        		filter: drop-shadow(0 10px 4px #5c7277);
+                        	}
+                        }

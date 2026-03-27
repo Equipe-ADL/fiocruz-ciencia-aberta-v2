@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 4 | Aula 4 - Compartilhamento e uso de dados para pesquisa na prática</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<link rel="stylesheet" href="aula1-info1.css" />
+</head>
+
+<body id="modulo4">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button class="d-block d-lg-none" type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 4 <br /><br />
+							Aula 4</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 4</span>
+									<span class="title">Gestão, Compartilhamento, Abertura de Dados para Pesquisa</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 1: Introdução a dados</a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico  concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 2: Gestão de dados: conceitos e principais ferramentas</a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico  concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 3: Dados para pesquisa em saúde e sua proteção jurídica</a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico  não concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 4: Compartilhamento e uso de dados para pesquisa na prática</a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 5: FAIR: dos princípios à prática</a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Planos de Gestão de dados (PGD)</a>
+										<a href="aula7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 7: Requisitos de financiadores de revistas científicas, plataformas e repositórios de dados e data papers</a>
+										<a href="aula8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 8: Integração de dados administrativos governamentais para pesquisa em Saúde Pública</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod4-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 4</strong> . Aula 4</span>
+								<span class="title-bold">Compartilhamento e uso de dados </span> para pesquisa na prática
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="card objetivos">
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Esta aula segue abordando questões jurídicas que incidem sobre os dados coletados, produzidos e utilizados nas pesquisas em saúde. Ao final desta aula, você será capaz de:</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Entender a necessidade da formalização dos termos de uso para depósito, condições de uso, licenças e demais formas e instrumentos para a utilização de dados de pesquisa em repositório de dados.</li>
+												<li class="list-group-item">Conhecer as funções dos mecanismos de cessão, licenciamento e termos de uso dos dados que são comumente adotados em repositórios de dados para a pesquisa.</li>
+												<li class="list-group-item">Conhecer as principais opções para compartilhamento de dados em repositórios: abertura irrestrita, licenciamento controlado e acordos específicos.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Compartilhamento e uso <span class="dualcolor">dos dados em pesquisa</span></h3>
+								</div>
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure>
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula4-img1.png" alt="" title="Fonte: Freepik (2025)">
+
+											<figcaption class="figure-caption fonte">Fonte: Freepik (2025)</figcaption>
+										</figure>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+
+										<p>O compartilhamento e uso de dados podem desempenhar papel relevante na pesquisa científica, permitindo maior reprodutibilidade e diminuição de esforços e riscos, assim como promovendo colaborações entre pesquisadores e o avanço do conhecimento.</p>
+
+										<p>No entanto, o compartilhamento e uso de dados envolvem questões legais e éticas que devem ser consideradas pelos pesquisadores, curadores de repositórios de dados e pelos terceiros usuários que terão acesso a eles.</p>
+
+										<p>Tais questões se relacionam especialmente ao contexto da Propriedade Intelectual e da proteção de dados pessoais, como discutimos na aula anterior. </p>
+
+										<p>Assim, para garantir um uso responsável e juridicamente seguro, é essencial compreender os mecanismos de cessão, licenciamento e termos de uso dos dados que são comumente adotados em repositórios de dados para a pesquisa, por exemplo. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<div class="heading__block">
+											<h4 class="heading__title h5">Compartilhamento de dados <span class="dualcolor"> pelo pesquisador </span></h4>
+										</div>
+
+										<p>Especialmente para os pesquisadores de instituições públicas, antes dessa ação é mandatório que haja autorização para divulgação por uma autoridade (art.12), assim como o Núcleo de Inovação Tecnológico (NIT) de sua instituição opine sobre tal divulgação (art,16, V), nos termos da Lei de Inovação.</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Quando um pesquisador aspira compartilhar os dados de determinada pesquisa, ele pode fazê-lo de diversas formas, dependendo da natureza dos dados e das restrições legais envolvidas. Isso pode ser feito — e normalmente é — por meio de plataformas nacionais, internacionais ou institucionais, como Arca Dados da Fiocruz — o primeiro repositório de dados da América Latina a receber selo do CoreTrustSeal, uma das mais importantes certificações internacionais que o legitima como repositório confiável.</p>
+
+								<p>Para realizar o depósito é mandatório que o pesquisador tenha os direitos ou a devida autorização sobre os dados. Dessa forma, ele poderá depositá-los e permitir ao repositório realizar o seu reúso e compartilhamento com terceiros. Para o repositório, é importante que sejam obtidos os documentos que atestem esses direitos do pesquisador, como termos de cessão, autorização etc., incluindo aqueles dos eventuais coautores da pesquisa ser depositada. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Documentos a serem obtidos <span class="dualcolor"> dos pesquisadores depositantes </span></h3>
+								</div>
+
+								<div class="heading__block">
+									<h4 class="heading__title h5">Termo de uso para depósito dos dados<span class="dualcolor"></span></h4>
+								</div>
+
+								<p>O pesquisador depositante deve observar atentamente as condições e as instruções apresentadas antes de realizar o depósito de dados em uma plataforma, bem como deve possuir todos os direitos para realizar essa atividade. Nesse contexto, a utilização de um documento como um Termo de Uso pode ter caráter educativo e orientador, esclarecendo as responsabilidades do pesquisador ao disponibilizar dados científicos.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto mb-5">
+									<p>O objetivo desse documento é instruir o depositante de forma a garantir que os dados depositados atendam aos critérios técnicos e legais, promovendo transparência, conformidade ética e preservação da integridade científica alinhadas às legislações que discutimos acima — DPI, LGPD, LAI etc. </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Esses aspectos são especialmente relevantes para proteção dos curadores de dados e da própria plataforma de depósito e compartilhamento, pois atuam como mecanismo essencial para assegurar qualidade, integridade e legalidade às informações e aos dados depositados. </p>
+
+								<p>Dessa forma, o Termo de Uso para depósito dos dados tem a função de orientar o pesquisador na avaliação dos dados submetidos, verificando se atendem, por exemplo:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush" id="accordionExample2">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Origem e proveniência dos dados</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+
+												<p>O Depositante é responsável por verificar se os dados foram coletados, produzidos, processados, organizados e utilizados dentro do escopo da pesquisa informada no depósito. Esse critério assegura a integridade das informações depositadas e sua vinculação com um contexto de pesquisa legítimo.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Tratamento e qualidade dos dados</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Os dados devem ser tratados previamente ao depósito, seguindo diretrizes e requisitos técnicos estabelecidos para repositórios científicos e bases de dados institucionais. Para garantir a difusão e a preservação adequadas do conteúdo, os arquivos depositados devem conter:</p>
+
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Metadados descritivos que detalhem a origem, formato e contexto dos dados.</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Estrutura e organização compatíveis com as diretrizes estabelecidas para armazenamento e reutilização de dados científicos.</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Padrões de formatação que assegurem acessibilidade e interoperabilidade.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Garantia de autorização e poderes sobre os dados</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>O Depositante deve declarar e assegurar que detém todas as autorizações necessárias para o depósito, incluindo:</p>
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Consentimento de coautores e titulares que tenham participação na geração dos dados.</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Ausência de restrições contratuais que impeçam o compartilhamento dos dados.</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Garantia de que o compartilhamento dos dados não infringe direitos de terceiros, incluindo Direitos de Propriedade Intelectual.</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Ausência de potencial para geração de novos produtos, serviços ou processos protegidos por direitos de propriedade intelectual, considerando que a divulgação indevida poderia comprometer esse potencial.</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Autorização formal da autoridade competente para divulgação, incluindo a manifestação do Núcleo de Inovação Tecnológica (NIT), aplicável ao caso do pesquisador de instituição pública.</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Ausência de informações sigilosas, conforme definido na Lei nº 12.527/2011 (Lei de Acesso à Informação).</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Anonimização obrigatória para dados pessoais, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD – Lei nº 13.709/2018).</li>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Respeito à legislação incidente sobre acesso ao Patrimônio Genético (PG) e Conhecimento Tradicional Associado (CTA), garantindo conformidade com a Lei nº 13.123/2015 e normativas correlatas.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Termo de cessão ou autorização <span class="dualcolor"> para o pesquisador depositante </span></h3>
+								</div>
+
+								<p>Em complemento ao Termo de Uso, como forma de mobilizar a cessão dos direitos patrimoniais sobre os dados a serem depositados (alinhado às práticas associadas aos direitos autorais discutidas acima e em seus respectivos módulos), <strong>deve ser obtido um Termo de Cessão de Direitos Patrimoniais</strong> sobre o conjunto de dados a serem depositados. </p>
+
+								<p>Trata-se de um instrumento jurídico que formaliza a concessão ou a transferência dos direitos de uso, armazenamento e compartilhamento de dados de pesquisa de um Depositante (como um pesquisador) para uma instituição ou repositório de dados. Esse documento, ou uma <strong>autorização</strong> para deposito e compartilhamento, deve igualmente ser obtido de todos os coautores da pesquisa. Essa autorização é, normalmente, operada para pesquisadores externos e que não cederiam ao repositório os direitos patrimoniais sobre os dados.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5">
+
+									<p>O Termo de Cessão de Direitos Patrimoniais é essencial para estabelecer regras claras sobre titularidade, acesso e reutilização das informações, garantindo segurança jurídica tanto para o pesquisador quanto para a plataforma que recebe os dados e os compartilha com terceiros. Somente com esse documento, a instituição pode, de forma segura e alinhada às boas-práticas, usar, gozar e dispor desses dados a partir de repositórios.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Como foi discutido no módulo de direito autoral, esse termo é um contrato no qual o pesquisador (cedente) autoriza um repositório, instituição ou outra entidade (cessionário) a utilizar os dados depositados dentro dos limites estabelecidos no documento. Diferentemente dos direitos morais, que permanecem com o autor e garantem o reconhecimento da autoria da pesquisa, os direitos patrimoniais podem ser cedidos, permitindo que a instituição utilize, armazene, publique e compartilhe os dados sob condições específicas.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>Para os pesquisadores, assinar o Termo de Cessão de Direitos Patrimoniais significa proteger sua autoria, permitir o uso responsável dos dados e garantir que sua pesquisa tenha um impacto duradouro. Para os repositórios, representa uma camada de proteção legal e operacional, assegurando que os dados sejam disponibilizados e reutilizados de forma ética e segura de acordo com a legislação vigente.</p>
+											</div>
+										</div>
+
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Acesso aos dados <span class="dualcolor"> por terceiros </span></h3>
+								</div>
+
+								<p>É igualmente necessário o estabelecimento de direitos e obrigações aos usuários que venham a ter acesso a esses dados. Nesse contexto, é importante que a plataforma que hospeda os dados tenha Termos de Uso para terceiros interessados nos dados, pois esses documentos são fundamentais para regular o acesso e a utilização de dados em plataformas de compartilhamento, garantindo transparência e segurança jurídica.</p>
+
+								<p>Algumas observações importantes sobre o acesso a dados por terceiros.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-3">
+								<!-- Accordion com imagens-->
+								<div class="row justify-content-center mt-5">
+									<div class="col-12">
+										<p class="text-muted text-center mb-5"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span> <span class="d-inline-block d-lg-none">Toque</span> nas imagens para visualizar as informações.</p>
+									</div>
+
+									<div class="col-10 col-md-5 col-lg-4 mb-5">
+										<div class="image-dropdown">
+											<a class="image-button" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+												<div class="image-button-thumb">
+													<img class="img-fluid" src="../media/modulo4/aula4-ic1.svg" alt="">
+													<span class="pic-behind pic--1"></span>
+													<span class="pic-behind pic--2"></span>
+												</div>
+												<span class="image-button-label">Diretrizes</span>
+											</a>
+											<div class="image-content collapse" id="collapse1">
+												<div class="">
+													<p>Os Termos de Uso sobre o Acesso aos Dados devem estabelecer diretrizes sobre como os usuários podem visualizar, baixar e reutilizar dados e informações, protegendo os direitos dos depositantes, com o devido reconhecimento de autoria e fonte, bem como assegurando o uso responsável dos dados mediante o estabelecimento de eventuais condições de uso.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-10 col-md-5 col-lg-4 mb-5">
+										<div class="image-dropdown">
+											<a class="image-button" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+												<div class="image-button-thumb">
+													<img class="img-fluid" src="../media/modulo4/aula4-ic2.svg" alt="">
+													<span class="pic-behind pic--1"></span>
+													<span class="pic-behind pic--2"></span>
+												</div>
+												<span class="image-button-label">Restrições</span>
+											</a>
+											<div class="image-content collapse" id="collapse2">
+												<div class="">
+													<p>Determinados conjuntos de dados podem estar sujeitos a restrições especificas de acesso, como exigência de citação, restrição de uso comercial, acesso limitado a determinados pesquisadores ou instituições, ou necessidade de preservar o anonimato. Essa natureza especifica exigirá a construção de termos particulares a determinado deposito, como discutiremos a seguir.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-10 col-md-5 col-lg-4 mb-5">
+										<div class="image-dropdown">
+											<a class="image-button" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+												<div class="image-button-thumb">
+													<img class="img-fluid" src="../media/modulo4/aula4-ic3.svg" alt="">
+													<span class="pic-behind pic--1"></span>
+													<span class="pic-behind pic--2"></span>
+												</div>
+												<span class="image-button-label">Compromissos</span>
+											</a>
+											<div class="image-content collapse" id="collapse3">
+												<div class="">
+													<p>Ao aceitar os Termos de Uso de Acesso, o usuário deve assumir o compromisso de respeitar essas condições, evitando usos indevidos ou violações de propriedade intelectual e privacidade.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center mb-5">
+							<div class="col-12 col-md-10 col-lg-8 mb-3">
+								<p>Além de proteger a integridade dos dados e a confiança na plataforma, os Termos de Uso de Acesso incentivam a reutilização ética e responsável das informações, promovendo um ambiente colaborativo para pesquisa, inovação e desenvolvimento tecnológico.</p>
+
+								<p>Antes de avançarmos para algumas formas de acesso aos dados, é importante ressaltar que o fato de estarem disponibilizados em um repositório não significa que a titularidade dos direitos sobre eles será transferida ao usuário que os acessará. É sempre necessário que seja avaliado pelo usuário quais condições de uso e acesso estão sendo impostas ao dado em questão para que não ocorra violação de direitos.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<div class="heading__block">
+											<h4 class="heading__title h5">Ciência Aberta e <span class="dualcolor"> Propriedade Intelectual </span></h4>
+										</div>
+										<p>Respeitar os direitos de Propriedade Intelectual, inclusive no contexto da Ciência Aberta, é fundamental para evitar penalidades legais. É sempre importante lembrar que o simples fato de uma obra estar disponível na internet não significa que ela é livre para uso. Isso inclui a correta atribuição de autoria, o respeito às condições estabelecidas em licenças como as Creative Commons, e a obtenção de permissão para uso de material protegido por direitos autorais, incluindo os limites de sua utilização. </p>
+
+										<p>Violações de direitos de PI podem resultar em consequências legais graves, incluindo processos judiciais e multas. Portanto, é essencial que indivíduos e instituições que operam no ambiente da Ciência Aberta estejam cientes das leis e das melhores práticas para evitar a violação dos direitos de terceiros.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Algumas opções para compartilhamento <span class="dualcolor"> dos dados em repositórios</span></h3>
+								</div>
+
+								<p>Os termos de uso são ferramentas importantes para dispor os direitos e deveres dos usuários que acessarão os dados. </p>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="accordionExample">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading3-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Abertura irrestrita</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading3-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Disponibilização dos dados em repositórios em acesso aberto, fomentando a transparência e sua reutilização pela comunidade científica. Isso significa que qualquer interessado poderá acessar os dados, sem que seja necessário, por exemplo, se cadastrar, solicitar direito de acesso, explicar razões de interesse etc. Esse compartilhamento irrestrito pode facilitar o acesso a terceiros interessados; no entanto, a ausência de contatos necessários, por exemplo, com as equipes envolvidas, pode inibir a criação de conexões e de redes de inovação.</p>
+
+												<p>Para saber mais sobre os tipos de licenças, (re)visite o módulo “<a href='../modulo2/introducao.html' target='_blank' rel='noopener noreferrer'>Marcos Legais”</a>. </p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading3-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Licenciamento controlado</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading3-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Uso de licenças específicas para permitir reutilização sob determinadas condições, tais como as licenças Creative Commons (CC BY, CC BY-SA, CC BY-NC etc.). Essas licenças podem estar dispostas nos termos de uso gerais ou termos de acesso, como disposto a seguir, ou podem ser os termos padrões do repositório de dados.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading3-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Acordos específicos</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading3-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Quando há necessidade de restringir o uso de determinado dado ou de estabelecer condições específicas a ele pode-se formalizar um termo de cessão de dados ou termo de acesso específico, definindo claramente quais são os direitos e deveres das partes envolvidas. Esses instrumentos se mostram especialmente relevantes quando há compartilhamento de dados estratégicos ou mesmo de dados sensíveis que exigem a ciência e compromisso do recebedor dos dados para com leis aplicáveis. Esses mecanismos podem criar redes de inovação e promover a Ciência Aberta, diminuindo custos e riscos aos envolvidos.</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Embora devidamente discutido nesta aula, é importante reiterar que, ao compartilhar dados, é fundamental garantir que estejam anonimizados ou que tenham sido tomadas medidas que garantam a proteção dos direitos dos indivíduos para evitar a identificação de indivíduos e respeitar normas como a LGPD.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">A necessidade de uma abordagem jurídica integrada e<span class="dualcolor"> estratégica no compartilhamento e uso de dados</span></h3>
+								</div>
+
+								<p>Como foi possível observar nas aulas 3 e 4, dedicadas a proteção jurídica, ao tratarmos de direitos sobre os dados de pesquisa, em especial na área da saúde, precisamos, em regra, conceber os dados de forma abrangente, considerando dados, informação e conhecimento como categorias equivalentes, em alguns casos estendendo essa concepção também aos documentos. </p>
+
+								<p>Embora isoladamente, o dado, aqui enquanto dado e respeitadas suas especificidades, não seja objeto de proteção por DPI, quando inserido em um conjunto de dados ou mesmo em uma base de dados, em conjunto com os demais, torna-se objeto de proteção por DPI, estendendo o seu espectro de proteção em favor de seus autores ou titulares.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure>
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula4-img2.png" alt="" title="Fonte: Freepik (2025)">
+
+											<figcaption class="figure-caption fonte">Fonte: Freepik (2025)</figcaption>
+										</figure>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+
+										<p>Em relação aos dados pessoais e dados de seres humanos, é importante considerar sempre a base legal para o tratamento deles dados, reconhecer quando será necessário o consentimento para seu tratamento e quando, mesmo dispensado esse consentimento, será necessária a submissão de análise ética e garantia da integridade da pesquisa. Além disso, é fundamental identificar quando o titular dos dados possui domínio sobre esses e quando tal domínio é integralmente do pesquisador ou detentor dos dados e, nesse sentido, respeitar ou gozar dos direitos relativos ao emprego dos dados.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>No Brasil, a maioria dos casos envolvem os entes federados, que arcam com os custos diretos e indiretos para a realização da pesquisa na área da saúde, contando, em muitos casos, com a parceria de entes públicos e privados estrangeiros para esse financiamento.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5">
+									<p>Considerando a atribuição estabelecida pela Lei do SUS, podemos encarar a pesquisa na área da saúde como uma atividade pública administrativa e, por essa razão, os dados gerados, utilizados e acumulados seriam considerados dados públicos administrativos.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O que se pretende aqui é demonstrar que, ao se pensar a proteção jurídica dos dados para a pesquisa em saúde, se faz necessária a identificação do potencial estratégico desses dados para que seja implementada a devida proteção do DPI, quando aplicável, assim como da proveniência dos dados, ou seja, de sua origem e não apenas sobre o que trata o dado. </p>
+
+								<p>Se os dados são sobre o paciente ou participante da pesquisa, podemos estar diante de dados pessoais. Se são dados coletados ou gerados no contexto de uma pesquisa patrocinada direta ou indiretamente por um ou mais entes federados, podemos estar diante de dados públicos administrativos. Além disso, é preciso compreender que uma condição não exclui a outra. O fato de o dado ser pessoal não impede que seja um dado público administrativo.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>O fato de um dado ser público não exclui a possibilidade de sua proteção estratégica por DPIs, garantindo que as tecnologias ou conhecimentos derivados possam ser utilizados de forma gratuita pelos entes públicos em benefício da sociedade. Esse equilíbrio permite conciliar o acesso aberto à informação com a necessidade de preservar interesses institucionais e estratégicos, assegurando que o conhecimento gerado contribua diretamente para o desenvolvimento social e a inovação.</p>
+											</div>
+										</div>
+
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Conhecer essas condições permite ao pesquisador identificar quem pode dispor dos dados para uso na pesquisa e assim definir a necessidade ou não de consentimento para uso deles, a submissão para análise ética, as permissões de uso estabelecidas pelas licenças, entre outras medidas de proteção. A identificação desses fatores é importante quando o pesquisador utiliza dados de terceiros e quando tem a necessidade de definir as medidas de proteção dos dados coletados e gerados em sua própria pesquisa.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+											<p>D’AGUILA, Marcelo Campos; DO NASCIMENTO, Francisco José Tavares. Compartilhamento e uso dos dados para pesquisa na prática. <em>In:</em> JORGE, Vanessa; CLINIO, Anne (coord.). Programa de Formação Modular em Ciência Aberta. Módulo, 4. Gestão, compartilhamento e abertura de dados. Aula 4. 2. ed. Rio de Janeiro: Fiocruz, 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula4.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula4.html</a>. Acesso em: 14 nov. 2025.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula3.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 3</a>
+								<a class="fio-button fio-button-primary" href="aula5.html" rel="next">Aula 5 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+
+</body>
+
+</html>

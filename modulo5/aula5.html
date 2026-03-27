@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 5 | Aula 5 - Software livre e REAs </title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body id="modulo5">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal"
+					data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 5 <br /><br />
+							Aula 5</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 5</span>
+									<span class="title">Educação Aberta e Recursos Educacionais Abertos</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 1: O que é Educação Aberta: modelos, desafios e perspectivas. </a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 2: Inteligência Artificial: potencialidades e riscos para a educação. </a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 3: Inteligência Artificial: concepções pedagógicas e suas implicações para a educação. </a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 4: O que são Recursos Educacionais Abertos? </a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 5: Software Livre e REAs.</a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Como encontrar, usar e compartilhar REA.</a>
+										<a href="aula7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 7: Criar REA</a>
+										<a href="aula8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 8: Monitoramento e avaliação do REA</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod5-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 5</strong> . Aula 5</span>
+								<span class="title-bold">Software livre </span> e REAs
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="card objetivos">
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Nesta aula você conhecerá os conceitos fundamentais do Software Livre, sua trajetória histórica, os principais tipos de licenças e sua relação com a emancipação social e a Educação Aberta, destacando sua importância para a democratização do conhecimento e a autonomia tecnológica.</p>
+
+										<p>Ao final desta aula você deverá ser capaz de:</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Compreender os conceitos e as principais características do Software Livre.</li>
+												<li class="list-group-item">Analisar a história do Movimento Software Livre, reconhecendo seus principais marcos, ideias e impactos sociais e tecnológicos.</li>
+												<li class="list-group-item">Diferenciar licenças permissivas, licenças recíprocas totais e licenças recíprocas parciais.</li>
+												<li class="list-group-item">Avaliar criticamente o papel do Software Livre na emancipação do indivíduo e na promoção da Educação Aberta.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Conceito e <span class="dualcolor">características</span></h3>
+								</div>
+
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure class="lightbox mb-3">
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula5-img1.png" alt="" title="Fonte: Freepik">
+											<figcaption class="figure-caption fonte">Fonte: Freepik</figcaption>
+										</figure>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+										<p>No cenário contemporâneo, caracterizado pela crescente ubiquidade das tecnologias digitais na vida cotidiana da sociedade, surge a necessidade de uma reflexão crítica acerca dos softwares adotados.</p>
+
+										<p>Essa análise torna-se fundamental para avaliar os impactos dessas ferramentas em oportunidades de desenvolvimento e inserção social, bem como em dinâmicas de poder que podem incidir sobre um paradigma de inclusão ou exclusão digital. </p>
+
+										<p>À medida que a escolha de softwares permeia diversas esferas da sociedade, desde instituições educacionais até órgãos governamentais, torna-se primordial compreender como essas decisões podem moldar as trajetórias individuais e coletivas, influenciando as relações sociais e a equidade no acesso ao universo digital.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800">
+									<p>A análise crítica dos softwares adotados em contextos educacionais não deve restringir-se somente às suas características técnicas, uma vez que também exige um olhar crítico sobre as dimensões sociais, políticas e econômicas que estruturam e condicionam o uso dessas tecnologias.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Essa perspectiva implica examinar como determinadas escolhas podem ampliar ou limitar oportunidades de aprendizagem, potencializando processos de formação ou, inversamente, reproduzindo mecanismos de exclusão e assimetrias de poder no interior das instituições educativas. </p>
+
+								<p>Segundo Pretto (2012), a adoção de tecnologias abertas e colaborativas (Software Livre) constitui uma opção ética e política, associada à defesa de autonomia, de transparência e de participação democrática. Assim, a implementação de softwares livres ultrapassa uma decisão meramente operacional/técnica ao fortalecer a soberania tecnológica e ampliar as possibilidades de que sujeitos e comunidades adaptem e recontextualizem soluções segundo suas necessidades. Desse modo, a avaliação criteriosa das tecnologias empregadas assume papel estratégico na promoção de uma inclusão digital mais efetiva e na mitigação das desigualdades que podem ser reforçadas por escolhas tecnológicas não problematizadas.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula5-img2.jpg" alt="Imagem gerada por IA" title="Fonte: Campus Virtual Fiocruz, a partir da ferramenta de IA Gemini">
+									<figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz, a partir da ferramenta de IA Gemini</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Silveira (2004) descreve em seu artigo, intitulado “Inclusão digital, software livre e globalização contra-hegemônica”, que foi a partir da indignação de um integrante do MIT, Richard Stallman, contra a proibição de se acessar o código-fonte de um software, certamente desenvolvido a partir do conhecimento acumulado de tantos outros programadores. Em 1983, Richard Stallman informa nos grupos de usuários “net.unix-wizards” e “net.usoft”, que estava desenvolvendo um sistema um similar ao UNIX chamado GNU (um acrônimo para <em>Gnu is Not Unix</em>) e que ele seria disponibilizado livremente a todos os interessados. Assim, inicia-se o movimento <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>'Software livre' significa software que respeita a liberdade e os usuários. De forma resumida, significa que os usuários têm a liberdade de executar, copiar, distribuir, estudar, alterar e melhorar o software. Assim, sobre 'software livre' pode-se afirmar que é uma questão de liberdade, não de preço. Para compreender o conceito, deve-se pensar em 'livre' como em 'liberdade de expressão' e não relacionado à gratuidade (FSF, 2025).</p>" data-bs-original-title="Software livre">software livre</a>.</p>
+
+								<p>Práticas Educacionais Abertas incluem:</p>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-8 col-lg-6 mb-5">
+								<!-- Swipper Effect Card -->
+								<div class="swiper swiper--effect-card card">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="card-header">
+												<span class="h6">Liberdade 0</span>
+											</div>
+
+											<div class="card-body">
+												<p>A liberdade de executar o programa como você desejar, para qualquer propósito.</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-header">
+												<span class="h6">Liberdade 1</span>
+											</div>
+
+											<div class="card-body">
+												<p>A liberdade de estudar como o programa funciona e adaptá-lo às suas necessidades. Para tanto, acesso ao código-fonte é um pré-requisito.</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-header">
+												<span class="h6">Liberdade 2</span>
+											</div>
+
+											<div class="card-body">
+												<p>A liberdade de redistribuir cópias de modo que você possa ajudar outros.</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-header">
+												<span class="h6">Liberdade 3</span>
+											</div>
+
+											<div class="card-body">
+												<p>A liberdade de distribuir cópias de suas versões modificadas a outros. Dessa forma, você pode dar a toda comunidade a chance de se beneficiar de suas mudanças. Para tanto, acesso ao código-fonte é um pré-requisito.</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination swiper-pagination3"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Para Assistir -->
+								<div class="box" data-box="para assistir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Assistir</span>
+										</div>
+										<div class="card-body">
+											<p>No vídeo a seguir, Richard Stallman apresenta o conceito e características do Software Livre. Assista!</p>
+											<div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/Ag1AKIl_2GM?si=lvOoxWqIvuha1Tdj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+												<!-- <video controlslist="nodownload" name="media" controls="" poster="media/images/home/thumb-video-home.jpg">
+													<source src="https://educare.fiocruz.br/file-storage/ecnoz-Pa" type="video/mp4">
+												</video> -->
+											</div>
+											<span class="d-block figcaption text-center">Fonte: Free Software Foundation (2014).</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O uso de software livre desempenha papel essencial na sociedade contemporânea, promovendo a democratização do acesso à tecnologia e estimulando a colaboração aberta. Ao optar por soluções de código aberto, as comunidades podem reduzir a dependência de empresas privadas e garantir maior transparência, uma vez que o código-fonte está disponível para inspeção/auditoria pública. Cabe ressaltar que isso contribui para a segurança cibernética, permitindo que especialistas identifiquem e corrijam vulnerabilidades rapidamente. Ademais, o software livre facilita a customização e a adaptação conforme as necessidades locais (por exemplo: idioma e regionalização), impulsionando a inovação e a flexibilidade em setores como educação, governo e organizações sem fins lucrativos.</p>
+
+								<p>Para fechar este tópico, vale ressaltar que a filosofia por trás do software livre também pode promover inclusão digital, proporcionando a comunidades e países em desenvolvimento a oportunidade de participar ativamente do desenvolvimento tecnológico. O acesso gratuito ao conhecimento e às ferramentas de software impulsiona a criação de uma sociedade mais equitativa, pois as barreiras financeiras para a entrada no mundo digital são reduzidas. Além disso, ao escolher soluções de código aberto, as organizações podem economizar recursos financeiros, investindo em desenvolvimento local e contribuindo para a criação de um ecossistema tecnológico mais sustentável e acessível para todos.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais Toggle -->
+								<div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="saiba-mais__header">
+										<button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span> Saiba mais</button>
+									</div>
+									<div class="saiba-mais__content collapse" id="saiba-mais1">
+										<p>O livro <em>A catedral e o bazar</em>, de Eric S. Raymond, é uma obra seminal que analisa os modelos de desenvolvimento de software livre e de código aberto. Raymond contrapõe dois paradigmas: o modelo da <strong>“catedral”</strong>, centralizado e controlado, e o do <strong>“bazar”</strong>, colaborativo e aberto. A partir da experiência com o projeto <em>Fetchmail</em>, o autor demonstra como a abertura do código e a participação coletiva favorecem a inovação, a qualidade e a rapidez no desenvolvimento. A obra tornou-se referência para compreender a filosofia e as práticas do movimento do software livre. </p>
+
+										<!-- Lista Não-Ordenada -->
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item aos-init aos-animate" list-style='page' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Você pode ler através <a href='http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ ' target='_blank' rel='noopener noreferrer'>deste link</a> (em inglês - ative o tradutor do google em seu navegador) </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Educação Aberta: <span class="dualcolor">contexto</span></h3>
+								</div>
+
+								<p>Iniciaremos este tópico com uma citação de Lévy (1999) para reflexão.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>"[..] na perspectiva da cibercultura assim como das abordagens mais clássicas, as políticas voluntaristas de luta contra as desigualdades e a exclusão devem visar o ganho em autonomia das pessoas e grupos envolvidos. Devem, em contrapartida, evitar o surgimento de novas dependências provocadas pelo consumo de informações ou de serviços de comunicação concebidos e produzidos em uma ótica puramente comercial ou imperial e que têm como efeito, muitas vezes, desqualificar os saberes e as competências tradicionais dos grupos sociais e das regiões desfavorecidas."</p>
+											<span class="quotation-autor">(Lévy, 1999, p. 238)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Em 1984, era impossível usar um computador moderno sem instalar um sistema operacional privativo, que você teria que obter sob uma licença restritiva. Ninguém tinha permissão para compartilhar softwares livremente com outros usuários de computador, e dificilmente alguém poderia mudar o software para atender às suas próprias necessidades (Stallman, 1999).</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0 mb-5">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> Navegue pela linha do tempo a seguir e conheça os principais marcos do movimento software livre</p>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-10 col-md-10 mb-5">
+								<iframe style="border: 2px solid var(--fio-sys-color-neutral-light-active); border-radius: var(--fio-sys-size-radius-md); min-height: 9840px; height: auto;" title="Linha do tempo interativa apresenta a história do software livre, destacando marcos, licenças, organizações e avanços em liberdade digital desde 1983." width="100%" height="100%" src="https://mooc.campusvirtual.fiocruz.br/rea/software-livre/timeline/"></iframe>
+
+								<div class="visually-hidden">
+									<p>Descrição da linha do tempo:</p>
+
+									<p>Página contendo uma linha do tempo interativa sobre a história do movimento do software livre. A timeline apresenta eventos importantes organizados cronologicamente, desde a década de 1980 até os anos recentes.</p>
+
+									<p>O primeiro marco destacado é o anúncio do Projeto GNU em 1983 por Richard Stallman, iniciativa voltada à criação de um sistema operacional totalmente livre. Em 1985 ocorre a publicação do Manifesto GNU e a criação da Free Software Foundation, organização dedicada à promoção e defesa do software livre.</p>
+
+									<p>A linha do tempo apresenta também a definição formal de software livre em 1986, baseada em quatro liberdades fundamentais: executar o programa para qualquer propósito, estudar como ele funciona e adaptá-lo, redistribuir cópias e compartilhar versões modificadas.</p>
+
+									<p>Entre os eventos seguintes estão o lançamento da licença GNU GPL em 1989, que garante juridicamente essas liberdades, e a expansão internacional do movimento nos anos 1990 e 2000, com iniciativas como o diretório de software livre e a criação da Free Software Foundation Europa.</p>
+
+									<p>A timeline inclui ainda campanhas e avanços relacionados aos direitos digitais, como a campanha contra restrições digitais (DRM), a publicação da licença GPL versão 3 em 2007 e a criação da licença AGPL voltada para softwares executados em rede.</p>
+
+									<p>Nos anos mais recentes, são apresentados marcos relacionados ao desenvolvimento de hardware livre, certificações de dispositivos que respeitam a liberdade do usuário e iniciativas de proteção à privacidade digital, como guias de criptografia para comunicação segura.</p>
+
+									<p>O conteúdo destaca como o movimento do software livre evoluiu ao longo do tempo, articulando tecnologia, liberdade de uso, colaboração e acesso aberto ao conhecimento.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>No próximo tópico vamos conhecer os tipos de licenças utilizadas.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Licenças</h3>
+								</div>
+
+								<p>As licenças, geralmente, podem ser categorizadas em três segmentos, classificados de acordo com a presença de termos que estabelecem restrições no licenciamento durante a redistribuição ou criação de trabalhos derivados do original. Nesse sentido, as licenças são classificadas como permissivas ou recíprocas, sendo estas últimas subdivididas em parciais ou totais. A distinção principal reside no fato de que as licenças recíprocas totais preservam integralmente os termos da licença original, enquanto as recíprocas parciais também são conhecidas como copyleft fraco (Sabino, 2011).</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title h5">Licenças <span class="dualcolor">permissivas</span></h4>
+								</div>
+
+								<p>No caso das licenças permissivas, não são colocadas grandes restrições ao licenciamento de trabalhos derivados, estes podendo, inclusive, ser distribuídos sob uma licença fechada.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="ayla5-accordion1">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Licença BSD</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Primeira licença de software livre, criada originalmente para o Berkeley Software Distribution, um sistema derivado do UNIX.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Licença MIT</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Similar à Licença BSD. Também pode ser conhecida em algumas variantes como Licenças MIT/X11, pois foi criada para disponibilizar o gerenciador de janelas X11 desenvolvido pelo MIT.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Licença Apache</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Licença criada pela Apache Software Foundation, por meio da qual esta disponibiliza todos seus projetos. Estão incluídos: Apache HTTP Server, Apache Hadoop, Apache Tomcat e Apache Ant, dentre outros.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h4 class="heading__title h5">Licenças <span class="dualcolor">recíprocas totais</span></h4>
+								</div>
+
+								<p>As licenças recíprocas totais — também conhecidas como copyleft — determinam que qualquer trabalho derivado do original deve ser redistribuído e disponibilizado sob os mesmos termos da licença original. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="aula5-accordion2">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Licença GPL</button>
+										</h5>
+										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Principal licença de software livre recíproca total. Teve sua primeira versão redigida em 1989. A versão 2.0 foi redigida em 1991 e permaneceu até 2007, quando foi lançada a GPLv3, em vigência até os dias atuais.</p>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item5">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Licença AGPL</button>
+										</h5>
+										<div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Desenvolvida pela Affero Inc. como uma derivação autorizada da licença GPL com o intuito de permitir o uso de um software através de uma rede. Também pode ser conhecida como GNU Affero General Public License.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h4 class="heading__title h5">Licenças <span class="dualcolor">recíprocas parciais</span></h4>
+								</div>
+
+								<p>Estabelecem que modificações feitas em um software sob essa licença sejam disponibilizadas sob a mesma licença. No entanto, uma distinção importante surge quando essas modificações são incorporadas como componentes em outro projeto de software. Nesse caso, o projeto resultante não é estritamente obrigado a ser disponibilizado sob a mesma licença. Essa flexibilidade representa a principal diferença entre as licenças recíprocas parciais e as totais, conferindo maior liberdade em relação às condições de licenciamento quando as modificações são integradas em novos contextos de desenvolvimento de software.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="aula5-accordion3">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item6">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item6" aria-expanded="false" aria-controls="collapse1-item6">Licença LGPL (GNU Lesser General Public Licence)</button>
+										</h5>
+										<div id="collapse1-item6" class="accordion-collapse collapse" aria-labelledby="heading1-item6" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Redigida como uma cópia da licença GPL com alterações relativas a bibliotecas, definidas como um conjunto de funções de software que podem ser agregadas para formar novos softwares. Em 2007, a LGPL foi reescrita para ficar em conformidade com a GPLv3.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item7">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item7" aria-expanded="false" aria-controls="collapse1-item7">Licença pública Mozilla (Mozilla Public Licence)</button>
+										</h5>
+										<div id="collapse1-item7" class="accordion-collapse collapse" aria-labelledby="heading1-item7" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Determina que o código sob essa licença deve ser redistribuído pelos termos dessa mesma licença. Entretanto, o código pode ser utilizado em projetos maiores, que podem estar sob outra licença.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item8">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item8" aria-expanded="false" aria-controls="collapse1-item8">Licença Pública Eclipse</button>
+										</h5>
+										<div id="collapse1-item8" class="accordion-collapse collapse" aria-labelledby="heading1-item8" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Criada para substituir duas licenças anteriores à criação da fundação: a IBM Public Licence de 1999, que foi posteriormente substituída pela Common Public Licence.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Como escolher uma licença de software livre? Observe a seguir um fluxograma para auxiliar o processo de escolha da licença a ser empregada ao software livre.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-8 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula5-img3.jpg" alt="" title="Fonte: Adaptado por Campus Virtual Fiocruz, a partir de Sabino (2011)">
+									<figcaption class="figure-caption fonte">Fonte: Adaptado por Campus Virtual Fiocruz, a partir de Sabino (2011)</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Software Livre, <span class="dualcolor">Emancipação e Educação Aberta</span></h3>
+								</div>
+
+								<p>O uso de s<strong>oftware livre na educação</strong> transcende a dimensão técnica e assume papel essencial na f<strong>ormação crítica e emancipatória</strong> de estudantes, professores e comunidades. Ao garantir o direito de acessar, estudar, modificar e redistribuir o código-fonte, o software livre oferece mais do que ferramentas gratuitas; ele propõe uma nova forma de pensar a tecnologia como bem comum e como meio de <strong>autonomia</strong>. </p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Destaque Parallax -->
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container aos-animate aos-init" data-aos="fade" data-aos-easing="ease-out" data-aos-duration="800">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>Quando o estudante tem liberdade para compreender o funcionamento das ferramentas que utiliza, ele desenvolve competências de leitura e autoria digital, participando ativamente do processo de produção de conhecimento e não apenas de sua recepção. Essa relação ativa transforma a aprendizagem em um ato de construção e de liberdade, podendo, assim, se aproximar dos ideais de uma <strong>educação emancipadora</strong>.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Além de favorecer a autonomia do estudante, o software livre se articula diretamente com a implementação de REA (Recursos Educacionais Abertos) e com a educação aberta enquanto políticas e práticas. Quando os ambientes virtuais de aprendizagem, os editores de conteúdo, os repositórios ou os sistemas de gestão são construídos ou adaptados com código livre, as instituições ganham autonomia institucional para modificar, contextualizar, traduzir e distribuir os recursos sem depender de licenças proprietárias ou de fornecedores que restrinjam essas práticas. Isso significa que os educadores, alunos e comunidades podem adaptar os recursos (conteúdos, atividades, interfaces) ao seu contexto cultural, linguístico ou socioeconômico, fortalecendo assim a relevância local do material e promovendo inclusão. Essa abordagem fortalece a equidade no acesso à educação, pois reduz barreiras econômicas, tecnológicas e de dependência. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init card--in aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>Ferramentas livres, como o Moodle, o H5P, o Etherpad, o GIMP e o LibreOffice, permitem que os processos pedagógicos ocorram em ambientes que respeitam a liberdade de uso e promovem a <strong>autossuficiência tecnológica</strong> (Santana; Rossini; Pretto, 2012).</p>
+											</div>
+										</div>
+
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Do ponto de vista da emancipação do estudante e de comunidades educacionais, o software livre também representa um <strong>ato político e ético</strong> em defesa da soberania digital e da inclusão. Ao reduzir dependências de plataformas proprietárias, escolas e universidades públicas (ou não) ampliam sua capacidade de gerir dados, personalizar ambientes e investir em soluções colaborativas de baixo custo. Essa independência tecnológica favorece a inovação pedagógica e fortalece o compromisso social das instituições de ensino com a <strong>democratização do conhecimento</strong>. Assim, a combinação entre software livre e educação aberta pode criar um ecossistema que promove não apenas a partilha de conteúdos, mas sobretudo a formação de sujeitos críticos, capazes de compreender e transformar a realidade em que vivem (Pretto, 2012).</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais Toggle -->
+								<div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="saiba-mais__header">
+										<button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span> Saiba mais</button>
+									</div>
+									<div class="saiba-mais__content collapse" id="saiba-mais1">
+										<p><a href='../media/modulo5/M5_Aula 5_ Planilha Principais Softwares Livres para Contextos Educacionais.pdf' target='_blank' rel='noopener noreferrer'>Clique aqui</a> e conheça os principais softwares livres para contextos educacionais.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Cada software livre listado pode ser integrado a estratégias de <strong>aprendizagem ativa, produção colaborativa de REA</strong> e <strong>ensino híbrido</strong>, reforçando a autonomia docente e discente. A combinação entre ferramentas livres e licenças abertas constitui a base tecnológica e ética da <strong>educação aberta</strong> e da <strong>emancipação digital</strong>.</p>
+
+								<p>Chegamos ao final desta aula. Nela foram apresentados os conceitos essenciais do Software Livre, sua trajetória histórica e os diferentes tipos de licenças existentes. Ao longo do percurso destacou-se a importância do Movimento Software Livre para democratização do conhecimento, autonomia tecnológica e promoção de Educação Aberta, reforçando seu papel na emancipação do indivíduo e no desenvolvimento de práticas sociais, educativas e tecnológicas mais livres e colaborativas.</p>
+
+								<p>Na próxima aula abordaremos como encontrar, usar e compartilhar REA. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+											<p>PIMENTEL, Mariano; CARVALHO, Felipe. Inteligência Artificial Generativa na Educação Aberta: potencialidades e riscos. <strong>Programa de Formação Modular em Ciência Aberta. Módulo 5. Educação Aberta e Recursos Educacionais Abertos Aula 5.</strong> 1. ed. Rio de Janeiro: Fiocruz, 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo5/aula5.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo5/aula5.html</a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula4.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 4</a>
+								<a class="fio-button fio-button-primary" href="aula6.html" rel="next">Aula 6 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+
+</html>

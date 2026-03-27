@@ -1,0 +1,28 @@
+/* AULA 1 - INFO 2 */
+
+
+   
+
+.st0 {
+  fill: #ddb433;
+  opacity: 0;
+}
+
+
+
+
+
+#info2 a:hover #bt1.st0,
+#info2:focus #bt1.st0,
+#info2 a:hover #bt2.st0,
+#info2:focus #bt2.st0,
+#info2 a:hover #bt3.st0,
+#info2:focus #bt3.st0,
+#info2 a:hover #bt4.st0,
+#info2:focus #bt4.st0,
+#info2 a:hover #bt5.st0,
+#info2:focus #bt5.st0 {
+  transition: .3s;
+  opacity: 20%;
+  fill: #ddb433;
+}

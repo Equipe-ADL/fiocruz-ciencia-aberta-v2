@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 4 | Aula 8 - Integração de dados administrativos governamentais para pesquisa em Saúde Pública</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body id="modulo4">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button class="d-block d-lg-none" type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 4 <br /><br />
+							Aula 8</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 4</span>
+									<span class="title">Gestão, Compartilhamento, Abertura de Dados para Pesquisa</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 1: Introdução a dados</a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 2: Gestão de dados: conceitos e principais ferramentas</a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 3: Dados para pesquisa em saúde e sua proteção jurídica</a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 4: Compartilhamento e uso de dados para pesquisa na prática</a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 5: FAIR: dos princípios à prática</a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Planos de Gestão de dados (PGD)</a>
+										<a href="aula7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 7: Requisitos de financiadores de revistas científicas, plataformas e repositórios de dados e data papers</a>
+										<a href="aula8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 8: Integração de dados administrativos governamentais para pesquisa em Saúde Pública</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod4-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 4</strong> . Aula 8</span>
+								<span class="title-bold">Integração de dados </span><br> administrativos governamentais para pesquisa em Saúde Pública
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="card objetivos">
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Nesta aula você será apresentado ao tema integração de dados administrativos governamentais para subsidiar pesquisas acadêmicas e em Saúde Pública. Ao final, você será capaz de:</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Compreender o que são dados administrativos governamentais e o que é a integração de bases de dados.</li>
+												<li class="list-group-item">Conhecer experiências de centros de integração de dados no exterior e no Brasil e suas iniciativas para engajamento público.</li>
+												<li class="list-group-item">Conhecer o fluxo de pedido a bases de dados administrativos originais e acesso aos dados integrados no Cidacs/Fiocruz Bahia.</li>
+												<li class="list-group-item">Ser apresentado a um novo campo de conhecimento a partir da Declaração de Posicionamento da Ciência de Dados Populacionais.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">O que são <span class="dualcolor">dados administrativos governamentais?</span></h3>
+								</div>
+
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure class="lightbox mb-0">
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula8-img1.png" alt="" title="Fonte: Freepik">
+										</figure>
+										<span class="figure-caption fonte d-block text-center">Fonte: Freepik (2025)</span>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+										<p>Dados administrativos são coletados sistemática e rotineiramente por diferentes departamentos governamentais para subsidiar atividades administrativas e prestação de serviços à população, como ocorre nas áreas de saúde, educação, programas de proteção social, habitação, censo populacional etc. Esses tipos de dados são coletados, de maneira compulsória ou facultativa, quando os cidadãos se relacionam com as agências de governos municipal, estadual ou federal.</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Os dados administrativos governamentais geralmente incluem informações pessoais dos cidadãos, e por essa razão, seu acesso, tratamento, compartilhamento e utilização apresentam questões éticas e legais que demandam procedimentos para mitigar riscos e ampliar benefícios para os indivíduos e para a sociedade.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Integração de dados administrativos <span class="dualcolor">governamentais para pesquisa</span></h3>
+								</div>
+
+								<p>Ao considerar que os dados administrativos governamentais são representativos de um determinado segmento populacional, coletados de forma contínua e sistemática, a integração entre diferentes bases de dados é considerada um recurso importante. Ela permite responder a questões científicas complexas com alto nível de validade externa devido ao seu grande tamanho amostral.</p>
+
+								<p>A partir da integração de dados, busca-se entender interdependências entre diferentes aspectos das nossas vidas. Ou seja, compreender como fatores sociais, econômicos, culturais, ambientais, comportamentais, étnicos e raciais, entre outros, impactam a vida no adoecimento e morte de determinados grupos ou populações inteiras. Subsidia, portanto, a ampliação de conhecimentos científicos e de evidências para políticas públicas que permitem responder perguntas e atuar para melhorar as condições de vida e de saúde.</p>
+
+								<p>Dada a necessidade de dados em nível individual para que se realize o processo de combinação de informações entre bases de dados, o acesso às bases dos sistemas de informação envolve uma série de condições sobre a finalidade de sua utilização e medidas de segurança da informação para a manutenção da privacidade dos cidadãos e a confidencialidade dos dados.</p>
+
+								<p>O processo de integração de dados pode ocorrer, basicamente, de duas maneiras.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-8 col-lg-5 mb-5">
+								<!--Flipcard-->
+								<div class="flipcard">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard1" class="more" aria-hidden="true">
+										<div class="flip-card-inner">
+											<!-- FRENTE -->
+											<div class="card shadow flip-card-front fundo1 ">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5 card-title">Integração determinística</span>
+														<!-- <p>Este card <strong>possui</strong> um texto rolável atrás</p> -->
+													</div>
+
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard1" class="fio-button fio-button-primary" aria-hidden="true">
+																<img src="../media/templates/flipcard-icon.svg" alt="Ícone de flipcard" width="36">
+																Confira
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- VERSO -->
+											<div class="card flip-card-back ">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h6">Integração determinística</span>
+														<div class="scrollable">
+															<p>Quando existe uma identificação única para cada indivíduo, ou entidade de interesse. Por exemplo, o número do Cadastro de Pessoas Físicas (CPF) possibilita integrar as informações dos indivíduos existentes em diferentes bases de dados por meio do uso desse número identificador.</p>
+														</div>
+													</div>
+
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard1" class="fio-button fio-button-secondary return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-8 col-lg-5 mb-5">
+								<!--Flipcard-->
+								<div class="flipcard">
+									<div class="flip-card">
+										<input type="checkbox" id="flipcard2" class="more" aria-hidden="true">
+										<div class="flip-card-inner">
+											<!-- FRENTE -->
+											<div class="card shadow flip-card-front fundo1 ">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-center d-flex flex-column">
+														<span class="h5 card-title">Integração probabilística</span>
+														<!-- <p>Este card <strong>possui</strong> um texto rolável atrás</p> -->
+													</div>
+
+													<div class="card-footer text-white">
+														<div class="card-btn">
+															<label for="flipcard2" class="fio-button fio-button-primary" aria-hidden="true">
+																<img src="../media/templates/flipcard-icon.svg" alt="Ícone de flipcard" width="36">
+																Confira
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- VERSO -->
+											<div class="card flip-card-back ">
+												<div class="h-100 bg-transparent border-0 text-center">
+													<div class="card-body justify-content-start d-flex flex-column">
+														<span class="h6">Integração probabilística</span>
+														<div class="scrollable">
+															<p>Quando não existe esse número identificador, a integração é possível pelo uso de identificadores comuns existentes nas bases a serem integradas, tais como: nome, idade, data e local do nascimento, nome da mãe etc. </p>
+														</div>
+													</div>
+
+													<div class="card-footer">
+														<div class="card-btn">
+															<label for="flipcard2" class="fio-button fio-button-secondary return" aria-hidden="true">
+																<span class="material-symbols-rounded">arrow_back</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4"> Integração de bases de dados de <span class="dualcolor">sistemas nacionais de informação</span></h3>
+								</div>
+
+								<p>A integração de dados administrativos diversos para a finalidade de pesquisa científica ou de estudos em saúde pública — como a integração de dados de proteção social, dados educacionais, entre outros, com dados provenientes dos sistemas de informação em saúde — lida com um conjunto de questões legais e éticas relacionadas aos termos e condições de acesso a dados identificados e ao uso de dados integrados (ainda que desidentificados). Adicionalmente, a integração de dados também lida com questões metodológicas no que tange ao processamento das bases originais (seleção, limpeza, padronização e harmonização das variáveis) e a utilização de algoritmos adequados (aos tipos e tamanhos das bases de dados) para que sejam integradas com qualidade e acurácia (Barreto <em>et al</em>., 2019).</p>
+							</div>
+						</div>
+
+						<!--Comparação-->
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-4 mb-5">
+								<div class="card h-100 ">
+									<div class="card-header">
+										<span class="h6">Dados identificados</span>
+									</div>
+									<div class="card-body">
+										<p>Informações que possibilitam a identificação de uma pessoa/indivíduo de maneira direta ou indireta.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-1 align-self-center mb-5 compare-symbol">
+								<span class="d-block text-center mx-auto">&</span>
+							</div>
+
+							<div class="col-12 col-md-4 mb-5">
+								<div class="card h-100">
+									<div class="card-header">
+										<span class="h6">Dados desidentificados</span>
+									</div>
+									<div class="card-body">
+										<p>Informações que foram modificadas para não identificar especificamente uma pessoa/indivíduo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Para enfrentar essas questões, alguns países passaram a investir na criação e manutenção de centros de integração de dados. Essas iniciativas realizam gestão e governança de dados e estão equipadas com arranjos de segurança da informação adequados, além de contarem com pessoal especializado para receber, processar, integrar e prover acesso aos dados administrativos integrados. A principal preocupação desse tipo de atividade é o respeito aos direitos dos titulares dos dados, destacando-se a privacidade e a confidencialidade de dados pessoais dos cidadãos.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+
+								<div class="heading__block">
+									<h3 class="heading__title h4">Centros de integração de dados para pesquisa<span class="dualcolor"> acadêmica e estudos em Saúde Pública no exterior</span></h3>
+								</div>
+
+								<p>Existem diversos centros no mundo que utilizam dados administrativos integrados com finalidade de pesquisa acadêmica e de estudos em Saúde Pública. Geralmente, esses centros são estabelecidos a partir de parcerias entre governos e universidades, tais como a Administrative Data Research Network (Adruk) e o Secure Anonymized Information Linkage Databank (SAIL Databank), ambos localizados no Reino Unido.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Abas -->
+								<div class="aba">
+									<ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="nav-link active" id="pills-atores-tab" data-bs-toggle="pill" data-bs-target="#pills-atores" type="button" role="tab" aria-controls="pills-atores" aria-selected="true">Adruk</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-seguranca-tab" data-bs-toggle="pill" data-bs-target="#pills-seguranca" type="button" role="tab" aria-controls="pills-seguranca" aria-selected="false">SAIL Databank</button>
+										</li>
+
+									</ul>
+									<div class="tab-content p-0" id="pills-tabContent">
+										<!-- Aba 1 -->
+										<div class="tab-pane fade show active" id="pills-atores" role="tabpanel" aria-labelledby="pills-atores-tab">
+											<div class="tab-pane-content">
+												<p class="h6">Adruk</p>
+
+												<p>A Adruk, mantida como parte da estratégia de pesquisa e inovação do Reino Unido (UKRI), disponibiliza dados administrativos para pesquisadores com o intuito de melhorar e ampliar a base de evidências para políticas e prestação de serviços públicos por meio de seus quatro Centros de Dados Administrativos (com dados da Inglaterra, País de Gales, Escócia e Irlanda do Norte). O acesso aos dados é negociado com cada departamento governamental, subsidiando o delineamento de estratégias diferenciadas para cada contexto.</p>
+												<p>Os pesquisadores interessados em utilizar dados da Adruk necessitam submeter uma proposta, que será avaliada por um comitê em termos de relevância e de interesse público. Após receber aprovação, o pesquisador realiza capacitação sobre os termos e condições de acesso aos dados para que possa ser devidamente credenciado. Posteriormente, os dados solicitados são “ingeridos” de-identificados em um dos centros de dados da rede para serem acessados em ambiente seguro e controlado, no qual as análises são monitoradas.</p>
+												<p>Os resultados das análises, disponibilizados de maneira agregada em formato de tabelas e gráficos, são verificados com o objetivo de mitigar riscos à identificação dos sujeitos a quem os dados se referem. Após verificação e aprovação, os resultados poderão ser amplamente divulgados.</p>
+											</div>
+										</div>
+										<!-- Aba 2-->
+										<div class="tab-pane fade" id="pills-seguranca" role="tabpanel" aria-labelledby="pills-seguranca-tab">
+											<div class="tab-pane-content">
+												<p class="h6">SAIL Databank</p>
+												<p>O SAIL Databank foi criado no País de Gales, inicialmente como um repositório de dados administrativos de saúde vinculado à unidade de pesquisa em informática da Universidade de Swansea. A partir de um estudo piloto para desenvolver métodos de recebimento, processamento, preservação, acesso e análise de dados com segurança da informação e privacidade, realizado em parceria com o Health and Care Research Wales, ampliou sua atuação para a integração de dados de saúde com outros dados administrativos. Atualmente, sua finalidade é atender a projetos de pesquisa do Reino Unido a partir de termos e condições específicos, avaliados por um painel independente de especialistas.</p>
+												<p>O SAIL Databank é reconhecido e respeitado como um dos mais bem-sucedidos centros de integração de dados do mundo por sua responsabilidade e transparência na condução de seus processos e confiabilidade na qualidade dos serviços prestados — sendo, inclusive, certificado pela ISO 27001 e acreditado pela Autoridade de Estatística do Reino Unido. Com a ampliação de sua atuação para todo o Reino Unido, o centro passou a cobrar uma taxa subsidiada de cada projeto aprovado para cobrir os custos de processamento e acesso aos dados integrados. O pagamento complementa os custos de manutenção da infraestrutura e pessoal, que são cobertos pelo Health and Care Research Wales e o Economic and Social Research Council, porém limitados.</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Iniciativas no <span class="dualcolor">Brasil</span></h3>
+								</div>
+
+								<p>O Brasil não possui centro nacional de dados administrativos governamentais com finalidade de pesquisa e de estudos em Saúde Pública nos moldes apresentados anteriormente — a despeito de ser um dos pioneiros na disponibilização de dados dos sistemas nacionais de informação em saúde para tal finalidade com a criação do Departamento de Informática do Sistema Único de Saúde (DATASUS), pelo Ministério da Saúde em 1991. Além disso, registra-se a atuação precursora de pesquisadores brasileiros utilizarem dados administrativos vinculados há mais de duas décadas (Coeli <em>et al</em>., 2015), inclusive com o desenvolvimento de técnicas de vinculação de registros como o OpenRecLink.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>"Uma iniciativa no país que se aproxima dessa finalidade é o <a href="https://Cidacs.bahia.fiocruz.br/" target="_blank">Centro de Integração de Dados e Conhecimentos para Saúde (Cidacs)</a>, vinculado à Fiocruz Bahia, iniciado a partir do projeto de pesquisa “Coorte de 100 milhões de brasileiros”</p>
+											<span class="quotation-autor">(Barreto <em>et al</em>., 2019-2022)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Inaugurado em dezembro de 2016, a missão do Cidacs é realizar pesquisas sobre os determinantes sociais da saúde para contribuir com a ampliação de conhecimentos e evidências científicas a fim de melhorar as condições de vida e de saúde da população brasileira a partir da integração de dados para estudos de base populacional. Para tal, o Cidacs estruturou um complexo sistema de gerenciamento de dados com dispositivos transversais de segurança da informação, ética e privacidade em todos os seus processos.</p>
+								<p>Ouça a seguir como o Cidacs/Fiocruz Bahia solicita dados originais e provê acesso aos dados integrados.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Para Escutar -->
+								<div class="box" data-box="para escutar">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Escutar</span>
+										</div>
+										<div class="card-body">
+											<div class="media audio">
+												<audio controls="true" controlslist="nodownload">
+													<source src="https://educare.fiocruz.br/file-storage/q46xtwfn">
+													Seu navegador não suporta este formato de áudio.
+												</audio>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Termos e condições para acessar dados <span class="dualcolor">administrativos governamentais integrados no Cidacs</span></h3>
+								</div>
+
+								<p>O acesso aos dados integrados e desidentificados produzidos no Cidacs é restrito e ocorre, quando autorizado, em ambiente seguro e controlado. A solicitação de acesso precisa atender aos seguintes requisitos:</p>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Ser do quadro interno ou colaborador.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Apresentar projeto de pesquisa detalhado acompanhado de parecer ético favorável do Sistema CEP/Conep.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Apresentar plano de dados fornecido pelo Cidacs para embasar a vinculação e a extração das variáveis contidas nas bases de dados disponíveis, que deverão ser restritas às necessárias para responder às perguntas do estudo proposto.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Assinatura de termos de responsabilidade relacionados ao acesso e uso dos dados.</li>
+
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A despeito das limitações de atendimento a pesquisadores e projetos externos, o Cidacs tem investido em iniciativas voltadas à disponibilização de dados agregados, inclusive com a participação de diferentes segmentos da sociedade (Dos Anjos Fonseca <em>et al</em>, 2022).</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Declaração de posicionamento da <span class="dualcolor"> Ciência de Dados Populacionais</span></h3>
+								</div>
+
+								<p>Os desafios para equilibrar direitos individuais e o legítimo interesse público na integração de dados para pesquisa motivaram um grupo de especialistas a publicar uma declaração conjunta sobre um novo campo de conhecimento, que chamaram de “Ciência de Dados Populacionais” (Population Data Science) e se caracteriza por:</p>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Possuir valor e interesse público, pois utiliza dados de maneira positiva para os cidadãos e a sociedade.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Integrar e analisar dados de diferentes fontes.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Analisar os resultados a nível populacional.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Desenvolver infraestrutura técnica e política aderente aos marcos éticos, legais e de preservação da privacidade em suas respectivas jurisdições para apoiar a pesquisa científica.</li>
+
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A declaração ressalta ainda que, além de ser uma ciência multidisciplinar, esse novo campo busca avançar em tecnologias de integração de dados, em formas de análise e em metodologias de engajamento público (McGrail <em>et al</em>., 2018).</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Experiências de engajamento público no uso de <span class="dualcolor"> dados administrativos integrados para pesquisa</span></h3>
+								</div>
+
+								<p>Observe a seguir algumas práticas de engajamento público associadas à utilização de dados administrativos integrados em pesquisas científicas:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="800" id="accordionExample">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Adruk</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>A Adruk concebe o engajamento público como um conjunto propositivo de atividades destinadas a promover diálogo contínuo com a sociedade sobre o uso de dados administrativos, com o intuito de maximizar os impactos das pesquisas e ampliar os benefícios para todas as partes interessadas. Sua estratégia de engajamento público para o período de 2021-2026 indica que é preciso demonstrar confiabilidade no trabalho que desenvolvem a partir de aderência aos marcos legais, responder perguntas do público e maximizar o benefício público por meio do envolvimento da sociedade.</p>
+												<p>Nessa perspectiva passaram a desenvolver atividades como painéis públicos com participação de parceiros e sociedade em geral, painéis com representantes de grupos específicos, eventos abertos como seminários, workshops e festivais para apresentar e discutir pesquisas que utilizam dados administrativos; oficinas de trabalho e grupos focais acerca de questões específicas sobre programas de pesquisa e estudos que utilizam dados administrativos (Adruk, 2021).</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">SAIL Databank</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>As iniciativas do SAIL Databank voltadas ao envolvimento e engajamento público contam com um painel de usuários e grupos consultivos de especialistas externos com o intuito de estabelecer uma governança de dados segura, ética e responsável.</p>
+												<p>O painel de usuários foi criado em 2011 para receber contribuições de cidadãos do País de Gales, que avaliam a aceitação social do trabalho conduzido pela iniciativa além de debaterem propostas de pesquisa e implicações éticas, legais e sociais de seus objetivos e achados. Assim, contribuem também com as estratégias de comunicação e disseminação dos resultados dos estudos e estratégias de envolvimento e engajamento de grupos específicos e da sociedade em geral.</p>
+												<p>Declara que suas iniciativas de engajamento são conduzidas no campo da Ciência de Dados Populacionais, em arranjo colaborativo e bidirecional, que inclui o público em geral, pacientes, profissionais diversos e outras partes interessadas como proponentes de projetos ou membros da alta direção do SAIL para delineamento e desenvolvimento de ações. Mencionam, ainda, que reconhecem a importância da verdadeira participação pública em sociedades democráticas para que haja respeito e transparência acerca dos direitos dos titulares dos dados e utilização desses dados de forma socialmente responsável.</p>
+												<p>O SAIL conta com um diretor associado, um encarregado operacional e um encarregado de pesquisa dedicados em tempo integral à governança de informações e ao engajamento público. Além disso, conta com outros profissionais vinculados a grupos de trabalho para gerar aderência à política de envolvimento e engajamento público (SAIL Databank, 2024).</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Cidacs/Fiocruz Bahia</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Com a entrada em vigor da Lei Geral de Proteção de Dados Pessoais (LGPD) em 2020, marco na regulamentação de dados pessoais no Brasil, foi concebido o estudo exploratório "Percepções e experiências sobre compartilhamento e vinculação de dados para pesquisa e avaliação de políticas públicas na área da saúde" com o objetivo de compreender as experiências e percepções de indivíduos de determinados segmentos da sociedade acerca do compartilhamento e vinculação de dados pessoais, tanto na esfera pública (pesquisas científicas e políticas públicas) quanto na esfera privada. A pesquisa deu especial atenção aos dados administrativos governamentais, partindo da premissa de que são bens públicos de grande valor para a sociedade.</p>
+
+												<p>O estudo buscou entender o que as pessoas pensam sobre ganhos, benefícios, perdas, limites e riscos — potenciais ou reais — sobre o uso de dados contendo informações pessoais para subsidiar ações de conscientização, envolvimento e engajamento da sociedade sobre seus direitos no que tange ao uso de dados pessoais e sensíveis, e sobre a importância desses dados para pesquisa e para políticas públicas (Almeida; Pimenta, 2021)</p>
+
+												<p>Essa pesquisa subsidiou a iniciativa de divulgação científica "Seus dados contam e fazem história", cujos materiais produzidos pelo Cidacs respondiam a perguntas como: o que são dados primários e dados secundários? O que são dados pessoais e dados sensíveis? Quais são os aspectos éticos do uso de dados pessoais para pesquisa científica? Qual é a importância dos dados administrativos para a ciência e para a gestão pública? O que é LGPD? O que é linkage?</p>
+
+												<p>Desde então, o Cidacs passou a fomentar que seus projetos de pesquisa promovam e implementem ações de envolvimento e engajamento público, bem como o delineamento de princípios para uma governança de dados mais dialógica e inclusiva (Almeida <em>et al</em>., 2024).</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h4 class="heading__title h5">Integração de dados administrativos <span class="dualcolor"> e a Ciência Aberta</span></h4>
+								</div>
+
+								<p>O aumento da disponibilidade de dados de distintas fontes ampliou o uso secundário de dados pela comunidade científica. No caso de dados administrativos governamentais, devido à sua importância para estudos de base populacional, altos investimentos em tecnologia, infraestrutura e pessoal especializado, estão alinhados às estratégias nacionais para geração de conhecimento científico e de evidências para políticas públicas.</p>
+
+								<p>Ao considerarmos a grande quantidade, diversidade e tipologias de dados que podem ser correlacionados para fazer inferências sobre a saúde de indivíduos, grupos e populações, o uso de dados secundários para pesquisa passa a ser reconhecido como um importante ativo de desenvolvimento científico e de evidências para elaboração e avaliação de políticas públicas voltadas à população em geral ou populações específicas.</p>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Destaque Parallax -->
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container aos-animate aos-init" data-aos="fade" data-aos-easing="ease-out" data-aos-duration="800">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>Na perspectiva da Ciência Aberta, o acesso e a integração de dados administrativos governamentais para pesquisa em Saúde Pública representam uma nova forma de produzir conhecimento científico em seu objetivo de responder a questões de interesse público, requer aderência aos marcos éticos e regulatórios. Adicionalmente, iniciativas e projetos de pesquisa que utilizam dados administrativos integrados vêm implementando estratégias de promoção de diálogo, envolvimento e participação de diferentes segmentos da sociedade.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Espera-se que esses processos de diálogo avancem para modelos de gestão e governança de dados mais participativos e equitativos a fim de que indivíduos, grupos e populações aos quais os dados se referem tenham suas vozes ouvidas e seus direitos assegurados nas decisões sobre os usos de seus dados, com transparência e participação efetiva na busca de respostas para lacunas de conhecimento e na tomada de decisões políticas baseadas em evidências científicas. Esses valores e princípios são convergentes com as Recomendações da Unesco sobre Ciência Aberta (Unesco, 2021, p. 17-19).</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+
+											<p>ALMEIDA, Bethânia de Araújo. Programa de Formação Modular em Ciência Aberta. Integração de dados administrativos governamentais para pesquisa em saúde pública. Módulo, 4. Dados Abertos. Aula 8., Rio de Janeiro: Fiocruz, 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula8.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula8.html</a>. Acesso em: 14 ago. 2025.</p>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula7.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 7</a>
+								<a class="fio-button fio-button-primary" href="encerramento.html" rel="next">Encerramento<span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+
+</body>
+
+</html>

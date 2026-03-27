@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 4 | Aula 5 - FAIR: dos princípios à prática</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body id="modulo4">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button class="d-block d-lg-none" type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 4 <br /><br />
+							Aula 5</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 4</span>
+									<span class="title">Gestão, Compartilhamento, Abertura de Dados para Pesquisa</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 1: Introdução a dados</a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 2: Gestão de dados: conceitos e principais ferramentas</a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 3: Dados para pesquisa em saúde e sua proteção jurídica</a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 4: Compartilhamento e uso de dados para pesquisa na prática</a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 5: FAIR: dos princípios à prática</a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Planos de Gestão de dados (PGD)</a>
+										<a href="aula7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 7: Requisitos de financiadores de revistas científicas, plataformas e repositórios de dados e data papers</a>
+										<a href="aula8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 8: Integração de dados administrativos governamentais para pesquisa em Saúde Pública</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod4-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 4</strong> . Aula 5</span>
+								<span class="title-bold">FAIR: dos princípios</span> à prática
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="card objetivos">
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Nesta aula você será apresentado ao conceito e às aplicações dos princípios FAIR. Ao final você será capaz de:</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Reconhecer os problemas cotidianos na gestão de dados e as origens do debate sobre os princípios FAIR.</li>
+
+												<li class="list-group-item">Compreender o que significa cada dimensão dos princípios FAIR e as diretrizes para aplicá-los na prática. </li>
+
+												<li class="list-group-item">Identificar os benefícios da adoção dos princípios por diversos setores do ecossistema da Ciência e Tecnologia.</li>
+
+												<li class="list-group-item">Conhecer a iniciativa GO FAIR e seus componentes. </li>
+
+												<li class="list-group-item">Conhecer recursos úteis para a implementação dos princípios FAIR.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Da perda de dados <span class="dualcolor">à gestão adequada de dados</span></h3>
+								</div>
+
+								<p>Iniciaremos esta aula com algumas perguntas:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Você já teve problemas com o seu computador que levaram à perda de dados ou de informações importantes sobre a sua pesquisa? </li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Se isso já aconteceu, quanto tempo levou para recuperar esses dados? </li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">E se precisar consultar dados de mais de dois ou três anos atrás, ainda será capaz de entendê-los e usá-los de maneira eficaz? </li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Alguma vez você leu uma publicação interessante e desejou ter acesso aos dados originais por considerá-los úteis para o seu trabalho? </li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Você considera uma boa prática científica disponibilizar dados e detalhes do seu experimento para que outros investigadores possam reproduzi-los e verificar a sua pesquisa? </li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Já pensou na economia de tempo e dinheiro se os seus dados estivessem disponíveis para reutilização em novas pesquisas? </li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Se você já passou por alguma dessas situações, certamente consegue imaginar o quanto uma gestão de dados adequada poderia evitar incidentes e contribuir para agilizar a expansão do conhecimento. </p>
+
+								<p>A produção de conhecimento a partir do reúso de dados vem crescendo rapidamente. Novas tecnologias estão surgindo, facilitando o acesso, a transferência e a análise de dados, criando oportunidades inéditas para o avanço científico. No entanto, essas oportunidades só podem ser efetivamente potencializadas quando os dados de pesquisa estão bem descritos, bem estruturados, adequadamente armazenados e disponíveis para que outros os utilizem.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Para refletir -->
+								<div class="box" data-box="Para Refletir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Refletir</span>
+										</div>
+										<div class="card-body">
+											<p>Como alcançar esse nível de qualidade?</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Essas perguntas são constantemente debatidas no mundo acadêmico e, com mais intensidade, nas práticas da ciência de dados. A resposta é simples: por meio de um adequado gerenciamento. Foi exatamente para atender a essas necessidades que surgiram os princípios FAIR.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Origem dos <span class="dualcolor">princípios FAIR</span></h3>
+								</div>
+
+								<p>Historicamente, as primeiras manifestações sobre o tema aconteceram durante o workshop "Jointly Designing a Data FAIRPORT", realizado em janeiro de 2014, quando um grupo de especialistas, incluindo representantes da academia, agências de fomento à pesquisa, editores científicos e indústria, debateu a criação de uma infraestrutura global para dar suporte às publicações e aos dados oriundos de pesquisas, promovendo seu compartilhamento, reutilização e até novas descobertas. A partir desse encontro em Leiden (Holanda), foi elaborado um conjunto de práticas orientadoras para a boa gestão de dados denominado "princípios FAIR", cujo acrônimo significa <em>Findable</em>, <em>Accessible</em>, <em>Interoperable</em> e <em>Reusable</em> (Encontrável, Acessível, Interoperável e Reutilizável).</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure class="lightbox mb-0">
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula5-img1.jpg" alt="A imagem é uma tabela de 4 linhas por 5 colunas. A primeira coluna de cada linha é preta e traz o título e o ícone principal; as colunas seguintes detalham os requisitos técnicos com ícones e cores variadas. Linha 1: Findable (Localizável), seguindo para Identificadores persistentes (PIDs), metadados enriquecidos, repositórios de dados indexados e PIDs em metadados. Linha 2: Accessible (Acessível), Protocolo de comunicação padronizado, Protocolo gratuito, aberto, Autenticação quando necessária, Metadados sempre disponíveis. Linha 3: Interoperable (Interoperável), Vocabulários, Vocabulários são FAIR, Metadados li Ligados. Linha 4: Reusable (Reutilizável), Metadados possuem múltiplos atributos, Licença de uso, Proveniência, Padrões da comunidade científica. O quadro utiliza uma linguagem com ícones universais como lupa, engrenagens, cadeado, setas de reciclagem." title="Fonte: Sales et al., 2019">
+										</figure>
+										<span class="figure-caption fonte d-block text-center">Fonte: <a href='https://www.researchgate.net/publication/371560434_Plano_de_gestao_de_dados_de_pesquisa_de_povos_indigenas_consideracoes_acerca_dos_principios_FAIR_e_CARE' target='_blank'>Sales <em>et al</em>., 2019</a></span>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+										<p>Os princípios FAIR foram inicialmente disponibilizados para comentários no site do FORCE 11 e posteriormente publicados na revista <em>Scientific Data</em>, da <em>Nature Portfolio</em>, em 2016, no artigo de Wilkinson, M. D. et al. (2016) intitulado <em>The FAIR Guiding Principles for Scientific Data Management and Stewardship</em>.</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">O que significa <span class="dualcolor">FAIR?</span></h3>
+								</div>
+
+								<p>Veja a seguir o que significa FAIR.</p>
+
+								<p>Clique em cada um dos pontos do FAIR para conhecer seus princípios e aplicações</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" id="aula5-accordion1" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1"><img class="img-fluid me-5" src="../media/modulo4/aula5-fair1.svg" width="100px" /> Findable (Achável) </button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Propõe que os seus dados possam ser descobertos por outros pesquisadores. Na prática, significa que os dados e metadados devem adotar um identificador persistente único; que os metadados devem ser ricos e ambos indexados em repositórios confiáveis.</p>
+
+												<!-- Tabela -->
+												<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<table class="table table-bordered">
+														<thead>
+															<tr class="text-center">
+																<th>Princípio</th>
+																<th>Como aplicar?</th>
+															</tr>
+														</thead>
+
+														<tbody>
+															<tr class="text-left">
+																<td>F.1 (Meta)dados devem ter identificadores globais, únicos e persistentes.</td>
+																<td>Adote identificadores únicos persistentes, tanto para o conjunto de dados quanto para os metadados (ex.: DOI, ARK, RRID, PID).</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>F.2 Dados devem ser descritos utilizando-se metadados ricos (impacta diretamente R1).</td>
+																<td>Descreva o conjunto de dados com metadados suficientemente ricos para que, uma vez indexados em um mecanismo de busca, possam ser encontrados mesmo sem o identificador único persistente.</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>F.3 Metadados devem incluir clara e explicitamente os identificadores dos dados que descrevem.</td>
+																<td>Como não podemos prever que os dados e seus metadados estejam sempre juntos, a associação entre eles deve ocorrer por meio da inclusão do identificador persistente dos dados nos metadados.</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>F.4 (Meta)dados devem ser registrados ou indexados em mecanismos de busca.</td>
+																<td>Para que os dados sejam encontrados, seus metadados devem ser indexados em mecanismos de busca (<em>search engine</em>) permitindo que computadores e usuários os encontrem com facilidade.</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2"><img class="img-fluid me-5" src="../media/modulo4/aula5-fair2.svg" width="100px" /> Accessible (Acessível)</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Propõe que seus dados possam ser acessados por outros pesquisadores. Isso significa o uso de protocolos de comunicação padronizados, abertos e gratuitos, que ofereçam autenticação e acesso aos metadados, mesmo quando os dados em si não estiverem mais disponíveis.</p>
+
+												<!-- Tabela -->
+												<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<table class="table table-bordered">
+														<thead>
+															<tr class="text-center">
+																<th>Princípio</th>
+																<th>Como aplicar?</th>
+															</tr>
+														</thead>
+
+														<tbody>
+															<tr class="text-left">
+																<td>A.1 (Meta)dados devem ser recuperáveis por seus identificadores usando protocolos de comunicação padronizados.</td>
+																<td>Utilizando o identificador persistente do conjunto de dados e/ou de seus metadados, o usuário poderá recuperá-los facilmente por meio de protocolos de comunicação padronizados (ex.: HTTP ou FTP).</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>A.1.1 O protocolo deve ser aberto, gratuito e universalmente implementável.</td>
+																<td>Independentemente do licenciamento dos dados e metadados, o protocolo de comunicação utilizado para acessá-lo deve ser aberto, gratuito e passível de ser implementado por qualquer interessado. (ex.: HTTP ou FTP).</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>A.1.2 O protocolo deve permitir procedimentos de autenticação e autorização, quando necessário.</td>
+																<td>Dependendo das restrições de acesso aos dados e/ou metadados, o protocolo de comunicação deve oferecer mecanismos de autenticação e autorização para acesso, como os fornecidos por repositórios confiáveis.</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>A.2 (Meta)dados devem ser acessíveis, mesmo quando os dados não estiverem mais disponíveis.</td>
+																<td>Deve existir um conjunto de estratégias de preservação para dados e metadados. Os metadados devem ser sempre acessíveis, possibilitando a criação de índices para o conjunto de dados atuais e aqueles que não estão mais disponíveis.</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3"><img class="img-fluid me-5" src="../media/modulo4/aula5-fair3.svg" width="100px" /> Interoperable (Interoperável)</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Propõe que seus dados possam ser integrados com outros e facilmente compreendidos por computadores. Na prática, demanda o uso de linguagens de representação do conhecimento, vocabulários e/ou ontologias que adotem os princípios FAIR, além de dados e metadados interligados.</p>
+
+												<!-- Tabela -->
+												<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<table class="table table-bordered">
+														<thead>
+															<tr class="text-center">
+																<th>Princípio</th>
+																<th>Como aplicar?</th>
+															</tr>
+														</thead>
+
+														<tbody>
+															<tr class="text-left">
+																<td>I.1 (Meta)dados devem ser representados por meio de uma linguagem formal, acessível, compartilhada e amplamente aplicável para a representação do conhecimento.</td>
+																<td>Para representar dados e metadados deve-se adotar linguagens de representação do conhecimento que sejam padronizadas, acessíveis e amplamente aplicáveis (ex.: RDF, XML).</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>I.2 (Meta)dados devem usar vocabulários de acordo com os princípios FAIR.</td>
+																<td>É necessário referenciar o conjunto de dados, possibilitando que aqueles gerados a partir de outros conjuntos de dados sejam interligados, assegurando a ligação semântica entre eles.</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>1.3 (Meta)dados devem incluir referências qualificadas para outros (Meta)dados.</td>
+																<td>É necessário referenciar o conjunto de dados, possibilitando que aqueles gerados a partir de outros conjuntos, sejam interligados, assegurando a ligação semântica entre eles.</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4"><img class="img-fluid me-5" src="../media/modulo4/aula5-fair4.svg" width="100px" /> Reusable (Reusável) </button>
+										</h5>
+										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Propõe que os seus dados possam ser reutilizados em novas pesquisas. Isso significa que dados e metadados devem possuir múltiplos atributos, usar licenças apropriadas, descrever suas procedências e seguir padrões específicos amplamente adotados por sua comunidade.</p>
+
+												<!-- Tabela -->
+												<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<table class="table table-bordered">
+														<thead>
+															<tr class="text-center">
+																<th>Princípio</th>
+																<th>Como aplicar?</th>
+															</tr>
+														</thead>
+
+														<tbody>
+															<tr class="text-left">
+																<td>R.1 (Meta)dados são descritos com uma pluralidade de atributos precisos e relevantes.</td>
+																<td>Prover metadados descritos com alto nível de detalhes, permitindo ao pesquisador avaliar a possibilidade do reúso bem como a adequação às suas necessidades.</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>R.1.1 (Meta)dados devem ser disponibilizados com licenças de uso claras e acessíveis.</td>
+																<td>O responsável pelos dados e metadados deve definir explicitamente quem pode ter acesso a eles, com que finalidade e sob quais condições, por meio de licenças de uso claras e acessíveis.</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>R.1.2 (Meta)dados devem estar associados à sua proveniência.</td>
+																<td>Especificar a proveniência (linhagem) dos dados é importante para que os pesquisadores possam avaliar a utilidade dos dados ou metadados e, igualmente, atribuir o devido crédito a quem produziu, manteve ou editou esses dados.
+																	<br /><br />
+																	Entre as informações relativas à proveniência destacam-se:
+																	<br /><br />
+																	a) a linhagem dos dados, ou seja, o processo de obtenção dos dados (gerado ou coletado);
+																	<br /><br />
+																	b) data de geração do conjunto de dados e outras informações relevantes para o reúso deles, tais como condições de laboratório durante sua obtenção, quem preparou os dados, configurações de parâmetros de instrumentos, nome e versão do <em>software</em> utilizado;
+																	<br /><br />
+																	c) particularidades ou limitações dos dados que outros pesquisadores devem conhecer;
+																	<br /><br />
+																	d) explicitar se são dados brutos ou processados;
+																	<br><br>
+																	e) a versão dos dados arquivados e/ou reutilizados deve ser claramente especificada e documentada.
+																</td>
+															</tr>
+
+															<tr class="text-left">
+																<td>R.1.3 (Meta)dados devem estar alinhados com padrões relevantes do seu domínio.</td>
+																<td>Além de atender aos padrões específicos de cada área de pesquisa deve-se seguir boas práticas de arquivamento e compartilhamento específicas da comunidade científica.</td>
+															</tr>
+
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">O que os princípios <span class="dualcolor">FAIR não são</span></h3>
+								</div>
+
+								<p>Os princípios FAIR descrevem um conjunto de atributos desejados para as boas práticas de gestão e tratamento de recursos digitais, mas não oferecem muitos esclarecimentos sobre como implementá-los. Mons <em>et al.</em> (2017, p. 50) afirmam que os princípios “deliberadamente não especificam requisitos técnicos, mas sim um conjunto de orientações para uma crescente reutilização contínua, por meio de diferentes implementações”. Para evitar interpretações equivocadas e imprecisas, Mons <em>et al.</em> (2017, p. 52) apresentam alguns indicativos do que os princípios FAIR não são.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5">
+									<p>Os princípios não têm a pretensão de impor qualquer tipo de padrão específico. Eles não são apenas RDF (<em>Resource Description Framework</em>), ou dados conectados, ou Web Semântica. Os computadores devem ser capazes de acessar uma publicação de dados de forma autônoma, sem a ajuda de humanos.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center align-items-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Os princípios FAIR podem ser igualmente aplicados a qualquer tipo de dado e serviço provenientes de qualquer disciplina.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center align-items-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Princípios FAIR e a <span class="dualcolor">possibilidade de abertura de dados</span></h3>
+								</div>
+
+								<p>As pesquisas científicas alinhadas aos princípios FAIR adotam 15 diretrizes que orientam a gestão, compartilhamento e reúso de dados coletados ou produzidos. As diretrizes devem ser aplicadas de maneira a atender às questões éticas, legais e restrições contratuais que recaem sobre os dados. Na prática, significa que dados podem ser tratados conforme os princípios FAIR e, ao mesmo tempo, terem acesso restrito. Esse é o caso de pesquisas envolvendo dados pessoais, sensíveis, sigilosos ou protegidos por cláusulas de direito autoral ou propriedade intelectual.</p>
+
+								<p>Nessas situações, embora os dados em si não possam ser abertos, a descrição sobre eles pode ser publicizada após uma análise. Dessa forma, o pesquisador divulga a existência dos dados para terceiros (que podem negociar condições para acesso integral, compartilhamento e reúso) enquanto segue a orientação que indica: “os dados são abertos quando possível e fechados quando necessário” (Landi <em>et al.</em>, 2020). </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<p class="text-center h6 mb-5"><strong>Quem adota os princípios FAIR no campo científico</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span><span class="d-inline-block d-lg-none">Toque</span> e arraste para passar os cartões</p>
+							</div>
+							<div class="col-12 col-md-8 col-lg-7 mb-5">
+								<!-- Swipper Effect Card -->
+								<div class="swiper swiper--effect-card card">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="card-header">
+												<span class="h6">Pesquisadores</span>
+											</div>
+
+											<div class="card-body">
+												<p>Eles são úteis para os pesquisadores na medida em que ajudam a organizar e tratar os dados, contribuindo para a qualidade do registro da pesquisa.</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-header">
+												<span class="h6">Agências de fomento</span>
+											</div>
+
+											<div class="card-body">
+												<p>Estão incorporando-os como parte das orientações para obtenção de financiamento, reconhecendo-os como estratégias para agregar valor e transparência ao resultado de pesquisas que financiam.</p>
+
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-header">
+												<span class="h6">Instituições de pesquisa</span>
+											</div>
+
+											<div class="card-body">
+												<p>Estão incluindo os princípios FAIR em suas políticas de Ciência Aberta, enquanto diversas universidades os estão inserindo em suas políticas de dados abertos de pesquisa. Essas instituições percebem a importância da boa gestão dos dados para o aumento da transparência, favorecer a reprodutibilidade e a integridade em pesquisa, além de promover o seu reúso.</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-header">
+												<span class="h6">Editores</span>
+											</div>
+
+											<div class="card-body">
+												<p>Entendem que os princípios melhoram o processo de revisão por pares, além de gerar maior publicidade às investigações.</p>
+											</div>
+										</div>
+
+
+
+									</div>
+									<div class="swiper-pagination swiper-pagination3"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">A iniciativa <span class="dualcolor">GO FAIR</span></h3>
+								</div>
+
+								<p>Com o intuito de disseminar os princípios e serviços FAIR e fornecer orientações básicas sobre como implementá-los, surgiu em 2017 o <a href='https://www.go-fair.org/' target='_blank'>GO FAIR</a>, uma iniciativa conjunta da Holanda, Alemanha e França. Adotando metodologias <em>bottom-up</em>, o GO FAIR incentiva a criação de redes independentes e autônomas pelas comunidades científicas. Essas redes podem se filiar espontaneamente ao Global Open FAIR (GO FAIR) alinhando-se à sua filosofia e orientações.</p>
+
+								<p>Na Europa, as atividades da GO FAIR contribuem para a implantação da European Open Science Cloud (EOSC), que abrange não apenas pesquisa e desenvolvimento, mas também indústria e inovação. </p>
+
+								<p>Essa iniciativa prioriza tornar todos os tipos de dados que se encontram fragmentados e desconectados em localizáveis, acessíveis, interoperáveis e reutilizáveis. Ou seja, tornar os dados FAIR. </p>
+
+								<p>A iniciativa GO FAIR está sustentada por três pilares.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p class="text-muted text-center mb-5"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span> <span class="d-inline-block d-lg-none">Toque</span> nas imagens para visualizar as
+									informações.</p>
+
+								<div class="info-SVG aos-init mb-3 aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<span class="visually-hidden">A imagem é um infográfico nas cores azul e amarelo, com três colunas verticais principais conectadas por uma base comum chamada "Escritório de apoio e coordenação internacional Go Fair". A coluna da esquerda tem em seu topo a palavra GO CHANGE, e próximo ao centro a palavra Cultura. A coluna do meio tem em seu topo a palavra GO TRAIN, e próximo ao centro a palavra Treinamento. A coluna da direita tem em seu topo a palavra GO BUILD, e próximo ao centro a palavra Tecnologia e sistemas. Há ícones e setas de conexão dentro e entre as colunas, elas ligam o título do topo ao título na parte inferior.</span>
+
+									<svg id="info1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1280 720">
+										<!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+										<defs>
+											<style>
+												.st0 {
+													fill: rgba(255, 255, 255, 0);
+												}
+
+												.st1 {
+													fill: #fff;
+												}
+
+												.st2 {
+													fill: #814cab;
+												}
+
+												#info1 .bts {
+													animation: move2 1s ease-out infinite alternate;
+												}
+
+												#info1 .bts circle {
+													fill: var(--fio-sys-color-primary-dark);
+												}
+
+												#info1 .bts:hover {
+													cursor: pointer;
+													transform: translateY(-5px);
+													filter: drop-shadow(0 4px 4px #ababab);
+												}
+
+												#info1 .bts:hover circle {
+													fill: var(--fio-sys-color-accent-normal);
+												}
+
+
+												#info1 .bts:focus {
+													animation: none;
+													transform: translateY(-5px);
+												}
+
+												#info1 #cultura:hover rect {
+													fill: rgba(255, 255, 255, .25);
+													transition: .25s
+												}
+
+												#info1 #treinamento:hover rect {
+													fill: rgba(255, 255, 255, .25);
+													transition: .25s
+												}
+
+												#info1 #tecnologia:hover rect {
+													fill: rgba(255, 255, 255, .25);
+													transition: .25s
+												}
+
+												@keyframes move2 {
+													from {
+														transform: translateY(0);
+														filter: drop-shadow(0 1px 1px rgba(11, 41, 39, .5));
+													}
+
+													to {
+														transform: translateY(-20px);
+														filter: drop-shadow(0 10px 4px rgba(11, 41, 39, .5));
+													}
+												}
+											</style>
+										</defs>
+										<image id="bg-img" width="869" height="450" transform="translate(5.2 29.2) scale(1.5)" xlink:href="../media/modulo4/aula5-img2.png" />
+										<g id="cultura">
+											<rect id="area-cultura" class="st0" x="14" y="26.3" width="416.3" height="536.1" />
+											<a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Foca nas prioridades e políticas, incentivando a implementação dos princípios FAIR.</p> <p>Promove mudanças socioculturais que envolvem importantes atores de todos os níveis, visando tornar os princípios um padrão de trabalho na ciência.</p>" data-bs-original-title="Cultura">
+												<g id="bt-cultura" class="bts">
+													<circle class="st2" cx="201.8" cy="508" r="66.7" />
+													<g id="title-barreiras">
+														<path class="st1" d="M196.6,529.8v-15.1h-14.6v-9.6h14.6v-14.6h10v14.6h14.6v9.6h-14.6v15.1h-10Z" />
+													</g>
+												</g>
+											</a>
+										</g>
+
+										<g id="treinamento">
+											<rect id="area-treinamento" class="st0" x="429.9" y="26.3" width="416.3" height="536.1" />
+											<a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Trata da definição de currículos e programas de treinamento sobre o gerenciamento de dados. Sua meta é facilitar a capacitação de profissionais em gestão de dados.</p>" data-bs-original-title="Treinamento">
+												<g id="bt-treinamento" class="bts">
+													<circle class="st2" cx="629.6" cy="508" r="66.7" />
+													<g id="title-barreiras1" data-name="title-barreiras">
+														<path class="st1" d="M624.3,529.8v-15.1h-14.6v-9.6h14.6v-14.6h10v14.6h14.6v9.6h-14.6v15.1h-10Z" />
+													</g>
+												</g>
+											</a>
+										</g>
+
+										<g id="tecnologia">
+											<rect id="area-tecnologia" class="st0" x="859.9" y="26.3" width="416.3" height="536.1" />
+											<a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Aborda o tema das infraestruturas para dados interoperáveis, criando padrões, protocolos e serviços compatíveis que possibilitam aos pesquisadores depositarem, acessar e analisar dados científicos de todas as áreas.</p>" data-bs-original-title="Tecnologia">
+												<g id="bt-tecnologia" class="bts">
+													<circle class="st2" cx="1058.7" cy="508" r="66.7" />
+													<g id="title-barreiras2" data-name="title-barreiras">
+														<path class="st1" d="M1053.4,529.8v-15.1h-14.6v-9.6h14.6v-14.6h10v14.6h14.6v9.6h-14.6v15.1h-10Z" />
+													</g>
+												</g>
+											</a>
+										</g>
+									</svg>
+									<span class="d-block text-center figure-caption">Fonte: Tradução: Campus Virtual Fiocruz</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>A iniciativa GO FAIR chega ao Brasil por intermédio do Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict) e seu objetivo é difundir, apoiar e coordenar as atividades relacionadas à adoção das estratégias de implementação dos princípios FAIR em todo o território nacional, conforme as especificidades das áreas do conhecimento. </p>
+
+								<p>Na área da saúde, o GO FAIR Brasil-Saúde é a rede de implementação responsável pela elaboração de estratégias para a adoção dos princípios FAIR nesse domínio. Sua coordenação está sob a responsabilidade do Instituto de Comunicação e Informação Científica e Tecnologia em Saúde — Icict da Fundação Oswaldo Cruz (Fiocruz), com a participação de diversas instituições das áreas de Saúde Pública, Vigilância Sanitária, Informação e Comunicação em Saúde, História do Patrimônio Cultural das Ciências e da Saúde, Oncologia, Enfermagem e Educação Profissional em Saúde.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Ferramentas para adoção <span class="dualcolor">de princípios FAIR no dia a dia</span></h3>
+								</div>
+
+								<p>A <a href='https://fairsharing.org/' target='_blank'>FAIRSharing</a> é uma ferramenta que auxilia usuários na descoberta, seleção e utilização de padrões de dados e metadados, além de fornecer informações sobre repositórios e políticas de dados. Ela também apoia os produtores de dados a promoverem visibilidade e aumento das citações de seus recursos. O FAIRSharing é amplamente utilizado por pesquisadores em diversas áreas — academia, indústria e governo —, assim como por desenvolvedores e curadores de dados, editores de periódicos e instituições de ensino e pesquisa. Alcança também os gestores de dados de pesquisa, bibliotecários, instrutores, sindicatos, financiadores e formuladores de políticas de dados. Atualmente (setembro/2024), o FAIRSharing oferece acesso a 1.766 padrões, 2.141 repositórios e 277 políticas de dados. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title h5">FAIR<span class="dualcolor">PLUS</span></h4>
+								</div>
+
+								<p>O <a href='https://fairplus-project.eu/' target='_blank'>FAIRPlus</a> é um projeto que foi realizado entre 2019 e 2022, e desenvolveu uma estrutura reutilizável de FAIRificação para dados das ciências biológicas. Entre os principais produtos, destacam-se:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Abas -->
+								<div class="aba">
+									<ul class="nav nav-pills nav-fill" id="pills-tab1" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="nav-link active" id="pills-aba1-item1-tab" data-bs-toggle="pill" data-bs-target="#pills-aba1-item1" type="button" role="tab" aria-controls="pills-aba1-item1" aria-selected="true">The FAIR Cookbook</button>
+										</li>
+
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-aba1-item2-tab" data-bs-toggle="pill" data-bs-target="#pills-aba1-item2" type="button" role="tab" aria-controls="pills-aba1-item2" aria-selected="false">FAIRplus Dataset Maturity (DSM) Model</button>
+										</li>
+									</ul>
+									<div class="tab-content p-0" id="pills-tabContent">
+										<!-- Aba 1 -->
+										<div class="tab-pane fade show active" id="pills-aba1-item1" role="tabpanel" aria-labelledby="pills-aba1-item1-tab">
+											<div class="tab-pane-content">
+												<p>Recurso on-line, aberto e continuamente atualizado, o "livro de receitas" oferece orientações práticas para tornar e manter os dados localizáveis, acessíveis, interoperáveis e reutilizáveis; em resumo, FAIR. </p>
+
+												<p><a href='https://faircookbook.elixir-europe.org/content/home.html' target='_blank'>Acesse aqui</a></p>
+											</div>
+										</div>
+
+										<!-- Aba 2-->
+										<div class="tab-pane fade" id="pills-aba1-item2" role="tabpanel" aria-labelledby="pills-aba1-item2-tab">
+											<div class="tab-pane-content">
+												<p>Um modelo de referência desenvolvido para aprimorar o nível de conformidade dos princípios FAIR dos conjuntos de dados de pesquisa. </p>
+
+												<p><a href='https://fairplus.github.io/Data-Maturity/' target='_blank'>Acesse aqui</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Programas e materiais <span class="dualcolor">de capacitação e treinamento</span></h3>
+								</div>
+
+								<div class="heading__block">
+									<h4 class="heading__title h5">FAIRsFAIR - <span class="dualcolor">Fostering Fair Data Practices in Europe</span></h4>
+								</div>
+
+								<p>Considerado um dos principais programas europeus dedicados ao desenvolvimento de infraestrutura de conhecimento para a gestão de dados acadêmicos de alta qualidade, a iniciativa deixou um amplo acervo de materiais para subsidiar estudos e aplicações relativa aos princípios FAIR, além de recomendações de boas práticas, procedimentos, padrões e métricas baseadas nos princípios FAIR ao longo de todo o ciclo de vida dos dados. </p>
+
+								<p>O <a href='https://www.fairsfair.eu/' target='_blank'>FAIRsFAIR</a> desempenhou papel fundamental na criação de padrões globais para a certificação de repositórios FAIR e contribuiu para a formulação de políticas e práticas. Alguns destaques são:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered" number-style="a">
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><a href='https://www.fairsfair.eu/recommendations-practice-support-fair-data-principles' target='_blank'>Recomendações sobre as práticas de apoio aos princípios FAIR. </a></li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><a href='https://www.fairsfair.eu/application-results-open-call-data-repositories' target='_blank'>Programa de apoio à repositório de dados</a></li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><a href=' https://www.fairsfair.eu/fair-adoption-handbook-report-good-practices-fair-competence-education' target='_blank'>Handbook para adoção do FAIR e boas práticas na Educação</a>, que gerou o relatório <a href='https://zenodo.org/records/6327344#.Yny8XGBBzap' target='_blank'>D7.5 – Good Practices in FAIR Competence Education</a></li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><a href='https://www.fairsfair.eu/fair-frameworks-training-programmes' target='_blank'>Programas de treinamento FAIR com uma lista de cursos de capacitação para estudantes em nível profissional, bacharelado, mestrado e doutorado. </a></li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><a href='https://www.fairsfair.eu/articles-publications' target='_blank'>Artigos, blogs e publicações sobre diversas aplicações dos princípios FAIR. </a></li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Redes de <span class="dualcolor">colaboração</span></h3>
+								</div>
+
+								<div class="heading__block">
+									<h4 class="heading__title h5">Research Data <span class="dualcolor">Alliance (RDA)</span></h4>
+								</div>
+
+								<p>Lançada em 2013, a plataforma on-line dedicada promove a colaboração e a troca de ideias e técnicas para superar barreiras no compartilhamento de dados. A <a href='https://www.rd-alliance.org/' target='_blank'>RDA</a> é composta por Grupos de Trabalho, Grupos de Interesse e Comunidades de Prática. A adesão individual é gratuita e aberta a todos, proporcionando acesso a informações valiosas para financiadores de pesquisa, formuladores de políticas, indústrias, desenvolvedores de infraestrutura, bibliotecas, instituições de pesquisa, pesquisadores e cientistas.</p>
+
+								<p>A RDA conta com mais de 14 mil membros individuais, 306 grupos e 99 membros organizacionais e afiliados ativos (setembro/2024). Atualmente, conta com membros regionais nas Américas, com a participação do Brasil, Canadá e Costa Rica. Na Europa, são membros a Eslovênia, Finlândia, França, Itália, Espanha, Sudeste da Europa, Alemanha, Holanda, Irlanda e Dinamarca. Entre os diversos grupos de trabalho focados na implementação dos princípios FAIR, destacamos:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Abas -->
+								<div class="aba">
+									<ul class="nav nav-pills nav-fill" id="pills-tab2" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="nav-link active" id="pills-aba2-item1-tab" data-bs-toggle="pill" data-bs-target="#pills-aba2-item1" type="button" role="tab" aria-controls="pills-aba2-item1" aria-selected="true">FAIR Data Maturity Model WG</button>
+										</li>
+
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-aba2-item2-tab" data-bs-toggle="pill" data-bs-target="#pills-aba2-item2" type="button" role="tab" aria-controls="pills-aba2-item2" aria-selected="false">FAIR Mapping WG</button>
+										</li>
+									</ul>
+									<div class="tab-content p-0" id="pills-tabContent">
+										<!-- Aba 1 -->
+										<div class="tab-pane fade show active" id="pills-aba2-item1" role="tabpanel" aria-labelledby="pills-aba2-item1-tab">
+											<div class="tab-pane-content">
+												<p>O grupo tem como objetivo desenvolver recomendações técnicas e práticas da RDA para a "FAIRificação" de mapeamentos, com base no projeto FAIR-IMPACT. Entre suas ações, estabelece critérios de avaliação da conformidade dos dados com os princípios FAIR e uma ontologia que descreve os tipos e processos de mapeamento, além de desenvolver modelos de dados para troca e compartilhamento de mapeamentos. O grupo prevê a criação de uma base de conhecimento que irá oferecer cenários de mapeamento, modelos de dados e links para a ontologia de mapeamentos.</p>
+
+												<p><a href='https://www.rd-alliance.org/rationale/fair-data-maturity-model-wg/' target='_blank'>Acesse aqui</a></p>
+											</div>
+										</div>
+
+										<!-- Aba 2-->
+										<div class="tab-pane fade" id="pills-aba2-item2" role="tabpanel" aria-labelledby="pills-aba2-item2-tab">
+											<div class="tab-pane-content">
+												<p>O grupo trabalha com diversas comunidades do RDA que desenvolvem mapeamentos em geral. Sua missão é fazê-los convergir para diretrizes comuns e criar um conjunto unificado de representações legíveis e acionáveis por máquina, superando as limitações das especificações existentes. </p>
+
+												<p><a href='https://www.rd-alliance.org/rationale/fair-mappings-wg/' target='_blank'>Acesse aqui</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Métricas e ferramentas para avaliar o nível de conformidade <span class="dualcolor"> dos conjuntos de dados aos princípios FAIR</span></h3>
+								</div>
+
+								<p>Para implementar os princípios FAIR de forma eficaz, é necessário avaliar o nível de FAIRness dos dados. Esse requisito levou ao desenvolvimento de diversas métricas, indicadores de maturidade e estruturas de avaliação. </p>
+
+								<p>Entre as opções disponíveis, destacam-se: </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Abas -->
+								<div class="aba">
+									<ul class="nav nav-pills nav-fill" id="pills-tab3" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="nav-link active" id="pills-aba3-item1-tab" data-bs-toggle="pill" data-bs-target="#pills-aba3-item1" type="button" role="tab" aria-controls="pills-aba3-item1" aria-selected="true">Métricas FAIR</button>
+										</li>
+
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-aba3-item2-tab" data-bs-toggle="pill" data-bs-target="#pills-aba3-item2" type="button" role="tab" aria-controls="pills-aba3-item2" aria-selected="false">FAIRplus Dataset Maturity (DSM) Model</button>
+										</li>
+									</ul>
+									<div class="tab-content p-0" id="pills-tabContent">
+										<!-- Aba 1 -->
+										<div class="tab-pane fade show active" id="pills-aba3-item1" role="tabpanel" aria-labelledby="pills-aba3-item1-tab">
+											<div class="tab-pane-content">
+												<p>Desenvolvidas pela FAIRsharing.org, baseadas no FAIR Data Maturity Model Specification and Guidelines da Research Data Alliance (RDA). </p>
+
+												<p><a href='https://zenodo.org/records/3909563#.YGRNnq8za70' target='_blank'>Acesse aqui</a></p>
+											</div>
+										</div>
+										<!-- Aba 2-->
+										<div class="tab-pane fade" id="pills-aba3-item2" role="tabpanel" aria-labelledby="pills-aba3-item2-tab">
+											<div class="tab-pane-content">
+												<p>Com uma abordagem prática para avaliar a conformidade dos conjuntos de dados com os princípios FAIR, a avaliação pode ser realizada manualmente ou com o auxílio de ferramentas automatizadas, proporcionando, de forma prática e sistemática, a verificação do alinhamento com as estruturas estabelecidas.</p>
+
+												<p><a href='https://fairplus.github.io/Data-Maturity/' target='_blank'>Acesse aqui</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Para explorar melhor as práticas atuais desse cenário o site <a href='https://fairassist.org/#!/' target='_blank'>FAIRassist.org</a> oferece um catálogo abrangente de ferramentas de avaliação do nível de FAIRness dos conjuntos de dados, incluindo questionários manuais, listas de verificação e testes automatizados. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Ferramentas do catálogo <span class="dualcolor">do FAIRassist</span></h3>
+								</div>
+
+								<p>É importante notar que a avaliação pode resultar em diferentes conclusões, dependendo da ferramenta utilizada. Isso ocorre devido à flexibilidade na interpretação dos princípios FAIR. </p>
+
+								<p>Para abordar essas variações, a Força-Tarefa de Métricas <a href='https:/eosc.eu/advisory-groups/fair-metrics-and-data-quality' target='_blank'>FAIR e Qualidade de Dados da European Open Science Cloud (EOSC)</a> está trabalhando para criar soluções e melhorar a consistência nas avaliações.</p>
+
+								<p>Das 28 ferramentas atualmente listadas no catálogo do FAIRassist, quatro são particularmente interessantes: </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" id="aula5-accordion2" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item1" aria-expanded="true" aria-controls="collapse2-item1">F-UJI</button>
+										</h5>
+										<div id="collapse2-item1" class="accordion-collapse collapse" aria-labelledby="heading2-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Serviço web desenvolvido para avaliar o nível de FAIRness de objetos de dados de pesquisa no nível do conjunto de dados — baseado nas métricas desenvolvidas pelo projeto FAIRsFAIR. </p>
+
+												<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid mx-auto d-block mb-3 w-75" src="../media/modulo4/aula5-img6.jpg" alt="" title="">
+												</figure>
+
+												<p>A ferramenta F-UJI tem interfaces FAIR-enabling services com integração com outros serviços como: <a href='https://www.re3data.org/' target='_blank'>re3data</a>, <a href='https://spdx.org/licenses/' target='_blank'>SPDX license registry</a>, e <a href='https://rdamsc.bath.ac.uk/' target='_blank'>RDA metadata catalog</a>. Para mais informações consulte <a href='https://www.f-uji.net/index.php?action=docs' target='_blank'>aqui</a>.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item2" aria-expanded="false" aria-controls="collapse2-item2">FAIR-Checker</button>
+										</h5>
+										<div id="collapse2-item2" class="accordion-collapse collapse" aria-labelledby="heading2-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Desenvolvido pelo grupo de trabalho de interoperabilidade do Instituto Francês de Bioinformática com foco na avaliação do FAIRness dos dados das ciências biológicos, é uma ferramenta automatizada que permite aos usuários a verificação de uma ou várias métricas. </p>
+
+												<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid mx-auto d-block mb-3 w-75" src="../media/modulo4/aula5-img7.jpg" alt="" title="">
+												</figure>
+
+												<p>Disponibiliza código-fonte no Github e uma API. Para suporte, a documentação completa está disponível em <a href='https://ardc.edu.au/resource/fair-data-self-assessment-tool/' target='_blank'>aqui</a>. </p>
+
+												<p>Para mais detalhes sobre essa ferramenta, consulte o artigo: “<a href='https://doi.org/10.1186/s13326-023-00289-5' target='_blank'>FAIR-Checker: supporting digital resource findability and reuse with Knowledge Graphs and Semantic Web standards</a>.”</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item3" aria-expanded="false" aria-controls="collapse2-item3">FAIR Data Self Assessment Tool</button>
+										</h5>
+										<div id="collapse2-item3" class="accordion-collapse collapse" aria-labelledby="heading2-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Ferramenta desenvolvida pela <a href='https://ardc.edu.au/' target='_blank'>Australian Research Data Commons (ARDC)</a> como foco em bibliotecários de dados e equipe de TI, mas que também pode ser utilizada por engenheiros de <em>software</em> que desenvolvem ferramentas e serviços de dados FAIR, bem como pesquisadores. </p>
+
+												<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid mx-auto d-block mb-3 w-75" src="../media/modulo4/aula5-img8.jpg" alt="" title="">
+												</figure>
+
+												<p>A ferramenta foi elaborada com base na interpretação da ARDC sobre os princípios de Dados FAIR e opera de forma manual. À medida que o usuário responde às perguntas de cada seção, recebe um indicador. Quando todas as seções são concluídas, um indicador geral de "FAIRness" é fornecido.</p>
+
+												<p>As pontuações se destinam exclusivamente para autoavaliação e para estimular a reflexão sobre maneiras de tornar os dados FAIR. </p>
+
+												<p>O código da ferramenta está <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/serie3/curso2/aula2.html' target='_blank'>disponível no GitHub</a>.</p>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item4" aria-expanded="false" aria-controls="collapse2-item4">FairDataBR</button>
+										</h5>
+										<div id="collapse2-item4" class="accordion-collapse collapse" aria-labelledby="heading2-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Ferramenta brasileira desenvolvida pela Universidade Federal da Paraíba (UFPB) com o objetivo de automatizar a verificação da conformidade de conjuntos de dados com os Princípios FAIR. Surge da necessidade de facilitar esse processo de avaliação e promover a qualidade dos dados científicos. </p>
+
+												<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula5-img9.jpg" alt="" title="">
+												</figure>
+
+												<p>Para mais informações, consulte a publicação: “<a href='https://doi.org/10.5281/ZENODO.5578767' target='_blank'>FAIR Data BR: ferramenta para a avaliação de conjuntos de dados científicos</a>.” </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Segundo um <a href='https://www.thehyve.nl/articles/evaluation-fair-data-assessment-tools' target='_blank'>estudo recente realizado por The Hyve</a> — uma das principais provedoras de serviços de TI de tecnologia da Europa que estabeleceu reputação internacional no domínio da informática biomédica —, selecionar a ferramenta adequada para uma avaliação FAIR é um desafio. A escolha adequada exige uma compreensão detalhada dos princípios FAIR, das estruturas de avaliação, das tecnologias disponíveis, do escopo da avaliação, das funcionalidades e dos resultados desejados. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>A avaliação dos princípios FAIR deve se aplicar tanto a dados quanto a metadados. No entanto, muitas ferramentas não fornecem métricas separadas para esses dois componentes. Outro desafio é a capacidade das ferramentas de identificar automaticamente os recursos a serem avaliados. Portanto, compreender profundamente as funcionalidades de cada ferramenta é fundamental antes de se escolher a mais adequada para cada caso.</p>
+											</div>
+										</div>
+
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Caso o objetivo seja promover uma "cultura organizacional FAIR", avaliar apenas o nível de conformidade dos dados não é suficiente. É importante entender também e avaliar as políticas de dados e o nível de conhecimento e experiência com os princípios FAIR entre seus profissionais.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p class="h6 mb-5 text-center"><strong>Para saber mais sobre os princípios FAIR</strong></p>
+
+								<!-- Swiper Navigation -->
+								<div class="swiper swiper--navigation card">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo4/aula5-img10.jpg" alt="" title="">
+											</div>
+
+											<div class="card-body">
+												<p>EUROPEAN COMMISSION: DIRECTORATE-GENERAL FOR RESEARCH AND INNOVATION. <strong>Turning FAIR into reality – Final report and action plan from the European Commission expert group on FAIR data</strong>. Publications Office, 2018. </p>
+
+												<p><a href='https://www.ouvrirlascience.fr/wp-content/uploads/2018/11/turning_fair_into_reality_1.pdf' target='_blank'>Disponível aqui</a></p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="https://placehold.co/1280x720" alt="" title="">
+											</div>
+
+											<div class="card-body">
+												<p>EUROPEAN COMMISSION: DIRECTORATE-GENERAL FOR RESEARCH AND INNOVATION. <strong>Six Recommendations for implementation of FAIR practice by the FAIR in practice task force of the European open science cloud FAIR working group</strong>. Publications Office, 2020.</p>
+
+												<p><a href='https://data.europa.eu/doi/10.2777/986252' target='_blank'>Disponível aqui (LINK ESTÁ QUEBRADO, FAVOR CONFERIR!)</a></p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo4/aula5-img4.jpg" alt="" title="">
+											</div>
+
+											<div class="card-body">
+												<p>DILLO, I.; HODSON, S.; PITTONET GAIARIN, S.; GROOTVELD, M. <strong>Recommendations for a FAIR EOSC - White Paper FAIRsFAIR Synchronisation Force</strong>. Version 1.0 Glossy. Zenodo, 2021. </p>
+
+												<p><a href='https://zenodo.org/records/6674042' target='_blank'>Disponível aqui</a></p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo4/aula5-img5.jpg" alt="" title="">
+											</div>
+
+											<div class="card-body">
+												<p>SALES, L.; VEIGA V.; HENNING, P.; SAYÃO, L. F. (orgs.). <strong>Princípios FAIR aplicados à gestão de dados de pesquisa</strong>. Rio de Janeiro: Ibict, 2021. </p>
+
+												<p><a href='https://ridi.ibict.br/handle/123456789/1182' target='_blank'>Disponível aqui</a></p>
+											</div>
+										</div>
+									</div>
+
+									<!-- If we need pagination -->
+									<div class="swiper-pagination"></div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+
+									<!-- If we need scrollbar -->
+									<!-- <div class="swiper-scrollbar"></div> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+											<p>HENNING, Patricia Henning; BONINO, Luis Olavo. FAIR: dos princípios à prática. <em>In:</em> JORGE, Vanessa; CLINIO, Anne (coord.). Programa de Formação Modular em Ciência Aberta. Módulo, 4. Gestão, compartilhamento e abertura de dados. Aula 5. 2. ed. Rio de Janeiro: Fiocruz, 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula5.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula5.html</a>. Acesso em: 14 nov. 2025.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula4.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 4</a>
+								<a class="fio-button fio-button-primary" href="aula6.html" rel="next">Aula 6 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+
+</body>
+
+</html>

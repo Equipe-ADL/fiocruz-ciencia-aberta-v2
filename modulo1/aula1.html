@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex" />
+  <meta name="author" content="Fiocruz, Campus Virtual" />
+  <meta name="description" content="Curso Ciência Aberta" />
+  <meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+  <meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+  <meta property="og:description" content="Curso Ciência Aberta" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image:src" content="" />
+
+  <!-- Favicons and Touch Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+  <link rel="manifest" href="../media/icons/manifest.json" />
+
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+  <!-- <meta name="theme-color" content="#003066" /> -->
+  <meta name="theme-color" content="#001833" />
+
+  <title>Curso Ciência Aberta | Mod 1 | Aula 1 - Introdução à Ciência Aberta</title>
+
+  <!-- Bootstrap CSS 5.1.3 -->
+  <link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+  <!-- Project CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body id="modulo1">
+  <header class="header">
+    <div class="mobile-toggle-open">
+      <a class="mobile-toggle__button" tabindex="0" role="button">
+        <span class="icon material-symbols-rounded">read_more</span>
+      </a>
+    </div>
+    <div class="brand">
+      <img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+      <img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+    </div>
+    <div class="title">
+      <h1>Curso Ciência Aberta</h1>
+    </div>
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+    </ul>
+  </header>
+  <div class="main">
+    <div class="sidebar" role="navigation">
+      <div class="sidebar__inner" style="position: relative">
+        <div class="sidebar__group d-lg-none">
+          <div class="sidebar__group-item">
+            <div class="sidebar__header">
+              <span>Curso</span>
+              <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+            </div>
+          </div>
+          <div class="sidebar__group-item">
+            <div class="sidebar__title">
+              <h1>Ciência Aberta</h1>
+            </div>
+          </div>
+          <div class="sidebar__group-item">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebar__group">
+          <div class="sidebar__group-item">
+            <button type="button" class="d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">
+              <span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+              <span class="label">Bibliografia</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sidebar__group">
+          <div class="sidebar__group-item">
+            <div class="dropend">
+              <button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                <span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+                <span class="label">Módulos</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+                <li class="d-lg-none dropdown-menu__header">
+                  <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                  <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da Ciência Aberta</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos Legais</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso Aberto</a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão, compartilhamento, abertura de dados para pesquisa</a>
+                </li>
+                <li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="divider">
+          <hr />
+        </div>
+        <div class="sidebar__group">
+          <div class="sidebar__group-item">
+            <span class="text module">Módulo 1 <br /><br />
+              Aula 1</span>
+          </div>
+          <div class="sidebar__group-item">
+            <div class="dropend">
+              <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+                <span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+                <span class="label">Aulas</span>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li class="d-lg-none dropdown-menu__header">
+                  <a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+                  <a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+                </li>
+                <li class="dropdown-menu__title">
+                  <span class="label">Módulo 1</span>
+                  <span class="title">Fundamentos da Ciência Aberta</span>
+                </li>
+                <li class="dropdown-menu__item">
+                  <nav class="topic-list">
+                    <a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+                    <a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 1: Introdução à Ciência Aberta</a>
+                    <a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 2: Barreiras a livre circulação do conhecimento e as expectativas em relação à Ciência Aberta</a>
+                    <a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 3: Visões críticas da Ciência Aberta</a>
+                    <a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 4: Cenário atual da Ciência Aberta no mundo e no Brasil</a>
+                    <a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+                  </nav>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="sidebar__group">
+          <div class="sidebar__group-item">
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod1">
+              <span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+              <span class="label">Bibliografia</span>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="content">
+      <div id="page-title">
+        <div class="container">
+          <div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+            <div class="col-12 col-md-10 col-lg-10 col-xl-8">
+              <h2 class="title">
+                <span class="label"><img src="../media/templates/page-title-mod1-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 1</strong> . Aula 1</span>
+                <span class="title-bold">Introdução</span><br />
+                à Ciência Aberta
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="page-content" class="">
+        <!-- Inserir o conteúdo aqui -->
+        <section>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+                <div class="card objetivos">
+                  <div class="card-header">
+                    <span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da aula</span>
+                  </div>
+
+                  <div class="card-body">
+                    <p>Nesta aula, você será apresentado à Ciência Aberta e a sua proposta de atualizar a forma como o conhecimento científico é produzido, organizado, compartilhado e reutilizado. Ao final, você será capaz de:</p>
+
+                    <div class="list">
+                      <ul class="list-group">
+                        <li class="list-group-item">Compreender a origem deste movimento internacional.</li>
+
+                        <li class="list-group-item">Identificar marcos iniciais, declarações e outros documentos relevantes.</li>
+
+                        <li class="list-group-item">Conhecer a definição do que é conhecimento aberto.</li>
+
+                        <li class="list-group-item">Identificar razões para adotar a Ciência Aberta.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <div class="heading__block">
+                  <h3 class="heading__title h4">Origens da <span class="dualcolor">Ciência Aberta</span></h3>
+                </div>
+
+                <p>Antes de tratar de suas origens, é importante conhecer o que é Ciência Aberta. Segundo Albagli, Appel e Maciel (2014), a “Ciência Aberta é, por sua vez, um termo guarda-chuva, que envolve múltiplos níveis e escopos de abertura”. Desta forma, conhecer as origens da Ciência Aberta envolve conhecer as origens de cada um dos movimentos que compõem esse conjunto de dimensões e práticas. Cada dimensão tem sua especificidade e grupos fundadores, mas todas convergem no objetivo de promover uma discussão e atualização sobre a abertura e o acesso à pesquisa.</p>
+
+                <p>Nas últimas décadas, a comunidade científica internacional vem se unindo em torno de um consenso cada vez mais forte: o acesso ao conhecimento científico deve ser tratado como um direito fundamental, uma vez que deve beneficiar toda a sociedade. Essa visão tem impulsionado o movimento da Ciência Aberta, que defende a ideia de que a pesquisa científica, especialmente aquela financiada por recursos públicos, deve ser compartilhada de forma livre e acessível para maximizar seu impacto.</p>
+
+                <p>Analisando as origens da Ciência Aberta a partir do ponto de vista do Acesso Aberto, o movimento pela abertura do conhecimento científico começou a ganhar força a partir de marcos importantes como:</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-4 py-lg-5 mb-5">
+                <div class="card h-100">
+                  <div class="card-header">
+                    <span class="">Fevereiro de 2002</span>
+                  </div>
+
+                  <div class="card-body">
+                    <p>Iniciativa de Acesso Aberto de Budapeste</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-10 col-lg-4 py-lg-5 mb-5">
+                <div class="card">
+                  <div class="card-header">
+                    <span class="">Outubro de 2003</span>
+                  </div>
+
+                  <div class="card-body">
+                    <p>Declaração de Berlim sobre Acesso Aberto ao Conhecimento nas Ciências e nas Humanidades</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <p>Esses documentos estabeleceram a base para as primeiras políticas de Acesso Aberto à literatura científica, defendendo que os resultados de pesquisas financiadas com recursos públicos - tipicamente publicados no formato de artigo em revistas científicas - deveriam estar disponíveis ao público sem qualquer tipo de restrição.</p>
+
+                <p>Inicialmente, o foco estava no acesso irrestrito aos artigos científicos de forma a permitir que as conclusões obtidas em pesquisa fossem acessíveis a todos – o que ficou conhecido como Acesso Aberto. Nos últimos anos, no entanto, o escopo da Ciência Aberta expandiu significativamente ao redor do mundo, reunindo outros movimentos, como o de dados, software, hardware, educação, ciência cidadã, entre outras discussões sobre práticas que perpassam o processo científico.</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <!-- Box de Para Assistir -->
+                <div class="box" data-box="Para Assistir">
+                  <div class="card">
+                    <div class="card-header">
+                      <span class="icone material-symbols-rounded" aria-hidden="true"></span>
+                      <span class="label">Para Assistir</span>
+                    </div>
+                    <div class="card-body">
+                      <div class="heading__block">
+                        <span class="h6 heading__title">O que é Ciência Aberta?<em>(“What is Open Reseach?”)</em></span>
+                      </div>
+                      <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iE7N3jgF4nU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                      </div>
+
+                      <span class="figure-caption text-center d-block mt-3">Fonte: Wellcome Trust</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <p>Nesse sentido, a Ciência Aberta vai além do simples acesso a artigos científicos e, mais recentemente, aos dados que embasam essas comunicações. Ela abrange uma gama de práticas, incluindo a ciência cidadã, o compartilhamento aberto de metodologias, softwares, hardwares e protocolos de pesquisa, abrangendo também a elaboração de recursos educacionais abertos e o fomento à Educação Aberta.</p>
+
+                <p>Vamos conhecer a seguir as principais práticas da Ciência Aberta:</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+              <div class="col-12 col-md-10 col-lg-8 pb-5">
+                <!-- Accordion -->
+                <div class="accordion accordion-flush" id="accordion1-aula1">
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item1">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Acesso Aberto</button>
+                    </h5>
+                    <div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>Refere-se à disponibilização gratuita na internet da literatura científica, permitindo que qualquer pessoa leia, copie, distribua e reutilize esses materiais sem barreiras econômicas ou legais. Esse movimento foi impulsionado pela Declaração de Budapeste (2002), Declaração de Berlim (2003) e Declaração de Bethesda (2003), que reforçaram a necessidade de tornar acessíveis os resultados de pesquisas financiadas por fundos públicos. Abordaremos mais o assunto no <a href="../modulo3/aula1.html" target="_blank">módulo 3 - Acesso Aberto</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Gestão, compartilhamento e abertura de dados para pesquisas</button>
+                    </h5>
+                    <div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>Os dados de pesquisa incluem todos os registros produzidos, coletados ou utilizados durante a atividade de pesquisa e que são utilizados para validar os resultados de um estudo. Segundo a <em>open definition</em> (s.d.), os dados de pesquisa abertos são aqueles que podem ser usados, reutilizados e redistribuídos por qualquer pessoa, sujeitos apenas à atribuição de autoria e ao compartilhamento sob licenças equivalentes. Abordaremos mais o assunto no <a href="../modulo2/aula1.html" target="_blank">módulo 2 – Marcos Legais</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item3">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3"><em>Preprints</em></button>
+                    </h5>
+                    <div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>Esta inovação na comunicação científica se refere a manuscritos científicos disponibilizados de maneira aberta em plataformas (de <em>preprints</em>) antes da revisão por pares. Este formato permite que pesquisadores compartilhem suas descobertas rapidamente, promovendo a disseminação ágil do conhecimento sem ter que esperar pelos longos processos de revisão e de publicação das revistas científicas. Abordaremos mais o assunto no <a href="../modulo3/aula1.html" target="_blank">módulo 3 - Acesso Aberto</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item4">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Revisão aberta por pares</button>
+                    </h5>
+                    <div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>A revisão por pares desempenha um papel fundamental no processo de validação científica. Na perspectiva aberta, pretende-se que esse processo seja mais transparente e inclusivo. Em algumas modalidades de revisão aberta por pares, as identidades dos revisores e autores são reveladas, permitindo maior interação entre as partes. Em outras implementações, os comentários e as discussões sobre o manuscrito podem ser publicados juntamente com o artigo, criando um registro público do processo de avaliação. Abordaremos mais o assunto no <a href="../modulo3/aula1.html" target="_blank">módulo 3 - Acesso Aberto</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item5">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Ciência Cidadã</button>
+                    </h5>
+                    <div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>Uma das vertentes mais dinâmicas e inclusivas da Ciência Aberta, a Ciência Cidadã promove a colaboração ativa entre cidadãos e cientistas em diferentes etapas do processo de pesquisa, incorporando a perspectiva de pessoas de diversas origens e experiências por meio de metodologias participativas e do uso de ferramentas digitais, como aplicativos e plataformas on-line.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item6">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item6" aria-expanded="false" aria-controls="collapse1-item6">Educação Aberta</button>
+                    </h5>
+                    <div id="collapse1-item6" class="accordion-collapse collapse" aria-labelledby="heading1-item6" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>Este movimento propõe a adoção de recursos educacionais sem restrições, ferramentas e práticas que empregam uma estrutura de compartilhamento aberto para melhorar o acesso e a eficácia educacional. Seu objetivo é democratizar o acesso à educação e ampliar a disseminação do conhecimento nas escolas e instituições de ensino. Abordaremos mais o assunto no <a href="../modulo5/aula1.html" target="_blank">módulo 5 - Educação Aberta e Recursos educacionais Abertos</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item7">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item7" aria-expanded="false" aria-controls="collapse1-item7">Recursos Educacionais Abertos</button>
+                    </h5>
+                    <div id="collapse1-item7" class="accordion-collapse collapse" aria-labelledby="heading1-item7" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>O termo se refere a “materiais de ensino, aprendizado, e pesquisa em qualquer suporte ou mídia, que estão sob domínio público, ou estão licenciados de maneira aberta, permitindo que sejam utilizados ou adaptados por terceiros. O uso de formatos técnicos abertos facilita o acesso e o reuso potencial dos recursos publicados digitalmente. Os REA podem incluir cursos completos, partes de cursos, módulos, livros didáticos, vídeos, testes, software, e qualquer outra ferramenta, material ou técnica que possa apoiar o acesso ao conhecimento.” (UNESCO, 2015). Abordaremos mais o assunto no <a href="../modulo5/aula1.html" target="_blank">módulo 5 - Educação Aberta e Recursos Educacionais Abertos</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item8">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item8" aria-expanded="false" aria-controls="collapse1-item8">Software científico aberto e código aberto</button>
+                    </h5>
+                    <div id="collapse1-item8" class="accordion-collapse collapse" aria-labelledby="heading1-item8" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>Se refere a programas de computador cujos códigos informáticos são disponibilizados publicamente para que qualquer pessoa possa usar, modificar e redistribuir. Essas tecnologias permitem que pesquisadores e desenvolvedores colaborem e inovem sem barreiras proprietárias, promovendo maior transparência e eficiência nos processos científicos.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="heading1-item9">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item9" aria-expanded="false" aria-controls="collapse1-item9">Hardware científico aberto</button>
+                    </h5>
+                    <div id="collapse1-item9" class="accordion-collapse collapse" aria-labelledby="heading1-item9" data-bs-parent="">
+                      <div class="accordion-body">
+                        <p>Segundo a comunidade <em>Gathering for Open Science Hardware</em> (GOSH), o hardware científico aberto engloba as ferramentas e as máquinas utilizadas em tarefas de pesquisa com base em um design aberto, desenvolvimento colaborativo e novas técnicas de fabricação. O hardware aberto permite que pesquisadores construam e modifiquem dispositivos físicos para realizar experimentos, coletar dados, e desenvolver novas tecnologias.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <div class="heading__block">
+                  <h3 class="heading__title h4">Ciência Aberta:<span class="dualcolor">Cenário Brasileiro e Tendências Globais</span></h3>
+                </div>
+
+                <p>O Brasil não conta com uma política nacional de Ciência Aberta e muitas universidades, centros de pesquisa e fundações de fomento à pesquisa também carecem de políticas institucionais que promovam a Ciência Aberta ou alguma de suas dimensões. Esta ausência limita a consolidação da Ciência Aberta e impede que seu potencial seja plenamente realizado no país. No entanto, há avanços notáveis na perspectiva da abertura do conhecimento científico, especialmente no campo do Acesso Aberto à literatura científica, prática que conta com indicadores consolidados que permitem medir o seu desenvolvimento.</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <!-- Saiba Mais -->
+                <div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+                  <div class="saiba-mais__header">
+                    <button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span> Você sabia?</button>
+                  </div>
+                  <div class="saiba-mais__content collapse" id="saiba-mais1">
+                    <p>Para se ter uma noção do protagonismo brasileiro, um relatório da Science Metrix, publicado em 2018, revelou que cerca de 74% da produção científica nacional já é disponibilizada em Acesso Aberto - a maior taxa entre os países analisados (SCIENCE METRIX, 2018). Dados mais recentes confirmam essa tendência: em 2023, o país publicou aproximadamente 156.800 artigos científicos, dos quais 75% foram disponibilizados em Acesso Aberto, mantendo-se como um dos líderes globais nessa modalidade de publicação (CAPES, 2024).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <p>Vale destacar que um ambiente favorável à implementação da Ciência Aberta no país é a Parceria para o Governo Aberto (<em>Open Government Partnership</em> – OGP), que reúne órgãos da administração pública e entidades da sociedade civil para promover maior interação entre a administração pública e a sociedade, priorizando a participação de cidadãos em políticas públicas.</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <!-- Box de Para Assistir -->
+                <div class="box" data-box="Para Assistir">
+                  <div class="card">
+                    <div class="card-header">
+                      <span class="icone material-symbols-rounded" aria-hidden="true"></span>
+                      <span class="label">Para Assistir</span>
+                    </div>
+                    <div class="card-body">
+                      <div class="heading__block">
+                        <span class="h6 heading__title">Ciência Aberta no Brasil: benefícios, desafios, experiências</span>
+                      </div>
+                      <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A9Mfqdp8DDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                      </div>
+
+                      <span class="figure-caption text-center d-block mt-3">Fonte: Revista Ciência & Cultura</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <p>No nível internacional, a Recomendação da Unesco sobre Ciência Aberta, aprovada em 2021, destaca a importância do estabelecimento de políticas nacionais que incentivem a abertura em todas as etapas da produção científica. Essas políticas são cruciais para promover uma mudança cultural nas instituições, fortalecer a colaboração global e garantir que os benefícios da ciência sejam acessíveis a todos.</p>
+              </div>
+            </div>
+
+            <!--div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 mb-5">
+                  <-- Box de Atenção --
+                  <div class="box" data-box="Atenção">
+                    <div class="card aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                      <div class="card-header">
+                        <span class="icone material-symbols-rounded" aria-hidden="true"></span>
+                        <span class="label">Atenção</span>
+                      </div>
+
+                      <div class="custom-shape-divider-top-1751890676">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                          <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+                        </svg>
+                      </div>
+                      <div class="card-body">
+                        <div>
+                          <p>Abordaremos mais sobre a implementação da Ciência Aberta ainda neste módulo, na aula “Cenário atual da Ciência Aberta no mundo e no Brasil”.</p>
+                        </div>
+                      </div>
+
+                      <div class="custom-shape-divider-bottom-1751890016">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                          <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div-->
+
+
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 pb-5 mb-5">
+                <div class="heading__block">
+                  <h3 class="heading__title h4">Perspectivas <span class="dualcolor">de futuro</span></h3>
+                </div>
+
+                <p>O impacto positivo da Ciência Aberta se torna ainda mais evidente em tempos de crise global. Durante a pandemia de Covid-19, o compartilhamento rápido e aberto de artigos científicos, <em>preprints</em> e dados de pesquisa acelerou o desenvolvimento de vacinas, tratamentos e políticas de saúde pública. Nesse cenário, ficou claro como a Ciência Aberta pode ser um diferencial para enfrentar desafios complexos como, por exemplo, a crise climática.</p>
+
+                <p>No entanto, é fundamental reconhecer que a transição para a Ciência Aberta não é um caminho simples. As instituições enfrentam desafios políticos, econômicos, culturais e operacionais que demandam um esforço conjunto de ações estratégicas para transformar a abertura em realidade. Além disso, existem incongruências a serem consideradas: enquanto a abertura, como princípio, promove o acesso ao conhecimento, ela também pode aumentar as desigualdades entre indivíduos, instituições e entre países.</p>
+
+                <p>Você concorda que a Ciência Aberta pode transformar a ciência em uma prática mais inclusiva, colaborativa e eficaz? Veja a seguir 10 razões para adotar a Ciência Aberta.</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8 mb-5">
+                <div class="heading__block">
+                  <h4 class="heading__title">10 razões para <span class="dualcolor">adotar a Ciência Aberta</span></h4>
+                </div>
+                <p class="text-center">
+                  <em>Adaptado de <a href="https://docs.wixstatic.com/ugd/a8bd7c_2a8c57f2c5664d68a00569bc2a0343ea.pdf" target="_blank"> FCT</a>, 2017</em>
+                </p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+              <div class="col-12">
+                <!-- Timeline Vertical -->
+                <div class="timeline-vertical">
+                  <div class="cd-timeline js-cd-timeline">
+                    <div class="cd-timeline__container">
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">1</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeInLeft">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Preserva, valoriza e compartilha a produção científica com outras partes interessadas</span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic1.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>A Ciência Aberta assegura que o conhecimento gerado seja acessível e preservado, promovendo sua disseminação entre comunidades científicas, governos e a sociedade. Isso fomenta a colaboração interdisciplinar e intersetorial, além de valorizar a contribuição de todos os envolvidos no processo de pesquisa.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">2</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeOutRight">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Promove o Acesso Aberto e os Princípios FAIR (Findable, Accessible, Interoperable, and Re-usable) </span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic2.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>Ao adotar o Acesso Aberto e os princípios FAIR, a Ciência Aberta facilita a localização e o acesso a dados e publicações, garantindo sua interoperabilidade e reutilização. Isso resulta em um ambiente mais colaborativo e eficiente para o avanço do conhecimento científico.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">3</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeOutLeft">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Protege e valoriza a propriedade intelectual</span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic3.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>A Ciência Aberta estabelece licenças claras e amigáveis que asseguram o reconhecimento das contribuições dos pesquisadores. Isso inclui mecanismos de compartilhamento controlado de dados e resultados, equilibrando a proteção da propriedade intelectual com a disseminação do conhecimento.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">4</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeOutRight">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Fomenta maior eficiência do processo científico </span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic4.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>Ao evitar a duplicação de esforços e ao reutilizar dados existentes, a Ciência Aberta otimiza recursos, acelera descobertas e permite o uso mais estratégico de informações já disponíveis. Essa abordagem promove um progresso científico mais rápido e sustentável.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">5</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeOutLeft">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Aumenta a visibilidade e o reconhecimento dos pesquisadores e das instituições</span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic5.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>A Ciência Aberta amplia o alcance das produções científicas, potencializando seu impacto acadêmico e social. Isso aumenta a reputação e o reconhecimento dos pesquisadores e das instituições, gerando mais oportunidades de colaboração e financiamento.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">6</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeOutRight">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Amplifica o impacto da pesquisa, estimula a criatividade e a inovação </span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic6.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>O compartilhamento de dados e ideias em um ambiente aberto promove soluções mais rápidas e criativas para desafios globais. A Ciência Aberta estimula a inovação ao conectar diferentes perspectivas e conhecimentos.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">7</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeOutLeft">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Promove a responsabilidade social científica e a apropriação social do conhecimento</span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic7.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>Integrando os avanços científicos à vida cotidiana, a Ciência Aberta permite que as comunidades se beneficiem diretamente das inovações. Isso fortalece o papel social da ciência e promove o bem-estar coletivo.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">8</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeOutRight">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Promove a transparência e o conhecimento do processo científico </span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic8.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>A abertura de dados e metodologias aumenta a confiança do público na ciência, permitindo validação e replicação de resultados. Essa transparência reforça a credibilidade da ciência como um pilar para a tomada de decisões informadas.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">9</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeOutRight">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Envolve a sociedade no processo de (co)criação e fruição do conhecimento </span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic9.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>Por meio de iniciativas de ciência cidadã, a Ciência Aberta conecta comunidades a projetos científicos, facilitando a participação ativa da sociedade na criação, validação e uso do conhecimento.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cd-timeline__block js-cd-block">
+                        <div class="cd-timeline__img cd-timeline__option1">
+                          <h4 class="ano">10</h4>
+                        </div>
+
+                        <div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeOutRight">
+                          <div class="card card--out">
+                            <div class="card-header">
+                              <span class="">Democratiza o acesso ao conhecimento científico e potencializa o desenvolvimento dos países </span>
+                            </div>
+                            <div class="card-body">
+                              <div class="col-md-8 col-lg-4 float-lg-start me-lg-4 px-0 order-1 order-lg-2">
+                                <img class="img-fluid mx-auto d-block mb-3" src="../media/modulo1/aula1-ic10.svg" alt="" title="Fonte: FCT" width="150px" />
+                              </div>
+
+                              <div class="order-2 order-lg-1">
+                                <p>A remoção de barreiras financeiras e geográficas garante que o conhecimento científico esteja ao alcance de todos. Em particular, a Ciência Aberta é essencial para o avanço dos países em desenvolvimento, promovendo a inclusão e o desenvolvimento sustentável.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+              <div class="col-12 col-md-10 col-lg-8 pb-5 mb-5">
+                <p>Você se imagina aplicando a Ciência Aberta no seu dia a dia? Aprenda mais nas próximas aulas. Vamos lá?</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+                  <div class="box-cor__base">
+                    <div class="base-header mb-5">
+                      <h4>Como citar esta aula:</h4>
+                    </div>
+                    <div class="base-body">
+                      <p>SILVA, Fabiano Couto Corrêa da. Introdução à Ciência Aberta. <em>In:</em> JORGE, Vanessa; CLINIO, Anne (Coord.). Programa de Formação Modular em Ciência Aberta. Módulo, 1. Fundamentos da Ciência Aberta. Aula 1 (2a versão), Rio de Janeiro: Fiocruz, 14 ago. 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo1/aula1.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo1/aula1.html</a>. Acesso em: 14 nov. 2025.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Navegação da aula -->
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <div class="page-nav d-flex justify-content-evenly">
+                <a class="fio-button fio-button-primary" href="introducao.html" rel="prev"><span class="material-symbols-rounded">west</span> Introdução</a>
+                <a class="fio-button fio-button-primary" href="aula2.html" rel="next">Aula 2 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center linha-de-marcas">
+          <div class="col-12 col-md-12">
+            <ul class="logos">
+              <!-- <li class="realizacao"> -->
+              <li>
+                <img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+              </li>
+              <li>
+                <img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+              </li>
+              <li>
+                <img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+              </li>
+              <li>
+                <img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!--  Bootstrap JS and Popper -->
+  <script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Sticky Sidebar -->
+  <script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+  <script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+  <script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+  <script type="text/javascript">
+    var sidebar = new StickySidebar(".sidebar", {
+      topSpacing: 0,
+      bottomSpacing: 0,
+      containerSelector: ".main",
+      innerWrapperSelector: ".sidebar__inner",
+      minWidth: 991,
+    });
+  </script>
+
+  <!-- Swiper -->
+  <script src="../../assets/js/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/swiper-init.js"></script>
+
+  <script type="text/javascript" src="../assets/js/scripts.js"></script>
+  <script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+  <script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+  <!-- Timeline horizontal -->
+  <script src="../assets/js/timeline-horizontal/util.js"></script>
+  <!-- util functions included in the CodyHouse framework -->
+  <script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+  <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+  <script src="../assets/js/timeline-horizontal/main.js"></script>
+  <!-- Start the Timeline -->
+  <script>
+    document.getElementsByTagName("html")[0].className += " js";
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

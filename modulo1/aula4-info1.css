@@ -1,0 +1,74 @@
+                              .st0, .st1, .st2, .st3, .st4, .st5, .st6 {
+                                isolation: isolate;
+                              }
+
+                              .st0, .st1, .st2, .st3, .st5, .st6 {
+                                opacity: .8;
+                              }
+
+                              .st0, .st7 {
+                                fill: #293653;
+                              }
+
+                              .st1, .st8 {
+                                fill: #ebb41a;
+                              }
+
+                              .st9 {
+                                fill: #f0ce80;
+                              }
+
+                              .st10, .st5 {
+                                fill: #c8645e;
+                              }
+
+                              .st11 {
+                                fill: #ccc;
+                              }
+
+                              .st12, .st3 {
+                                fill: #5ca27b!important;
+                              }
+
+                              .st13 {
+                                fill: #fff;
+                              }
+
+                              .st2, .st14 {
+                                fill: #985998;
+                              }
+
+                              .st15, .st6 {
+                                fill: #7596ba;
+                              }
+
+                              .st4 {
+                                fill: url(#Gradiente_sem_nome);
+                                opacity: .6;
+                              }
+               
+
+                          .button-info1 {
+                            animation: move2 1s ease-out infinite alternate;
+                          }
+
+                          .button-info1:hover {
+                        	cursor: pointer;
+                          }
+
+                          .button-info1:hover ellipse.st4 {
+                            transition: .5s;
+                            fill:var(--fio-sys-color-accent-light);
+                          }
+
+                          @keyframes move2 {
+                        	from {
+                        		transform: translateY(0);
+                        		filter: drop-shadow(0 1px 1px #5c7277);
+                        	}
+
+                        	to {
+                        		transform: translateY(-10px);
+                        		filter: drop-shadow(0 10px 4px #5c7277);
+                        	}
+                        }

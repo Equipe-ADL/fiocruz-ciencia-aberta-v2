@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 5 | Aula 2 - Inteligência Artificial: potencialidades e riscos para a educação</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<link rel="stylesheet" href="aula1-info1.css" />
+</head>
+
+<body id="modulo5">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal"
+					data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 5 <br /><br />
+							Aula 2</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 5</span>
+									<span class="title">Educação Aberta e Recursos Educacionais Abertos</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 1: O que é Educação Aberta: modelos, desafios e perspectivas. </a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Aula 2: Inteligência Artificial: potencialidades e riscos para a educação. </a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 3: Inteligência Artificial: concepções pedagógicas e suas implicações para a educação. </a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 4: O que são Recursos Educacionais Abertos? </a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 5: Software Livre e REAs.</a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Como encontrar, usar e compartilhar REA.</a>
+										<a href="aula7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 7: Criar REA</a>
+										<a href="aula8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 8: Monitoramento e avaliação do REA</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod5-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 5</strong> . Aula 2</span>
+								<span class="title-bold">Inteligência Artificial: potencialidades</span> e riscos para a educação.
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="card objetivos">
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Nesta aula você será apresentado à <strong>Inteligência Artificial Generativa (IAGen)</strong> e à sua <strong>relevância para a educação aberta</strong>, compreendendo seu papel nas práticas pedagógicas atuais.</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Explicar o que é IAGen e qual a sua relevância para a educação aberta.</li>
+												<li class="list-group-item">Reconhecer benefícios e riscos do uso da IAGen na educação.</li>
+												<li class="list-group-item">Analisar os usos que estudantes fazem da IAGen.</li>
+												<li class="list-group-item">Discutir o uso da IAGen para o plágio.</li>
+												<li class="list-group-item">Avaliar criticamente os diferentes usos da IAGen em educação, diferenciando aplicações que potencializam a aprendizagem daquelas que comprometem a integridade acadêmica.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">O que é Inteligência Artificial <span class="dualcolor">Generativa (IAGen)?</span></h3>
+								</div>
+
+								<p>A Inteligência Artificial Generativa (IA Generativa, IAGen ou IAG) é uma tecnologia capaz de gerar conteúdo a partir de descrições textuais (prompts). Atualmente, é comum que bons textos e imagens sejam gerados a partir de simples comandos, como:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Lista Não-Ordenada -->
+								<div class="list">
+									<ul class="list-group">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">“Explique simplificadamente o que é Inteligência Artificial Generativa.”
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">[imagine] “um gato digitando em um laptop com fundo branco”. </li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">“Escreva uma redação sobre IA e Educação.” </li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">“Elabore uma apresentação sobre Paulo Freire.” </li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">“Proponha exercícios de conversação em inglês.” </li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">“Crie um jogo para aprender frações”, “Revise o texto a seguir: [...]” etc.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Observe o exemplo: <strong>“Explique simplificadamente o que é Inteligência Artificial Generativa.”</strong></p>
+							</div>
+						</div>
+
+						<!--Comparação-->
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-4 mb-5">
+								<div class="card h-100 ">
+									<div class="card-header">
+										<span class="h6">Resposta do <a href="https://chatgpt.com/" target="_blank">ChatGPT</a> 4o (da OpenAI):</span>
+									</div>
+									<div class="card-body">
+										<p>“Inteligência Artificial Generativa (IA Generativa) é um ramo da inteligência artificial que se concentra em criar sistemas capazes de gerar novos conteúdos, como texto, imagens, música e muito mais, que são semelhantes aos criados por humanos. Em vez de apenas analisar dados e fazer previsões, como muitos outros tipos de IA, a IA Generativa pode produzir algo novo e original. [...].”
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-1 align-self-center mb-5 compare-symbol">
+								<span class="d-block text-center mx-auto">X</span>
+							</div>
+
+							<div class="col-12 col-md-4 mb-5">
+								<div class="card ">
+									<div class="card-header">
+										<span class="h6">Resposta do <a href="https://gemini.google.com/" target="_blank">Gemini</a> (do Google):</span>
+									</div>
+									<div class="card-body">
+										<p><strong>Resposta do <a href="https://gemini.google.com/" target="_blank">Gemini</a> (do Google): “A Inteligência Artificial Generativa (IA Generativa)</strong>, também conhecida como <strong>IA Criativa</strong>, é como um artista digital superpoderoso! Imagine um sistema de IA que, ao invés de apenas analisar e organizar informações, consegue criar conteúdos totalmente novos e originais, como: Textos[...], Imagens[...], Músicas[...], Vídeos[...].”</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Observe outro exemplo, agora com pedido de imagens: <strong>“Um gato digitando em um laptop com fundo branco.”</strong></p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline">Clique</span><span class="d-inline d-lg-none">Toque</span> e arraste os cards para ver as informações</p>
+							</div>
+
+							<div class="col-12 col-md-8 col-lg-6 mb-5">
+								<!-- Swipper Effect Card -->
+								<div class="swiper swiper--effect-card card">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img1.jpg" alt="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Dall-e (OpenAI)</span>
+											</div>
+
+											<div class="card-body">
+												<p>Lançamento: 5 jan. 2021.</p>
+
+												<p>Versão utilizada para gerar esta imagem: <a href="https://openai.com/index/dall-e-3/" target="_blank">Dall-e 3</a>, lançada em set. 2023.</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img2.jpg" alt="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Midjourney (Midjourney, Inc.).</span>
+											</div>
+
+											<div class="card-body">
+												<p>Lançamento: 12 jul. 2022.
+												<p>
+
+
+												<p>Versão utilizada para gerar esta imagem: <a href="https://www.midjourney.com/" target="_blank">Midjourney v6</a>, lançada em dez. 2023.</p>
+
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img3.jpg" alt="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Stable Diffusion (StabilityAI)</span>
+											</div>
+
+											<div class="card-body">
+												<p>Lançamento: 22 ago. 2022.</p>
+
+												<p>Versão utilizada para gerar esta imagem: <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion-3-medium" target="_blank">Stable Diffusion 3</a>, lançada em fev. 2024.</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img4.jpg" alt="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Imagen (Google)</span>
+											</div>
+
+											<div class="card-body">
+												<p>Lançamento: 23 maio 2022.</p>
+
+												<p>Versão utilizada para gerar esta imagem: <a href="https://aitestkitchen.withgoogle.com/pt/tools/image-fx" target="_blank">Imagen 2</a>, lançada em dez. 2023.</p>
+											</div>
+										</div>
+
+
+									</div>
+									<div class="swiper-pagination swiper-pagination3"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Inicialmente foi desenvolvida a tecnologia que gera imagens a partir de descrições textuais (<a href="https://pt.wikipedia.org/wiki/Modelo_de_texto_para_imagem" target="_blank">modelo de texto-para-imagem</a>). Em 2022, os modelos mais avançados tornaram-se capazes de gerar imagens que se assemelham a fotografias reais e a artes feitas por humanos. Um exemplo que viralizou foram as imagens do Papa Francisco vestindo um casaco branco estiloso, geradas pelo <a href="https://www.midjourney.com/" target="_blank"> Midjourney</a>, que fomentaram debates nas redes sociais e na televisão. Muitas pessoas acreditaram que as fotografias eram reais, embora a Igreja Católica seja muito conservadora em suas vestimentas. Essas imagens divulgaram o potencial e o perigo dessa IAGen, pois qualquer pessoa pode criar conteúdo convincente a partir de uma simples descrição textual, até mesmo imagens e vídeos com o objetivo de enganar (<a href="https://pt.wikipedia.org/wiki/Deepfake" target="_blank">deepfake</a>). </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img5.jpg" alt="Imagens geradas por IA: o Papa vestindo um casaco estiloso." title="Fonte: https://www.reddit.com/r/midjourney/comments/120vhdc/the_pope_drip">
+									<figcaption class="figure-caption">Imagens geradas por IA: o Papa vestindo um casaco estiloso</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: <a href="https://www.reddit.com/r/midjourney/comments/120vhdc/the_pope_drip" target="">https://www.reddit.com/r/midjourney/comments/120vhdc/the_pope_drip</a></figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Posteriormente conseguiram desenvolver a tecnologia capaz de gerar bons textos com base em um <a href="https://pt.wikipedia.org/wiki/Modelos_de_linguagem_de_grande_escala" target="_blank">modelo de linguagem de grande escala</a> (<em>Large Language Model - LLM</em>). O <a href="https://chatgpt.com/" target="_blank">ChatGPT</a>, baseado no modelo <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Sigla de Generative Pre-trained Transformer, que pode ser traduzido para Transformador Pré-treinado Generativo. Generativo refere-se à capacidade do modelo de gerar novos conteúdos. Pré-treinado significa que o modelo processou uma enorme quantidade de dados para conseguir produzir novos conteúdos que sejam parecidos com os dados processados.  Transformador é o nome da arquitetura de rede neural profunda utilizada para a criação do modelo, que é construído para prever a próxima palavra em uma frase, pois assim é capaz de gerar um novo texto a partir do texto do prompt do usuário e o texto que tiver sido gerado até o instante em que irá prever a próxima palavra.</p>" data-bs-original-title="GPT">GPT</a> desenvolvido pela OpenAI, alcançou mais de 100 milhões de usuários nos dois primeiros meses após seu lançamento em novembro de 2022, quebrando todos os recordes de rápida popularização, tornando-se um fenômeno da cibercultura. </p>
+
+								<p>O jornal <em>The New York Times</em> noticiou:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“O ChatGPT é, simplesmente, o melhor chatbot de inteligência artificial já lançado para o público em geral” </p>
+											<span class="quotation-autor">(Roose, 2022).</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O vertiginoso sucesso do ChatGPT desencadeou uma corrida entre as empresas de tecnologia para desenvolver o melhor sistema baseado em IAGen.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline">Clique</span><span class="d-inline d-lg-none">Toque</span> e arraste os cards para observar a reação dessas grandes empresas de tecnologia</p>
+							</div>
+
+							<div class="col-12 col-md-8 col-lg-6 mb-5">
+								<!-- Swipper Effect Card -->
+								<div class="swiper swiper--effect-card card">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img18.jpg" alt="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Microsoft</span>
+											</div>
+
+											<div class="card-body">
+												<p>Passou a utilizar o GPT em seu sistema <strong>Copilot</strong> após investir mais de 10 bilhões de dólares na OpenAI, tornando-se sua principal acionista com 49% de participação (Hoffman; Albergotti, 2023).</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img19.jpg" alt="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Google</span>
+											</div>
+
+											<div class="card-body">
+												<p>Lançou o <em>chatbot</em> Bard em março de 2023, posteriormente rebatizado como <strong>Gemini</strong>.</p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img20.jpg" alt="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Apple</span>
+											</div>
+
+											<div class="card-body">
+												<p>Apresentou, em junho de 2024, o Apple Inteligence, que integra a IAGen em seus sistemas operacionais (iOS, iPadOS e macOS).</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-pagination swiper-pagination3"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Os modelos GPT-4 e Gemini são multimodais, capazes de receber texto e imagem como entrada e criar obras em diferentes linguagens. Por exemplo, o <a href="https://openai.com/index/hello-gpt-4o/" target="_blank">GPT-4o</a> possibilita anexar uma imagem ao <em>prompt</em> e pedir explicações sobre ela, assim como anexar um arquivo PDF e fazer perguntas sobre o texto ou, ainda, solicitar um resumo. Ele também pode analisar dados, processar conteúdo da <em>web</em>, resumir vídeos do YouTube, criar narrativas visuais, construir mapas mentais, conversar por voz, traduzir fala em tempo real, criar vídeos, interagir por vídeo como se estivéssemos em uma videochamada com ele, renderizar imagens em 3D, entre outras capacidades. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Saiba Mais -->
+								<div class="box" data-box="saiba mais">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Saiba Mais</span>
+										</div>
+										<div class="card-body">
+											<p>A primeira versão lançada para o público geral foi o ChatGPT-3.5, de acesso gratuito, lançada em 30 de novembro de 2022. Em março de 2023 lançaram o GPT-4, acessível somente pelos assinantes do ChatGPT Plus, cuja mensalidade é de $20 dólares por mês. No ano seguinte, em maio de 2024, lançaram o GPT-4o, de acesso gratuito para todos. O GPT-5 foi disponibilizado em agosto de 2025, focando em inteligência mais robusta, capacidade multimodal avançada e maior memória de contexto. Depois disso já existem versões subsequentes (GPT-5.1 e GPT-5.2). </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Os anos em torno da virada da década de 2010 para 2020 marcaram o <a href="https://pt.wikipedia.org/wiki/Explos%C3%A3o_de_IA" target="_blank">boom da Inteligência Artificial</a>, caracterizado por massivos investimentos em pesquisa e desenvolvimento em IA Generativa, sendo criadas empresas, mercados, novas práticas de trabalho e de consumo de conteúdo a partir de sua utilização em diversas áreas. Esse novo cenário sociotécnico nos levou a reconhecer que, em termos tecnológicos, 2020 é a década da Inteligência Artificial Generativa.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-18">
+								<p class="text-center h6 mb-5"><strong>Tecnologias computacionais que marcaram as últimas décadas</strong></p>
+							</div>
+							<div class="col-12 col-md-11 col-lg-10 mb-5">
+								<!-- Timeline Vertical -->
+								<div class="timeline-vertical">
+									<div class="cd-timeline js-cd-timeline">
+										<div class="cd-timeline__container">
+
+											<!-- 1970 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">1970</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeInLeft">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>Mainframe</span>
+														</div>
+
+														<div class="card-body">
+															<p>Grandes computadores centralizados utilizados por governos, universidades e grandes empresas para processamento de dados em larga escala.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 1980 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">1980</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeInRight">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>Rede de computadores</span>
+														</div>
+
+														<div class="card-body">
+															<p>Expansão das redes que interligam computadores, permitindo a troca de informações entre instituições, universidades e empresas.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 1990 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">1990</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeInLeft">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>Computador pessoal</span>
+														</div>
+
+														<div class="card-body">
+															<p>Popularização dos computadores pessoais, permitindo que indivíduos e pequenas empresas utilizassem computadores em suas atividades diárias.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 2000 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">2000</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeInRight">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>Web e Internet comercial</span>
+														</div>
+
+														<div class="card-body">
+															<p>A internet torna-se amplamente acessível ao público, impulsionando serviços online, comunicação digital e comércio eletrônico.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 2010 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">2010</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeInLeft">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>Celular, Aplicativos e Web Social</span>
+														</div>
+
+														<div class="card-body">
+															<p>A popularização dos smartphones e aplicativos móveis transforma a forma de acessar a internet e interagir com serviços digitais.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 2015 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">2015</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeInRight">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>Sistemas de redes sociais</span>
+														</div>
+
+														<div class="card-body">
+															<p>Plataformas sociais passam a estruturar comunicação, marketing, entretenimento e produção de conteúdo em escala global.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 2020 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">2020</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeInLeft">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>IA Generativa</span>
+														</div>
+
+														<div class="card-body">
+															<p>Avanços em inteligência artificial permitem gerar textos, imagens, códigos e outros conteúdos automaticamente.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 2022 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">2022</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeInRight">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>ChatGPT 3.5</span>
+														</div>
+
+														<div class="card-body">
+															<p>Lançada a primeira versão do ChatGPT baseada no GPT-3.5, disponibilizada gratuitamente para o público geral.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 2023 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">2023</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeInLeft">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>GPT-4</span>
+														</div>
+
+														<div class="card-body">
+															<p>Lançamento do GPT-4, acessível somente pelos assinantes do ChatGPT Plus.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 2024 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">2024</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-right animate__animated animate__fadeInRight">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>GPT-4o</span>
+														</div>
+
+														<div class="card-body">
+															<p>Lançamento do GPT-4o, modelo multimodal disponibilizado gratuitamente para todos.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!-- 2025 -->
+											<div class="cd-timeline__block js-cd-block">
+												<div class="cd-timeline__img cd-timeline__option1">
+													<h4 class="ano">2025</h4>
+												</div>
+
+												<div class="cd-timeline__content js-cd-content bounce-left animate__animated animate__fadeInLeft">
+													<div class="card card--out">
+														<div class="card-header">
+															<span>GPT-5</span>
+														</div>
+
+														<div class="card-body">
+															<p>Lançamento do GPT-5, nova geração de modelos de inteligência artificial.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<span class="d-block figcaption fonte text-center">Fonte: Os autores (2026)</span>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Cabe destacar que alguns dos sistemas baseados em IAGen são gratuitos, como o ChatGPT e o Gemini, enquanto outros são pagos, como o Midjourney. O direito sobre a obra gerada por esses sistemas pertence ao usuário que digitou o <em>prompt</em>, possibilitando a geração de conteúdo de qualidade a baixo custo. Isso é especialmente relevante para a educação, particularmente a Educação Aberta, que frequentemente carece de recursos financeiros para pagar por imagens e outros elementos desejáveis para a produção de conteúdo didático.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Para Assistir -->
+								<div class="box" data-box="para assistir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Assistir</span>
+										</div>
+										<div class="card-body">
+											<p>O GPT já foi até incorporado como o cérebro de um robô humanoide. Assista ao vídeo.</p>
+											<div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/Sq1QZB5baNw?si=JOeh5OnRqucQYG6v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">A capacidade e as limitações da IAGen em<span class="dualcolor"> responder questões científico-educacionais</span></h3>
+								</div>
+
+								<p>As tecnologias de IAGen estão sendo aperfeiçoadas a cada ano. Por exemplo, cada nova versão do GPT tem apresentado desempenho superior, medido por meio de testes padronizados (<em>benchmarks</em>). </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-11 col-lg-10">
+								<p class="text-center h6 mb-5"><strong>Evolução do modelo GPT</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img6.png" alt="Evolução do modelo GPT" title="Fonte: Os autores (2026).">
+									<figcaption class="figure-caption">Evolução do modelo GPT</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: Os autores (2026)</figcaption>
+								</figure>
+							</div>
+						</div>
+
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>No Brasil, testaram o GPT-4 com as questões do Enem (<em>Nunes et al</em>., 2023; Pires <em>et al.</em>, 2023), cujos resultados são apresentados a seguir: </p>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Tabela -->
+								<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="text-center" colspan="3">Desempenho do GPT-4 no Enem 2022 e Enem 2023</th>
+											</tr>
+											<th></th>
+											<th>Enem 2022</th>
+											<th>Enem 2023</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Linguagens e códigos</td>
+												<td>82%</td>
+												<td>87%</td>
+											</tr>
+											<tr>
+												<td>Ciências humanas</td>
+												<td>96%</td>
+												<td>100%</td>
+											</tr>
+											<tr>
+												<td>Ciências da natureza</td>
+												<td>78%</td>
+												<td>91%</td>
+											</tr>
+											<tr>
+												<td>Matemática</td>
+												<td>61%</td>
+												<td>66%</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td><strong>Total</strong></td>
+												<td><strong>79%</strong></td>
+												<td><strong>86%</strong></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p class="figure-caption fonte">Fonte: Pires <em>et al.</em> (2023, p. 4)</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<p class="text-center h6"><strong>Desempenho do GPT-4 em comparação com as pessoas que fizeram o Enem 2022 e 2023</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img7.png" alt="Desempenho do GPT-4 em comparação com as pessoas que fizeram o Enem 2022 e 2023" title="Fonte: Os autores (2026).">
+									<figcaption class="figure-caption">Desempenho do GPT-4 em comparação com as pessoas que fizeram o Enem 2022 e 2023</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: Os autores, com base em Pires <em>et al.</em> (2023); Microdados do Enem (2023).
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O GPT-4 acertou 79% das questões do Enem 2022 e 86% das questões do Enem 2023. Ele apresentou excelente desempenho nas provas de Ciências Humanas, mas não apresentou desempenho tão bom em Matemática. Mesmo com essa limitação, poucas pessoas acertaram mais questões do que o GPT-4: a cada 773 pessoas, apenas uma acertou mais questões do que o GPT-4. Excetuando essa pessoa que acerta mais questões do que o GPT-4, ele é útil para todos os demais estudantes, porque pode apoiar o estudo do conteúdo cobrado nesse exame.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais Toggle -->
+								<div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="saiba-mais__header">
+										<button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span> Saiba mais</button>
+									</div>
+									<div class="saiba-mais__content collapse" id="saiba-mais1">
+										<p>Apenas 2.164 pessoas acertaram mais questões do que o GPT-4, entre as 2.344.823 pessoas que fizeram as quatro provas do Enem 2022. No Enem 2023, apenas 4.331 pessoas acertaram mais questões do que o GPT-4, entre as 2.678.264 pessoas que fizeram as quatro provas. No total, o GPT-4 teve um desempenho melhor do que 99,87% das pessoas que fizeram as 4 provas do Enem de 2022 e 2023.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Ficou bem conhecida a dificuldade do GPT-4 e das versões precedentes em resolver problemas de Matemática. Por isso, modificaram a forma de treinar o modelo e a versão posterior, o GPT-4o, apresentou melhora significativa na resolução de problemas matemáticos. Essa versão também apresentou melhora no desempenho em Ciências Naturais (Física, Química e Biologia) e na compreensão de textos longos, conforme indicaram os testes internacionais padronizados.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<p class="text-center h6"><strong>Comparação das sucessivas versões do GPT em relação ao percentual de acerto em testes padronizados</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img8.png" alt="Comparação das sucessivas versões do GPT em relação ao percentual de acerto em testes padronizados." title="Fonte: Os autores (2026).">
+									<figcaption class="figure-caption">Comparação das sucessivas versões do GPT em relação ao percentual de acerto em testes padronizados.</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: Os autores, com base em OpenAI (2023c, 2024); Rein <em>et al.</em> (2023); Hendrycks et al. (2021).</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O GPT-4o também melhorou a capacidade de gerar textos em diversos idiomas, incluindo o português. Ele também apresentou melhoras em testes de conhecimento profissional, como em Programação e no exame de admissão à advocacia nos Estados Unidos — <em>Uniform Bar Exam</em>, equivalente ao exame da Ordem dos Advogados do Brasil (OAB) —(OpenAI, 2023b; 2024b). Até o momento em que escrevemos este texto, não havia uma pesquisa sobre o desempenho do GPT-4o nos exames específicos do Enem. No entanto, com base nos resultados de testes padronizados, podemos prever que ele apresentará um desempenho ainda melhor do que o GPT-4. Podemos até supor que, em breve, as próximas versões do GPT acertarão mais questões no Enem do que qualquer pessoa será capaz de acertar.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init card--in aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>O GPT-4o, contudo, não é um especialista nas diferentes áreas de conhecimento. Ele foi treinado com textos da Wikipédia e de outras fontes, de modo que não se equipara a um pesquisador-doutor em uma área específica. Perguntas que requerem conhecimento muito avançado nem sempre são bem respondidas pelo GPT-4o.</p>
+											</div>
+										</div>
+
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Às vezes, a IAGen gera conteúdo com informações absurdas, mas, por gerar um texto bem escrito, pode parecer que está mentindo ou tendo uma “alucinação” (OpenAI, 2023a). Entretanto, a IAGen não tem intencionalidade, não quer nos enganar ou agradar; também não tem semântica, nem tem como julgar se a informação gerada é verdadeira ou falsa.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Destaque Parallax -->
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container aos-animate aos-init" data-aos="fade" data-aos-easing="ease-out" data-aos-duration="800">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>O compromisso da IAGen é gerar conteúdo parecido com os dados utilizados em seu treinamento, sem garantias da veracidade das informações geradas. Para lidar com essa limitação, pesquisadores e desenvolvedores buscam soluções. Por exemplo, no Gemini, após a geração de uma resposta, é feita uma busca na internet por conteúdos semelhantes visando a checagem da informação.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A possibilidade de alucinação aumenta se o modelo tiver sido treinado com pouco conteúdo relacionado ao <em>prompt</em> digitado pelo usuário. Por exemplo, o GPT-3 processou poucos textos em português (OpenAI, 2020), portanto possui poucas informações sobre a nossa história, cultura, valores, costumes e crenças, o que aumenta a chance de alucinar em perguntas relacionadas ao Brasil. </p>
+
+								<p>As informações geradas pelo modelo de linguagem também ficam datadas em função de seu treinamento. Ao ser perguntado sobre resultados de eleições em 2024, o GPT-3.5 dava informações atrasadas, citando ainda resultados de anos anteriores. Para lidar com essa limitação, alguns sistemas recuperam informações da internet em tempo real para gerar respostas atualizadas. </p>
+
+								<p>É importante conhecer as limitações da IAGen, como a possibilidade de alucinação, a incapacidade de julgamento sobre a veracidade das informações geradas, a limitação dos dados utilizados em seu treinamento e a não atualização do modelo.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init card--in aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p>Conhecer as limitações da IAGen nos possibilita interagir melhor e dar sentido às suas respostas, especialmente quando estão equivocadas ou são supérfluas. Conhecendo melhor a IAGen, aprendemos a identificar em que situações ela é útil e em quais não se aplica.</p>
+											</div>
+										</div>
+
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>As limitações da IAGen, no entanto, não a tornam inútil. Assim como o GPT-4 respondeu bem às questões do Enem, melhor do que 99,8% das pessoas, esse e outros sistemas baseados em IAGen podem ser muito úteis em diversas atividades educacionais, especialmente no contexto da Educação Aberta, quando não há um professor sempre disponível para tirar dúvidas do estudante sobre o conteúdo estudado. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Como a IAGen está sendo <span class="dualcolor"> utilizada por estudantes?</span></h3>
+								</div>
+
+								<p>Ao questionarmos os estudantes de um curso presencial de Computação, identificamos que eles estão utilizando o ChatGPT com muita frequência e para diversas finalidades (Carvalho; Pimentel, 2023). Alguns o utilizam para pesquisar, preferindo consultá-lo em vez de usar um mecanismo de busca na web. Há estudantes que utilizam o ChatGPT como uma espécie de professor particular que lhes ensina o que não foi bem compreendido a partir da explicação do professor humano ou do conteúdo didático:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“Se alguma disciplina me apresenta um conteúdo novo, eu logo penso: ‘Vamos ver o que o ChatGPT diz sobre esse tema.’ Por exemplo, houve uma semana em que me ausentei das aulas e, após saber quais os conteúdos que foram dados, foi muito fácil e rápido entrar na plataforma [ChatGPT] e conseguir ter uma breve noção do que foi visto.”</p>
+											<span class="quotation-autor">(Joana)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Muitos estudantes fazem uso dessa tecnologia para apoiar a autoria, como se ela fosse uma parceira intelectual, uma coautora na criação de obras, seja uma redação, uma apresentação ou um trabalho acadêmico: </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“Toda vez que preciso fazer algum trabalho da faculdade, eu utilizo a IA.”</p>
+											<span class="quotation-autor">(Allanis)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Os estudantes reconhecem as limitações da tecnologia e desenvolvem táticas para lidar com os problemas típicos do ChatGPT:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“Acredito que não posso confiar cegamente no que obtenho ali, e sempre reviso para verificar se realmente está correto.”</p>
+											<span class="quotation-autor">(Rebeca)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“Estou aprendendo a usar de maneira mais eficiente, descobri que ‘falando’ do jeito certo é possível obter resultados muito melhores e mais precisos, que me renderam grandes avanços em algumas atividades.”</p>
+											<span class="quotation-autor">(Augusto)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Os depoimentos revelam que os estudantes não são acríticos ou “idiotas culturais”; eles não aceitam tudo o que o ChatGPT apresenta como resposta. Em suas artes de fazer, os estudantes inventam múltiplos usos da IAGen, produzindo outros modos de estudar e aprender que ainda não foram enquadrados pelas lógicas hegemônicas das escolas e universidades. Esses usos inventivos da IAGen são forjados por estudantes situados culturalmente, produtores de conhecimento, seres pensantes que criam e aprendem em parceria com a IAGen. Cabe às escolas e universidades apoiar os estudantes a desenvolverem as competências digitais necessárias para lidar adequadamente com a inteligência artificial (Vicari <em>et al.</em>, 2023).</p>
+
+								<p>Os depoimentos aqui analisados não são representativos da totalidade dos estudantes universitários de nosso país, pois foram obtidos de uma amostra de estudantes de um único curso de Computação. A <em>Pesquisa Global de Estudantes 2023</em> (Chegg.org, 2023), por sua vez, realizou uma pesquisa online visando obter dados de uma amostra mais ampla de estudantes universitários de todo o mundo, inclusive do Brasil. Essa pesquisa identificou que a maioria dos estudantes brasileiros já estava usando a IAGen desde meados de 2023:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<p class="text-center h6"><strong>Frequência de uso de IAGen indicada por estudantes brasileiros em meados de 2023</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img9.png" alt="Frequência de uso de IAGen indicada por estudantes brasileiros em meados de 2023" title="Fonte: Chegg.org (2023, p. 13-14), tradução nossa">
+									<figcaption class="figure-caption">Frequência de uso de IAGen indicada por estudantes brasileiros em meados de 2023</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: Chegg.org (2023, p. 13-14), tradução nossa.</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Ao questionar os universitários sobre os usos que estavam fazendo da IAGen, a pesquisa obteve resultados semelhantes aos discutidos anteriormente: os estudantes utilizam a IAGen para diferentes atividades, como aprender, pesquisar, gerar ideias ou rascunhos de tarefas, escrever textos, elaborar apresentações, verificar o dever de casa, preparar-se para as provas e ajudar a fazer o dever de casa:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<p class="text-center h6"><strong>Finalidades de uso de IAGen indicadas por estudantes brasileiros em meados de 2023</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img10.png" alt="Finalidades de uso de IAGen indicadas por estudantes brasileiros em meados de 2023." title="Fonte: Chegg.org (2023, p. 15), tradução nossa.">
+									<figcaption class="figure-caption">Finalidades de uso de IAGen indicadas por estudantes brasileiros em meados de 2023</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: Chegg.org (2023, p. 15), tradução nossa.</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Ao serem questionados sobre os motivos de usarem a IAGen, a maioria dos estudantes declarou utilizá-la porque os ajuda a aprender mais rapidamente. Muitos também indicaram que a IAGen possibilita uma aprendizagem mais criativa, interativa e personalizada.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<p class="text-center h6"><strong>Motivos para usar a IAGen indicados por estudantes brasileiros em meados de 2023</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img11.png" alt="Motivos para usar a IAGen indicados por estudantes brasileiros em meados de 2023" title="Fonte: Chegg.org (2023, p. 15), tradução nossa.">
+									<figcaption class="figure-caption">Motivos para usar a IAGen indicados por estudantes brasileiros em meados de 2023</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: Chegg.org (2023, p. 15), tradução nossa.</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Chamou nossa atenção o fato de muitos estudantes justificarem o uso da IAGen por “liberar mais do meu tempo”. Isso levanta a seguinte questão: </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Dúvida -->
+								<div class="box" data-box="Dúvida">
+									<div class="card card--in">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Dúvida</span>
+										</div>
+										<div class="card-body">
+											<p>Será que estão colando do ChatGPT para não “perder tempo” ao fazer as tarefas de casa, como temem muitos professores?</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Embora sejam pertinentes as suspeitas sobre o uso ético, responsável e proveitoso da IA, cabe destacar que, na percepção dos estudantes, a IAGen possibilita melhor compreensão de conceitos e assuntos complexos, desenvolve habilidades de escrita, aumenta a capacidade de concluir tarefas e de organizar a carga de trabalho acadêmico, aumenta a confiança acadêmica, melhora as notas e o desempenho acadêmico no geral.</p>
+							</div>
+						</div>
+
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<p class="text-center h6"><strong>Percepção de mudanças com o uso da IAGen</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img12.png" alt="Percepção de mudanças com o uso da IAGen" title="Fonte: Chegg.org (2023, p. 25), tradução nossa.">
+									<figcaption class="figure-caption">Percepção de mudanças com o uso da IAGen</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: Chegg.org (2023, p. 25), tradução nossa.</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A maioria dos estudantes da pesquisa está ciente de que a IAGen pode ser usada para “trapacear” e que informações incorretas podem ser geradas (Chegg.org, 2023, p. 22). Apesar dessas preocupações, parece evidente, para a maioria dos estudantes universitários brasileiros, que a IAGen é uma tecnologia muito útil para o estudo e a aprendizagem, por isso estão utilizando-a frequentemente. Por tudo isso é importante produzirmos reflexões sobre essas tecnologias que estruturam nossas sociedades e culturas atravessando nosso cotidiano, mediando nossas experiências e aprendizagens, moldando nossos comportamentos, nossas práticas de estudo e nossos sistemas educacionais.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais Toggle -->
+								<div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="saiba-mais__header">
+										<button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span> Saiba mais</button>
+									</div>
+									<div class="saiba-mais__content collapse" id="saiba-mais1">
+										<p>A <em>Pesquisa Global de Estudantes 2023</em> está disponível em: <a href='https://www.chegg.org/global-student-survey-2023' target='_blank' rel='noopener noreferrer'>https://www.chegg.org/global-student-survey-2023</a>. Essa pesquisa objetivou compreender, principalmente, o impacto da IA generativa no ensino superior na perspectiva de estudantes de graduação com idades entre 18 e 21 anos em 15 países. Foi empregada uma metodologia de pesquisa online, realizada entre 31 de julho e 16 de agosto de 2023. O tamanho da amostra global foi de 11.816 estudantes, com tamanhos de amostra variando de 503 a 1.018 em cada país.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Quais são as preocupações<span class="dualcolor"> dos professores?</span></h3>
+								</div>
+
+								<p>A maior parte dos professores, em um primeiro momento, ficou temerosa com a novidade: “os alunos vão plagiar do ChatGPT”; “ele fará os deveres de casa, as redações e os trabalhos escolares/universitários”; “os estudantes se tornarão pessoas acríticas, preguiçosas e dependentes da tecnologia.”</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Citação -->
+								<div class="quotation">
+									<blockquote class="">
+										<span class="quotation-background"></span>
+										<div class="quotation-body">
+											<p>“Ainda não há maturidade para usar a ferramenta como meio de auxiliar o processo de ensino-aprendizagem. Essa IA, mal utilizada, pode atrapalhar o desenvolvimento do aluno na construção autônoma de trabalhos, nas respostas discursivas e construções críticas.”</p>
+											<span class="quotation-autor">(Professor do Ensino Médio e Fundamental)</span>
+										</div>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Pedir para o ChatGPT resolver as atividades escolares/universitárias é uma forma de utilizar a IAGen, mas não é a única. Alguns estudantes mobilizam o ChatGPT em um processo de trocas, questionamentos, aprofundamentos, de idas e vindas — o que caracterizamos como conversação e autoria híbrida. Esse tipo de uso é diferente do plágio, pois não se resume a copiar e colar tudo o que é gerado pela IA sem questionar nem se envolver ativamente na construção da obra e do conhecimento. Não consideramos a conversação e a cocriação com a IA como uma trapaça acadêmica, mas sim um esforço para aprender e fazer melhor a partir da interação com essa tecnologia.</p>
+
+								<p>A preocupação dos professores é que estudantes entreguem suas mentes e vozes para a IAGen fazer os deveres de casa por eles. De fato, após o lançamento do ChatGPT, passou a ser difícil afirmar se um texto foi escrito por um estudante ou pela IA.</p>
+
+								<p>Considerando essa dificuldade, foram desenvolvidos “detectores de IA”, ou seja, sistemas computacionais que buscam identificar se um texto parece ter sido escrito por IA ou por humano. Um texto gerado por IA costuma ser original, por isso não adianta compará-lo com os textos existentes, como fazem os sistemas de detecção de plágio. A estratégia utilizada pelos detectores de IA é analisar o texto em busca de características que possam indicar uma autoria artificial, como o estilo de escrita, o uso de certos recursos de linguagem e a ausência de erros gramaticais e ortográficos. No entanto, os sistemas detectores de IA podem errar: um texto humano pode ser erroneamente classificado como tendo sido gerado por IA, ou um texto gerado computacionalmente pode ser erroneamente classificado como sendo humano. Exemplificamos a análise feita pelos detectores de IA sobre um texto gerado pelo GPT-4o: dois acertaram ao afirmar que o texto foi gerado por IA e um errou ao afirmar que o texto foi produzido por humano.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Swiper Navigation -->
+								<div class="swiper swiper--navigation card">
+									<!-- Additional required wrapper -->
+									<div class="swiper-wrapper">
+										<!-- Slides -->
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img14.png" alt="" title="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Identificação correta de texto gerado por IA (via ZeroChat)</span>
+											</div>
+
+											<div class="card-body">
+												<p>Fonte: <a href="https://www.zerogpt.com/" target="_blank">ZeroChat (2026)</a></p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img15.png" alt="" title="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Identificação correta de texto gerado por IA (via ZeroChat)</span>
+											</div>
+
+											<div class="card-body">
+												<p>Fonte: <a href="https://www.zerogpt.com/" target="_blank">ZeroChat (2026)</a></p>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img16.png" alt="" title="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Identificação correta de texto gerado por IA (via Scribb)</span>
+											</div>
+
+											<div class="card-body">
+												<p>Fonte: <a href="https://www.scribbr.com/ai-detector/" target="_blank">Scribbr (2026)</a></p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="card-thumb">
+												<img src="../media/modulo5/aula2-img17.png" alt="" title="">
+											</div>
+
+											<div class="card-header">
+												<span class="h6">Identificação equivocada de texto como não sendo gerado por IA (via Hive)</span>
+											</div>
+
+											<div class="card-body">
+												<p>Fonte: <a href="https://hivemoderation.com/ai-generated-content-detection" target="_blank">Hive (2026)</a></p>
+											</div>
+										</div>
+									</div>
+
+									<!-- If we need pagination -->
+									<div class="swiper-pagination"></div>
+
+									<!-- If we need navigation buttons -->
+									<div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div>
+
+									<!-- If we need scrollbar -->
+									<!-- <div class="swiper-scrollbar"></div> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Após a popularização dos detectores de IA, foram desenvolvidos sistemas para “humanizar texto de IA”. Tais sistemas modificam um texto com vista a enganar os detectores de IA introduzindo nele pequenas variações no estilo de escrita, adicionando alguns erros e modificando o tom e a fluidez da redação. Um texto “humanizado” leva o detector de IA a concluir, equivocadamente, que o texto provavelmente foi escrito por uma pessoa. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<p class="text-center h6"><strong>Sistema “humanizador” de texto gerado por IA (via Stealthwriter.AI)</strong></p>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo5/aula2-img13.png" alt="Sistema “humanizador” de texto gerado por IA (via Stealthwriter.AI)" title="Fonte: Stealthwriter.AI (2026)">
+									<figcaption class="figure-caption">Sistema “humanizador” de texto gerado por IA (via Stealthwriter.AI)</figcaption>
+									<figcaption class="figure-caption fonte">Fonte: <a href="https://stealthwriter.ai/" target="_blank">Stealthwriter.AI</a>(2026)</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais Toggle -->
+								<div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="saiba-mais__header">
+										<button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais2" aria-expanded="false" aria-controls="saiba-mais2"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span> Saiba mais</button>
+									</div>
+									<div class="saiba-mais__content collapse" id="saiba-mais2">
+										<p>Conheça alguns sistemas para humanizar texto de IA:</p>
+
+										<!-- Lista Não-Ordenada -->
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Stealthwriter AI: <a href="https://stealthwriter.ai/" target="_blank">https://stealthwriter.ai/</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">AIHumanizer: <a href="https://aihumanizer.ai/" target="_blank">https://aihumanizer.ai/</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Humbot: <a href="https://humbot.ai/ " target="_blank">https://humbot.ai/</a> (testa gratuitamente até 100 palavras).</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Concordamos com a afirmação: “Não tente detectar a IA — faça com que o uso da IA não seja o problema” (MIT Technology Review, 2024). Em vez de proibirmos o uso da IAGen para manter a educação como estava antes de sua chegada, em vez de vigiarmos e punirmos quem a utiliza, devemos repensar as práticas educativas. Em nosso tempo de escola, nas décadas de 1980 e 1990, nossos pais nos ensinaram a realizar os trabalhos escolares copiando de uma enciclopédia física. Torcemos para que esse tipo de atividade não seja mais uma prática nas escolas e universidades, que as atividades não possam mais ser feitas copiando-se um texto, seja da enciclopédia, da internet ou da IAGen; que as atividades não possam ser feitas por uma inteligência artificial que pouco ou nada conhece sobre seu usuário. </p>
+
+								<p>A IA deixa de ser um problema quando valorizamos subjetividade, saberes, histórias de vida e formação, acontecimentos vividos, formas de compreender o mundo, sentimentos, desejos, medos, ideologias e demais facetas de identidades únicas e insubstituíveis, que ainda não podem ser geradas por IA.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">A necessidade de uma educação<span class="dualcolor"> para o uso da IAGen</span></h3>
+								</div>
+
+								<p>Não se trata de julgarmos a IAGen exclusivamente como boa ou ruim, mas de compreender que ela pode ser usada tanto para potencializar a aprendizagem quanto para promover trapaça acadêmica, dependendo dos usos que fazemos dela. A IAGen pode fornecer <em>feedback</em> das atividades e exercícios feitos pelos estudantes, pode apoiar a compreender o conteúdo, tirar dúvidas e cocriar. Ela é especialmente útil nas modalidades educacionais em que os estudantes não têm acesso facilitado a professores, como na Educação a Distância e na Educação Aberta. É fato que a IAGen também pode ser usada para gerar as respostas de muitos exercícios e atividades propostos por professores e livros didáticos. </p>
+
+								<p>Portanto, é necessária uma educação que ensine a usar essa tecnologia de forma ética, responsável e potencializadora da formação. Precisamos de uma educação que ensine nossos estudantes a pensarem com a IAGen, sem entregar a ela suas mentes e vozes, sem utilizá-la para o plágio. Esse é um dos principais desafios da formação na era da IAGen.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+											<p>PIMENTEL, Mariano; CARVALHO, Felipe. Inteligência Artificial Generativa na Educação Aberta: potencialidades e riscos. <strong>Programa de Formação Modular em Ciência Aberta. Módulo 5. Educação Aberta e Recursos Educacionais Abertos Aula 2.</strong> 1. ed. Rio de Janeiro: Fiocruz, 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo5/aula2.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo5/aula2.html</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula1.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 1</a>
+								<a class="fio-button fio-button-primary" href="aula3.html" rel="next">Aula 3 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+
+</body>
+
+</html>

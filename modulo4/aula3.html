@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 4 | Aula 3 - Dados para pesquisa em saúde e sua proteção jurídica</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<link rel="stylesheet" href="aula1-info1.css" />
+</head>
+
+<body id="modulo4">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button class="d-block d-lg-none" type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 4 <br /><br />
+							Aula 3</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 4</span>
+									<span class="title">Gestão, Compartilhamento, Abertura de Dados para Pesquisa</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 1: Introdução a dados</a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 2: Gestão de dados: conceitos e principais ferramentas</a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 3: Dados para pesquisa em saúde e sua proteção jurídica</a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 4: Compartilhamento e uso de dados para pesquisa na prática</a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 5: FAIR: dos princípios à prática</a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Planos de Gestão de dados (PGD)</a>
+										<a href="aula7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 7: Requisitos de financiadores de revistas científicas, plataformas e repositórios de dados e data papers</a>
+										<a href="aula8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 8: Integração de dados administrativos governamentais para pesquisa em Saúde Pública</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod4-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 4</strong> . Aula 3</span>
+								<span class="title-bold">Dados para pesquisa</span> em saúde e sua proteção jurídica
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="card objetivos">
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Esta aula tem por objetivo abordar fatores jurídicos que incidem sobre os dados coletados, produzidos e utilizados nas pesquisas em saúde. Ao final desta aula você será capaz de:</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Identificar os direitos e obrigações que incidem sobre os dados para pesquisa em saúde.</li>
+												<li class="list-group-item">Compreender as situações de incidência de direitos sobre os dados para pesquisa.</li>
+												<li class="list-group-item">Conhecer algumas obrigações a serem cumpridas ao utilizar dados para pesquisa.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Os dados à luz <span class="dualcolor">do Direito brasileiro</span></h3>
+								</div>
+
+								<p>Antes de adentrarmos nas questões jurídicas que impactam no tratamento dos dados para pesquisa, precisamos tecer algumas considerações acerca do dado enquanto elemento informacional e sua concepção no mundo jurídico.</p>
+
+								<p>Cada área do conhecimento possui suas próprias concepções terminológicas acerca do tema <strong>informação</strong>. Conforme explicam Capurro e Hjorland (2007, p. 160), a definição para o termo <strong>informação</strong> é concebida dentro de seu próprio contexto, conforme fenômenos específicos. E na Ciência Jurídica, ou Direito, não seria diferente. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>Enquanto no contexto da Ciência da Informação existem definições específicas para os termos <strong>dado, informação e conhecimento</strong> na literatura jurídica, embora as especificidades de cada um desses elementos sejam abordadas por alguns autores, na maioria dos casos os termos são tratados como sinônimos ou equivalentes.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Esse tratamento se justifica, na medida em que o próprio legislador brasileiro não se preocupou em estabelecer especificidades conceituais para os termos. Essas especificidades são próprias da atual era da informação e não se verificam controvérsias significativas, seja na literatura jurídica, seja na aplicação do direito na atualidade decorrente de eventual conflito conceitual acerca dos termos aqui tratados.</p>
+
+								<p>Quando abordamos a nossa legislação, podemos observar a equivalência semântica determinada pelo legislador brasileiro, inclusive para outros termos que podem ser equivalentes, tais como o termo <strong>documento</strong>.</p>
+
+								<p>Considerando a incidência de algumas leis no tratamento de dados para pesquisa, podemos indicar os seguintes exemplos de normas estabelecidas nas quais se verifica a equivalência dos termos.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Destaques da <span class="dualcolor">legislação brasileira</span></h3>
+								</div>
+
+								<p>Em âmbito internacional, o TRIPS (<em>Trade-Related Aspects of Intellectual Property Rights</em>), ou Acordo sobre Aspectos dos Direitos de Propriedade Intelectual Relacionados ao Comércio (ADPIC), é um tratado internacional administrado pela Organização Mundial do Comércio (OMC) que estabeleceu padrões mínimos de proteção à propriedade intelectual para seus membros, influenciando diretamente a formulação da <a href='https://www.planalto.gov.br/ccivil_03/leis/l9279.htm' target='_blank'>Lei nº 9.279/1996</a>, a <strong>Lei de Propriedade Industrial (LPI)</strong>. </p>
+
+								<p>No contexto da proteção de informações e conhecimentos, o artigo 39 do TRIPS determina que os países signatários devem garantir a proteção da informação confidencial contra uso desleal e divulgação não autorizada. Essa exigência reforça a importância estratégica dos dados e informações, evidenciando a necessidade de mecanismos jurídicos eficazes para sua proteção.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>Art.39 TRIPS</p>
+										<p>Os Membros que exijam a apresentação de resultados de testes ou outros dados não divulgados, cuja elaboração envolva esforço considerável — como condição para aprovar a comercialização de produtos farmacêuticos ou de produtos agrícolas químicos que utilizem novas entidades químicas —, protegerão esses dados contra seu uso comercial desleal. Ademais, os membros adotarão providências para impedir que esses dados sejam divulgados, exceto quando necessário para proteger o público ou quando tenham sido adotadas medidas para assegurar que os dados sejam protegidos contra o uso comercial desleal.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Vamos aprofundar as principais leis a seguir:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush" id="accordion1">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Lei nº 9.279/1996 - Lei de Propriedade Industrial (LPI)</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p><a href='https://www.planalto.gov.br/ccivil_03/leis/l9279.htm' target='_blank'>Confira aqui esta lei</a></p>
+
+												<p>Inspirada no TRIPS, ao definir crimes de concorrência desleal, em seu art. 195 a LPI define os termos <em></em>informação, dado e conhecimento</em> com a mesma proteção: </p>
+
+												<p><em>Art. 195. Comete crime de concorrência desleal quem:</em></p>
+												<p><em>[...]</em></p>
+
+												<p><em>XI - divulga, explora ou utiliza-se, sem autorização, de conhecimentos, informações ou dados confidenciais, utilizáveis na indústria, comércio ou prestação de serviços, excluídos aqueles que sejam de conhecimento público ou que sejam evidentes para um técnico no assunto, a que teve acesso mediante relação contratual ou empregatícia, mesmo após o término do contrato</em> (Brasil, 1996, grifo nosso).</p>
+
+												<p>Essa disposição legal evidencia que o legislador brasileiro, em tese, não fez distinção quanto à equivalência jurídica entre conhecimento, informação e dado, garantindo-lhes proteção contra o uso indevido no contexto empresarial e industrial.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2"> Lei nº 10.603/2002 - Proteção de informações para a comercialização de produtos</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p><a href='https://www.planalto.gov.br/ccivil_03/leis/2002/l10603.htm' target='_blank'>Confira aqui esta lei</a></p>
+
+												<p>Também inspirada no TRIPS, que trata da <strong>proteção de <u>informações</u> para a comercialização de produtos,</strong> que equipara <em>informação, dados e conhecimento</em> ao estabelecer o seu objeto:</p>
+
+												<p><em>[...] a proteção contra o uso comercial desleal de informações relativas aos resultados de testes ou outros dados não divulgados apresentados às autoridades competentes como condição para aprovar ou manter o registro para a comercialização de produtos farmacêuticos de uso veterinário, fertilizantes, bioinsumos e agrotóxicos, seus componentes e afins (Brasil, 2002, art. 2º, grifo nosso).</em></p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Lei nº 9.610/1998 - Lei de Direitos Autorais</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p><a href='https://www.planalto.gov.br/ccivil_03/leis/l9610.htm' target='_blank'>Confira aqui esta lei</a></p>
+
+												<p>A <strong>Lei de Direitos Autorais</strong>, embora trate de direitos sobre bases de dados e de questões acerca do dado isoladamente, não enfrenta a definição para os termos <strong>dados</strong> ou <strong>bases de dados</strong>. Essa lei visa proteger a estrutura em si da referida base de dados e não os dados de forma isolada, como podemos observar em seu artigo 87.</p>
+
+												<p><em>[Art. 87. O titular do direito patrimonial sobre uma base de dados terá o direito exclusivo, a respeito da forma de expressão da estrutura da referida base, de autorizar ou proibir:</em></p>
+
+												<p><em>I - sua reprodução total ou parcial, por qualquer meio ou processo;</em></p>
+
+												<p><em>II - sua tradução, adaptação, reordenação ou qualquer outra modificação;</em></p>
+
+												<p><em>III - a distribuição do original ou cópias da base de dados ou a sua comunicação ao público;</em></p>
+
+												<p><em>IV - a reprodução, distribuição ou comunicação ao público dos resultados das operações mencionadas no inciso II deste artigo.</em></p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Lei nº 12.527/2011 - Lei de Acesso à Informação (LAI) </button>
+										</h5>
+										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p><a href='https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm' target='_blank'>Confira aqui esta lei</a></p>
+
+												<p>A <strong>Lei de Acesso à Informação (LAI)</strong> é ainda mais explícita ao equivaler os termos <strong>dado</strong> e <strong>informação</strong>: </p>
+
+												<p><em>Art. 4º Para os efeitos desta Lei, considera-se: I - informação: dados, processados ou não, que podem ser utilizados para produção e transmissão de conhecimento, contidos em qualquer meio, suporte ou formato. Em se tratando desta lei cabe especial destaque à definição proposta para o termo documento, no inciso II do mesmo artigo: “II - documento: unidade de registro de informações, qualquer que seja o suporte ou formato.”</em></p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item5">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Lei nº 13.709/2018 - Lei Geral de Proteção de Dados Pessoais (LGPD)</button>
+										</h5>
+										<div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
+											<div class="accordion-body">
+												<p><a href='https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm' target='_blank'>Confira aqui esta lei</a></p>
+
+												<p>A <strong>Lei Geral de Proteção de Dados Pessoais (LGPD)</strong> define os <strong>dados pessoais</strong>:</p>
+
+												<p><em>Art. 5º Para os fins desta Lei, considera-se: I - dado pessoal: informação relacionada a pessoa natural identificada ou identificável”. Mais adiante, no mesmo artigo, define o termo banco de dados: “IV - banco de dados: conjunto estruturado de dados pessoais, estabelecido em um ou em vários locais, em suporte eletrônico ou físico.</em></p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item6">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item6" aria-expanded="false" aria-controls="collapse1-item6">Lei nº 14.874/2024 - Princípios, diretrizes e regras para a condução de pesquisas com seres humanos </button>
+										</h5>
+										<div id="collapse1-item6" class="accordion-collapse collapse" aria-labelledby="heading1-item6" data-bs-parent="">
+											<div class="accordion-body">
+												<p><a href='https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14874.htm' target='_blank'>Confira aqui esta lei</a></p>
+
+												<p>Mais especificamente, em relação aos dados para pesquisa em saúde, em relação a pesquisas com seres humanos, estabelece:</p>
+
+												<p><em>Art. 2º Para os efeitos desta Lei, consideram-se: [...] XV - dados-fonte: informações sobre resultados clínicos, observações ou atividades contidas nos registros originais e nas cópias autenticadas de registros originais de um estudo, necessárias para a sua reconstrução e avaliação. </em></p>
+
+												<p>Mais adiante, no mesmo artigo: </p>
+
+												<p><em>XIX - documento-fonte: documentos, dados e registros originais, tais como registros hospitalares, gráficos clínicos, prontuários médicos, dados laboratoriais, memorandos, diários de pacientes ou listas de verificação de avaliação, registros de dispensação da farmácia, dados gravados de instrumentos automatizados, cópias ou transcrições certificadas após a verificação como cópias precisas, microfichas, negativos fotográficos, microfilmes ou mídias magnéticas, raios-X e registros mantidos na farmácia, nos laboratórios e nos departamentos envolvidos na pesquisa, ou documentos semelhantes</em>.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Conceito ampliado <span class="dualcolor">de dado no Direito</span></h3>
+								</div>
+
+								<p>Observe que o legislador, ao estabelecer a definição para <strong>documento-fonte</strong>, não se preocupa com as especificidades que outras áreas do conhecimento, como Ciência da Informação e Tecnologia da Informação, tratam os termos <strong>dados, informações e conhecimento</strong>, sem nenhum preciosismo, inclusive, para o termo <strong>documento</strong>.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure>
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula3-img1.jpg" alt="" title="Fonte: Imagem gerada por IA (2025).">
+											<figcaption class="figure-caption fonte">Fonte: Imagem gerada por IA (2025).</figcaption>
+										</figure>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+										<p>Como é possível observar, embora para outras áreas do conhecimento as especificidades dos termos <strong>dados, informação, conhecimento e documento</strong> sejam relevantes no contexto do tratamento de dados, para o Direito os termos são equivalentes e, sempre que falarmos em proteção jurídica dos dados ou dos direitos decorrentes do tratamento de dados, precisamos entender os dados em seu significado mais amplo possível. </p>
+
+										<p>Tal amplitude abrange informações, conhecimentos e, em alguns casos, os documentos. Assim, as <strong>informações pessoais</strong> tratadas na LAI equivalem, por exemplo, aos <strong>dados pessoais</strong> tratados na LGPD.</p>
+
+										<p>Agora que compreendemos o conceito ampliado de dado, vamos fazer algumas considerações sobre as diferenças e similaridades entre dados pessoais e dados de seres humanos.</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Dados pessoais e <span class="dualcolor">dados de seres humanos</span></h3>
+								</div>
+
+								<p>No contexto da pesquisa científica é importante compreender bem cada uma dessas categorias, pois, <strong>do ponto de vista jurídico, todo dado pessoal é um dado de ser humano, mas nem todo dado de ser humano será um dado pessoal</strong>. O dado anonimizado, por exemplo, seria um caso de dado de ser humano que, do ponto de vista legal, não seria um dado pessoal.</p>
+
+								<p>Observe os cards a seguir e perceba o diálogo e a afinidade entre as duas normas.</p>
+							</div>
+						</div>
+
+						<!--Comparação-->
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-4 mb-5">
+								<div class="card h-100 ">
+									<div class="card-header">
+										<span class="h6">Dado pessoal</span>
+									</div>
+									<div class="card-body">
+										<p>LGPD: “informação relacionada à pessoa natural identificada ou identificável.”</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-1 align-self-center mb-5 compare-symbol">
+								<span class="d-block text-center mx-auto">&</span>
+							</div>
+
+							<div class="col-12 col-md-4 mb-5">
+								<div class="card h-100">
+									<div class="card-header">
+										<span class="h6">Informação pessoal</span>
+									</div>
+									<div class="card-body">
+										<p>LAI: “aquela relacionada à pessoa natural identificada ou identificável.”</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O dado pessoal tem, por essência sua relação direta ou indireta a uma pessoa natural determinada. A ausência dessa relação subtrai do dado o vínculo da pessoa a que se refere e o torna um dado sem o titular e converte o seu detentor em “proprietário”, por assim dizer, desse dado sem titularidade.</p>
+
+								<p>Embora não incida sobre esse dado, as normas de proteção de dados pessoais, no caso da pesquisa científica, incidirão sempre sobre o controle de eticidade, uma vez que, não sendo um dado pessoal, esse dado é sobre, ou de, um ser humano.</p>
+
+								<p>Entendemos dados de seres humanos a partir da definição de pesquisa com seres humanos na forma da Lei nº 14.874/2024 que estabelece a seguinte definição: “pesquisa que, individual ou coletivamente, tem como participante o ser humano, em sua totalidade ou em parte, e o envolve de forma direta ou indireta, incluído o manejo de seus dados, informações ou material biológico.” Ou seja, o dado de ser humano prescinde da identificação ou determinação do seu titular.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5">
+									<p>Para saber mais sobre dados pessoais retorne à aula 6, <a href='../modulo2/aula6.html' target='_blank'>“Proteção de Dados Pessoais e a Pesquisa Científica” do módulo “Marcos legais”</a>.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center align-items-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Dados para pesquisa <span class="dualcolor">em saúde no Brasil</span></h3>
+								</div>
+
+								<p>Nesta parte pretendemos abordar a pesquisa em saúde à luz da Lei do SUS, com especial atenção à LAI, à LGPD e à nova lei sobre pesquisas com seres humanos. Posteriormente, trataremos sobre Direitos de Propriedade Intelectual. </p>
+
+								<p>Como podemos observar, a pesquisa em saúde no Brasil é regida por um conjunto de normas que busca equilibrar o interesse público, a proteção dos direitos individuais e a promoção da inovação científica.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>A <a href='https://www.planalto.gov.br/ccivil_03/leis/l8080.htm' target='_blank'>Lei nº 8.080/1990</a>, <strong>Lei Orgânica do Sistema Único de Saúde (SUS)</strong>, estabelece que a pesquisa científica e o desenvolvimento científico e tecnológico estão no campo de atuação e de interesse do SUS, reforçando o papel do Estado na produção e disseminação de conhecimento, dados e informações para a melhoria das condições de saúde da população. No entanto, essas atividades devem respeitar normas específicas de acesso, compartilhamento e proteção de dados, conforme estabelecido por legislações como a LAI, LGPD, LPI, entre outras.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<p>A LAI, sem aprofundar a questão, traz algumas orientações quanto ao uso de informações pessoais no campo da pesquisa e estabelece que tal questão será regulada em legislação específica. Em especial, a LGPD regula, em parte, a utilização de dados pessoais em pesquisas científicas, impondo requisitos de transparência, finalidade do tratamento dos dados, segurança e governança. </p>
+
+								<p>Como dados pessoais sobre saúde são considerados sensíveis (Art. 5º, II da LGPD), seu tratamento deve obedecer a bases legais específicas, como consentimento do titular ou cumprimento de obrigações legais. Além disso, a LGPD prevê exceções à necessidade do consentimento do titular dos dados para a realização de pesquisa científica, desde que sejam observadas diretrizes de anonimização ou medidas que garantam a proteção dos direitos dos indivíduos, sem prejuízo da avaliação de eticidade da pesquisa. Essas regras impactam diretamente as pesquisas conduzidas por instituições públicas e privadas, que devem adequar seus protocolos às exigências da legislação a fim de evitar sanções e garantir a ética no tratamento dos dados.</p>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure>
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula3-img2.png" alt="" title="Fonte: Freepik (2025).">
+											<figcaption class="figure-caption fonte">Fonte: Freepik (2025).</figcaption>
+										</figure>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+										<p>Dados pessoais sobre saúde podem conter informações íntimas e privadas sobre determinados indivíduos e sua divulgação pode revelar as condições de saúde, histórico de doenças, tratamentos realizados, informações genéticas e até aspectos psicológicos. A divulgação indevida dessas informações pode submeter o titular dos dados a situações de discriminação e violar a dignidade da pessoa humana, atingindo sua intimidade, privacidade, honra ou sua imagem.</p>
+
+										<p>Embora tenhamos avançado na regulação da pesquisa científica com a publicação da LGPD, entendemos que essa lei tenha sido tímida ao regular a pesquisa em saúde, dedicando apenas um artigo para essa questão e indicando a necessidade de regulamentação específica para esse tema. </p>
+
+										<p>A <strong>Lei nº 14.874/2024, lei sobre pesquisas com seres humanos</strong>, estabeleceu critérios mais específicos para a coleta, armazenamento e compartilhamento de informações relativas aos estudos com seres humanos. O objetivo é assegurar que a pesquisa respeite os direitos dos participantes, promovendo integridade científica e proteção da privacidade. </p>
+
+										<p>Entendidas as questões relativas ao tratamento dos dados pessoais e dados de seres humanos no contexto da pesquisa em saúde, é importante que o pesquisador tenha ciência a respeito de seus direitos sobre os dados e quais direitos de terceiros devem ser observados quando tratar dados ao realizar pesquisas em saúde.</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Direitos de propriedade <span class="dualcolor">sobre os dados</span></h3>
+								</div>
+
+								<p>A proteção dos resultados gerados — proteção de dados e de informações resultantes de pesquisas, incluindo bancos de dados e descobertas científicas — pode e deve ser feita por meio dos diversos mecanismos de Direitos de Propriedade Intelectual (DPI), como patentes, direitos autorais ou segredos industriais. A escolha do mecanismo apropriado depende da estratégia adotada pelas instituições, bem como da natureza da criação gerada.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5">
+									<p>Para saber mais sobre “Direitos de Propriedade Intelectual” retorne à aula 5, <a href='../modulo2/aula5.html' target='_blank'>“Propriedade intelectual e Ciência Aberta: entre a divulgação e o sigilo de informações” do módulo “Marcos Legais”</a>.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Nesse sentido, os DPIs desempenham papel essencial ao fornecer uma base legal que garante a proteção e a correta atribuição dos resultados de colaborações. Além disso, asseguram que os primeiros avanços sejam devidamente documentados e referenciados, contribuindo para a transparência e a continuidade da pesquisa e da inovação.</p>
+
+								<p>Instrumentos como patentes, marcas e direitos autorais, não apenas incentivam a inovação ao permitir que os criadores ou titulares usufruam dos benefícios econômicos de suas descobertas. Eles também fortalecem o ecossistema de inovação ao viabilizar parcerias estratégicas e impedindo que grandes companhias atendam exclusivamente seu desejo por lucro, ao permitir que conhecimentos gerados sejam disponibilizados à sociedade.</p>
+
+								<p>Por fim, a intersecção entre pesquisa em saúde e direitos de propriedade intelectual merece atenção especial, principalmente no contexto de inovação e desenvolvimento tecnológico, que é um dever Constitucional do Estado. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>Art. 218. O Estado promoverá e incentivará o desenvolvimento científico, a pesquisa, a capacitação científica e tecnológica e a inovação.</p>
+
+										<p>§ 1º A pesquisa científica básica receberá tratamento prioritário do Estado, tendo em vista o bem público e o progresso das ciências.</p>
+
+										<p>§ 2º A pesquisa tecnológica voltar-se-á preponderantemente para a solução dos problemas brasileiros e para o desenvolvimento do sistema produtivo nacional e regional.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Nesse sentido, a proteção de conhecimentos estratégicos torna-se essencial para assegurar a soberania tecnológica, estimular a transferência de tecnologia e viabilizar a aplicação dos avanços científicos em benefício da sociedade. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Propriedade Intelectual <span class="dualcolor">e Ciência Aberta</span></h3>
+								</div>
+
+								<p>O equilíbrio entre a proteção da propriedade intelectual e a promoção de acesso ao conhecimento deve ser cuidadosamente observado, garantindo que as inovações geradas contribuam para o fortalecimento do sistema de saúde e para o bem-estar coletivo. Assim, a abertura e o compartilhamento de dados devem ser compatíveis com os mecanismos de proteção de direitos.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure>
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula3-img3.jpg" alt="" title="Fonte: Freepik (2025).">
+											<figcaption class="figure-caption fonte">Fonte: Freepik (2025).</figcaption>
+										</figure>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+										<p>Entendemos o potencial da Ciência Aberta como promotora de ações colaborativas no campo da pesquisa, com resultados mais rápidos, menos esforços, menor custo e acessibilidade universal, mas não podemos ser ingênuos e negligenciar a existência de interesses financeiros relativos aos resultados das pesquisas e de seus dados em detrimento do interesse social, em especial na área da saúde.</p>
+
+										<p>Por essa razão não podemos desprezar os mecanismos de proteção da propriedade intelectual e de restrição de acesso aos dados, especialmente quando a pesquisa é desenvolvida com recursos públicos e seus resultados devam estar voltados para o bem-estar social. O que queremos deixar claro é que defendemos, sim, uma Ciência Aberta e Cidadã fundamentada no princípio do “tão aberta quanto possível e tão fechada quanto o necessário”.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5">
+									<p>Para saber mais sobre “Restrição de acesso à informação” retorne à aula 7, <a href='../modulo2/aula7.html' target='_blank'>“As restrições ao acesso às informações sigilosas, a segurança da informação e a proteção de dados pessoais e a pesquisa científica” do módulo “Marcos Legais”</a>.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Direito de propriedade <span class="dualcolor">e o interesse público</span></h3>
+								</div>
+
+								<p>Os direitos de propriedade sobre os dados são de grande relevância, especialmente no contexto da produção de pesquisas pelo setor público. A Organização para a Cooperação e Desenvolvimento Econômico (OCDE) tem enfatizado a importância de políticas que promovam acesso e compartilhamento de dados para impulsionar a inovação e o desenvolvimento econômico. O acesso eficiente a dados de diversas naturezas, incluindo dados públicos e privados, é fundamental para maximizar os benefícios multissetoriais. Contudo, inclui a necessidade de equilibrar a proteção dos direitos de propriedade intelectual com a promoção da disseminação do conhecimento.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0 mb-5">
+						<div class="destaque-parallax my-0">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+										<p>Um novo documento da OCDE, revisado em 2021, denominado <em>Recommendation of the Council concerning Access to Research Data from Public Funding</em>, elaborado com a participação do Ministério da Ciência, Tecnologia e Inovações (MCTI) do Brasil, teve como foco promover o acesso aberto a dados de pesquisas científicas realizadas com investimento público. Vale destacar que o Brasil foi o único país não membro da OCDE que participou do grupo de trabalho que construiu essa recomendação.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A expectativa é que essas iniciativas minimizem a repetição de esforços na coleta de dados científicos, possibilitem o aproveitamento de um mesmo conjunto de informações em múltiplos projetos de pesquisa, promovam a cooperação entre cientistas, aprimorem a qualidade da pesquisa por meio da validação de resultados e ampliem o acesso ao conhecimento, tornando-o mais democrático e acessível.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Atenção -->
+								<div class="box" data-box="Atenção">
+									<div class="card aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Atenção</span>
+										</div>
+
+										<div class="custom-shape-divider-top-1751890676">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+										<div class="card-body">
+											<div>
+												<p><strong>Pontos de atenção para uso e compartilhamento de dados para pesquisa</strong></p>
+
+												<p>Contudo, para o uso e compartilhamento desses dados e informações é importante que sejam observadas as questões éticas, acima apresentadas, bem como a titularidade sobre esses conhecimentos, como discutido no modulo de Direito Autoral e de Propriedade Industrial. </p>
+
+												<p>É importante que sejam avaliadas questões incidentais sobre a titularidade dos dados e documentos gerados, considerando que de forma análoga são aplicadas as disposições presentes na Lei de Direito Autoral sobre dados, de modo que é necessária a exigência de termos de cessão dos funcionários e servidores envolvidos na construção desses conhecimentos para o posterior uso e compartilhamento.</p>
+											</div>
+										</div>
+
+										<div class="custom-shape-divider-bottom-1751890016">
+											<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+												<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Titularidade de direitos autorais <span class="dualcolor">no exercício da atividade pública</span></h3>
+								</div>
+
+								<p>No Brasil, a Advocacia-Geral da União (AGU) aborda a titularidade dos direitos autorais de obras produzidas por servidores públicos no exercício da atividade pública. <strong>De acordo com o Manual de Direitos Autorais do Tribunal de Contas da União (TCU), as obras intelectuais criadas por servidores no exercício de suas funções pertencem à Administração Pública</strong> e prevê expressamente a necessidade da transmissão desse direito no contrato firmado com o autor, caso tenha interesse na obra em questão. </p>
+
+								<p>Esse entendimento se baseia na premissa de que os servidores não deveriam obter benefícios privados decorrentes de atividades realizadas no cumprimento de seus deveres funcionais, a menos que houvesse previsão legal específica. Portanto, o direito autoral patrimonial dessas obras deveria ser exclusivo da instituição pública, enquanto os direitos morais permanecem com o autor.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5">
+									<p>Para formalizar a transferência dos direitos patrimoniais de obras produzidas por terceiros contratados pela Administração Pública, é recomendável e necessária a celebração de um termo de cessão de direitos autorais.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A nova Lei de Licitações e Contratos Administrativos (<a href='https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm' target='_blank'>Lei nº 14.133/2021</a>) prevê, por exemplo em seu Art. 93º, a possibilidade de inclusão de cláusulas que tratem da titularidade dos direitos autorais nos contratos firmados pela Administração. Isso assegura que os direitos sobre as obras intelectuais sejam claramente definidos, garantindo à Administração o uso pleno das criações para atender ao interesse público.</p>
+
+								<p>Em suma, é fundamental que as instituições públicas estabeleçam diretrizes claras sobre a propriedade intelectual de dados e obras produzidas no âmbito de suas atividades. Isso inclui a observância das recomendações dos dispositivos internacionais, o respeito à soberania nacional e o cumprimento da legislação nacional, garantindo que o conhecimento gerado com recursos públicos seja utilizado de forma ética e eficiente em benefício da sociedade.</p>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+											<p>D’AGUILA, Marcelo Campos; DO NASCIMENTO, Francisco José Tavares. Dados para pesquisa em saúde e sua proteção jurídica. <em>In:</em> JORGE, Vanessa; CLINIO, Anne (coord.). Programa de Formação Modular em Ciência Aberta. Módulo, 4. Gestão, compartilhamento e abertura de dados. Aula 3. 2. ed. Rio de Janeiro: Fiocruz, 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula3.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula3.html</a>. Acesso em: 14 nov. 2025.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula2.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 2</a>
+								<a class="fio-button fio-button-primary" href="aula4.html" rel="next">Aula 4 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+
+</body>
+
+</html>

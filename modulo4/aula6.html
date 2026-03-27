@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Ciência Aberta" />
+	<meta name="keywords" content="Fiocruz Curso Ciência Aberta" />
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso " />
+	<meta property="og:description" content="Curso Ciência Aberta" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Ciência Aberta" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
+
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
+
+	<title>Curso Ciência Aberta | Mod 4 | Aula 5 - FAIR: dos princípios à prática</title>
+
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body id="modulo4">
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			<img class="img-fluid logo-white" src="../media/logos/header-fiocruz-campus-virtual-white.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Curso Ciência Aberta</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Ciência Aberta</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button class="d-block d-lg-none" type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/introducao.html"><strong>Módulo 1</strong><br />Fundamentos da
+										Ciência Aberta</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/introducao.html"><strong>Módulo 2</strong><br />Marcos
+										Legais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/introducao.html"><strong>Módulo 3</strong><br />Acesso
+										Aberto</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo4/introducao.html"><strong>Módulo 4</strong><br />Gestão,
+										compartilhamento, abertura de dados para pesquisa</a>
+								</li>
+								<li class="dropdown-menu__item" style="cursor:not-allowed;">
+									<div style="cursor:not-allowed; cursor: not-allowed; color: var(--fio-sys-color-neutral-light-active); opacity: .8; border:none;" class="dropdown-menu__item-link disabled"><strong>Módulo 5</strong><br />Educação Aberta e Recursos Educacionais Abertos <span class="small">(EM BREVE)</span></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo 4 <br /><br />
+							Aula 6</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Aulas</span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 4</span>
+									<span class="title">Gestão, Compartilhamento, Abertura de Dados para Pesquisa</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="introducao.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status="visited"><span class="material-symbols-rounded"></span>Introdução</a>
+										<a href="aula1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 1: Introdução a dados</a>
+										<a href="aula2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 2: Gestão de dados: conceitos e principais ferramentas</a>
+										<a href="aula3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 3: Dados para pesquisa em saúde e sua proteção jurídica</a>
+										<a href="aula4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 4: Compartilhamento e uso de dados para pesquisa na prática</a>
+										<a href="aula5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 5: FAIR: dos princípios à prática</a>
+										<a href="aula6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 6: Planos de Gestão de dados (PGD)</a>
+										<a href="aula7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 7: Requisitos de financiadores de revistas científicas, plataformas e repositórios de dados e data papers</a>
+										<a href="aula8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Aula 8: Integração de dados administrativos governamentais para pesquisa em Saúde Pública</a>
+										<a href="encerramento.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído"><span class="material-symbols-rounded"></span>Encerramento</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod2">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-10 col-xl-8">
+							<h2 class="title">
+								<span class="label"><img src="../media/templates/page-title-mod4-icon.svg" width="40px" class="img-fluid" /> <strong>Módulo 4</strong> . Aula 6</span>
+								<span class="title-bold">Planos de Gestão </span> de dados (PGD)
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+
+
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<div class="card objetivos">
+
+									<div class="card-header">
+										<span class=""><img class="img-fluid" src="../media/templates/destaque-objetivos-aula.png" />Objetivos da
+											aula</span>
+									</div>
+
+									<div class="card-body">
+										<p>Nesta aula você será apresentado ao Plano de Gestão de Dados, documento de planejamento e apoio à gestão de dados de pesquisa. Ao final, você será capaz de:</p>
+
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item">Conhecer as principais características de um PGD e etapas de preenchimento/atualização.</li>
+												<li class="list-group-item">Reconhecer as vantagens de adotar o PDG no cotidiano da atividade de pesquisa, favorecendo seu reúso e evitando perda de dados, o que acarreta prejuízos para pesquisadores e instituições. </li>
+												<li class="list-group-item">Conhecer as principais plataformas de elaboração de PGDs, incluindo o FioDMP da Fiocruz e a perspectiva futura de planos acionáveis por máquina.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Políticas de financiadores <span class="dualcolor">de pesquisa</span></h3>
+								</div>
+
+								<p>A gestão ativa de dados é fundamental para garantir sua qualidade, viabilizando, sempre que possível, seu futuro reúso, compartilhamento e abertura. Recentemente, diversas agências de fomento à pesquisa e financiadores privados passaram a exigir a elaboração de um Plano de Gestão de Dados (PGD) como condição para o financiamento de projetos de pesquisa.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Olho de texto -->
+								<div class="olho-de-texto my-5">
+									<p>O PGD é um documento formal, dinâmico (passível de atualização), que contém perguntas orientadoras para estimular os pesquisadores a planejarem, de maneira intencional, a gestão de dados ao longo de todo seu ciclo de vida — período que se estende além da execução e finalização da pesquisa.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Essa inovação visa estimular a gestão ativa de dados de modo que se torne parte da cultura científica. Por isso, os financiadores disponibilizam modelos/templates específicos que devem ser preenchidos pelos pesquisadores em, pelo menos, três momentos.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula6-img1.png" alt="A imagem é uma colagem retangular sobre um fundo branco, contendo doze logotipos de organizações internacionais, sendo seis em cada linha. Na primeira linha:  Horizon 2020 (União Europeia, TDR (UNICEF/PNUD/Banco Mundial/OMS)), NIH (National Institutes of Health - EUA, SNF (Swiss National Science Foundation, NSF (National Science Foundation))) - EUA, Bill & Melinda Gates Foundation. Na Segunda linha:  Wellcome, NERC (Natural Environment Research Council - Reino Unido), MRC (Medical Research Council - Reino Unido, NWO (Netherlands Organisation for Scientific Research)), BSRC (Biotechnology and Biological Sciences Research Council - Reino Unido) e The Research Council of Norway." title="">
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Existem vários motivos para elaborar um PGD. Nesse vídeo, um avaliador de projetos da National Science Foundation (NSF) explica como projetos com excelência científica deixam de ser financiados devido à falta de um PGD. </p>
+
+								<p>No vídeo a seguir, somos apresentados a diversas situações cotidianas de perda de dados que resultam em transtornos para pesquisadores e prejuízos para as instituições de pesquisa. Observe como um PGD bem elaborado pode diminuir esses danos.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Para Assistir -->
+								<div class="box" data-box="Para Assistir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Assistir</span>
+										</div>
+										<div class="card-body">
+											<span class="h6 heading__title">Gestão de dados no dia a dia da pesquisa</span>
+											<p><strong><em>Why write a Data Management Plan?</em></strong></p>
+											<div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/3AfKCglktA0?si=LkAeBSgKEv0D-K9F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Destaques<span class="dualcolor"> do PGD</span></h3>
+								</div>
+
+								<p>O PGD é um elemento essencial para garantir a qualidade de um projeto de pesquisa. Ele não é um documento estático, mas sim uma ferramenta que evolui, ganhando mais precisão e substância à medida que o projeto de pesquisa avança.</p>
+								<p>A atualização do PDG é necessária conforme o projeto de pesquisa se desenvolve, visto que, no início de sua execução, talvez não se conheçam todos os dados a serem produzidos ou coletados, nem o seu potencial de reúso. </p>
+								<p>Por isso, ele deve ser:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula6-img2.png" alt="Infográfico em formato circular, dividido em quatro quadrantes coloridos. O ciclo é lido no sentido horário, começando pelo quadrante superior esquerdo. No centro do círculo, há duas setas brancas curvas que formam um movimento cíclico. Cada quadrante está conectado a um retângulo externo que descreve o momento em que aquela fase ocorre. Detalhamento dos Quadrantes: 1. Elaborado (Superior Esquerdo),na cor verde-água e com o texto interno: 'Elaborado'. Descrição externa em um retângulo laranja: 'No momento da formulação do projeto'. 2. Entregue (Superior Direito) na cor laranja com o texto interno: 'Entregue'. Descrição externa em um retângulo laranja: 'Na candidatura de um financiamento ou após a aprovação inicial do projeto de pesquisa.'' 3. Revisto e atualizado (Inferior Direito) na cor amarelo e com o texto interno: 'Revisto e atualizado'. Descrição externa em um retângulo laranja: 'Durante o andamento do projeto em suas etapas intermediárias.' 4. Finalização (Inferior Esquerdo) na cor laranja-escuro e o texto interno: 'Finalização'.Descrição externa em um retângulo laranja: 'Ao término do projeto.'" title="">
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Principais tópicos <span class="dualcolor"> de um PGD</span></h3>
+								</div>
+
+								<p>A Science Europe — associação que reúne 37 organizações de 28 países europeus, está entre as mais importantes entidades públicas que financiam e realizam pesquisas científicas no continente — estabeleceu diversos requisitos essenciais para a elaboração de templates de PGDs. Em 2021, a versão revisada e ampliada, <em>Practical Guide to the International Alignment of Research Data Management – Extended Edition</em>, apresentou requisitos básicos para PGDs, critérios para a seleção de repositórios confiáveis e orientações para pesquisadores cumprirem exigências.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Entenda os principais pontos solicitados por financiadores públicos e privados, nacionais e internacionais, para o bom planejamento e organização da gestão de dados.</p>
+
+								<!-- Box de Para Assistir -->
+								<div class="box" data-box="Para Assistir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Assistir</span>
+										</div>
+										<div class="card-body">
+											<span class="h6 heading__title">Requisitos dos financiadores para Planos de Dados</span>
+											<div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/A3n4D58z6cA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Texto à esquerda com Imagem -->
+								<div class="row justify-content-center d-lg-block">
+									<!-- Imagem -->
+									<div class="col-md-8 col-lg-4 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+										<figure>
+											<img class="img-fluid mx-auto d-block mb-3" src="../media/modulo4/aula6-img3.png" alt="A imagem é a capa na cor laranja de uma publicação com o título 'Plano de Gestão de Dados de Pesquisa', e com o subtítulo 'Guia de elaboração'. No centro, 12 blocos quadrados contêm ícones brancos como cifrão, lupa, cadeado, nuvem e logo do IBICT." title="">
+										</figure>
+									</div>
+
+									<!-- Texto -->
+									<div class="order-2 order-lg-1">
+										<p>No Brasil, existem diversas questões legais e éticas que devem ser consideradas antes de se realizar o compartilhamento de dados. Para apoiar a elaboração de PGDs alinhados aos Princípios FAIR e à legislação nacional, uma equipe multidisciplinar elaborou a publicação <strong>Plano de Gestão de Dados de Pesquisa – PGD: Guia de Elaboração.</strong></p>
+
+										<p>A maioria dos formulários/templates para elaboração de PGDs possui sete categorias, que são apresentadas no guia:</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center align-items-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" id="aula5-accordion2" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item1" aria-expanded="false" aria-controls="collapse2-item1">
+												1. Descrição dos dados, coleta e/ou reutilização de dados
+											</button>
+										</h5>
+										<div id="collapse2-item1" class="accordion-collapse collapse" aria-labelledby="heading2-item1" data-bs-parent="#aula5-accordion2">
+											<div class="accordion-body">
+												<p>1.1 - Quais dados serão coletados ou criados?</p>
+												<p>1.2 - Como os dados serão coletados ou produzidos e como poderão ser reusados?</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item2" aria-expanded="false" aria-controls="collapse2-item2">
+												2. Metadados, documentação e qualidade dos dados
+											</button>
+										</h5>
+										<div id="collapse2-item2" class="accordion-collapse collapse" aria-labelledby="heading2-item2" data-bs-parent="#aula5-accordion2">
+											<div class="accordion-body">
+												<p>2.1 - Que padrão de metadados acompanhará os conjuntos de dados?</p>
+												<p>2.2 - Que tipos de documentação acompanharão os conjuntos de dados?</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item3" aria-expanded="false" aria-controls="collapse2-item3">
+												3. Requisitos legais, éticos e códigos de conduta
+											</button>
+										</h5>
+										<div id="collapse2-item3" class="accordion-collapse collapse" aria-labelledby="heading2-item3" data-bs-parent="#aula5-accordion2">
+											<div class="accordion-body">
+												<p>3.1 - Como serão gerenciadas as questões éticas e os códigos de conduta?</p>
+												<p>3.2 - Como questões legais de direitos de propriedade intelectual (DPIs) e autoria serão gerenciadas? Qual legislação é aplicável?</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item4" aria-expanded="false" aria-controls="collapse2-item4">
+												4. Armazenamento e backup durante e após o processo de pesquisa
+											</button>
+										</h5>
+										<div id="collapse2-item4" class="accordion-collapse collapse" aria-labelledby="heading2-item4" data-bs-parent="#aula5-accordion2">
+											<div class="accordion-body">
+												<p>4.1 - Como serão feitos os backups e o armazenamento dos conjuntos de dados e dos metadados durante e após o processo de pesquisa?</p>
+												<p>4.2 - Como serão gerenciados o acesso e a segurança dos dados?</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item5">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item5" aria-expanded="false" aria-controls="collapse2-item5">
+												5. Seleção e preservação
+											</button>
+										</h5>
+										<div id="collapse2-item5" class="accordion-collapse collapse" aria-labelledby="heading2-item5" data-bs-parent="#aula5-accordion2">
+											<div class="accordion-body">
+												<p>5.1 - Quais dados serão selecionados para retenção, compartilhamento e/ou preservação em longo prazo?</p>
+												<p>5.2 - Qual é o planejamento para a preservação em longo prazo dos conjuntos de dados?</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item6">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item6" aria-expanded="false" aria-controls="collapse2-item6">
+												6. Compartilhamento e reúso dos dados
+											</button>
+										</h5>
+										<div id="collapse2-item6" class="accordion-collapse collapse" aria-labelledby="heading2-item6" data-bs-parent="#aula5-accordion2">
+											<div class="accordion-body">
+												<p>6.1 - Como e quando os dados serão compartilhados?</p>
+												<p>6.2 - Existem possíveis restrições ao compartilhamento do conjunto de dados?</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading2-item7">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item7" aria-expanded="false" aria-controls="collapse2-item7">
+												7. Responsabilidades e recursos financeiros
+											</button>
+										</h5>
+										<div id="collapse2-item7" class="accordion-collapse collapse" aria-labelledby="heading2-item7" data-bs-parent="#aula5-accordion2">
+											<div class="accordion-body">
+												<p>7.1 - Quem serão os responsáveis pela gestão dos dados?</p>
+												<p>7.2 - Quais recursos serão requeridos para a entrega do plano?</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Vantagens de elaborar <span class="dualcolor"> um PGD</span></h3>
+								</div>
+
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Planejamento prévio e organização antecipam questões que influenciam todo o ciclo de vida dos dados, para além do período de execução da pesquisa.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Ajuda a prevenir ou reduzir a probabilidade de contratempos, como perda ou uso inadequado dos dados.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Facilita a localização e acesso dos dados, visando sua reutilização. </li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">A documentação fornece detalhes valiosos sobre os dados, favorecendo sua compreensibilidade e reúso futuro — seja pela própria equipe, seja por terceiros. </li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Viabiliza a continuidade da pesquisa mesmo após a saída de membros da equipe ou a entrada de novos pesquisadores.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">A documentação é essencial para a validação e reprodutibilidade de resultados de pesquisa por terceiros — princípio fundamental da prática científica.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Garante a atribuição de crédito aos seus autores, que passam a ser devidamente citados e referenciados por pesquisadores que reutilizarem os dados.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Favorece a disponibilização aberta dos dados, especialmente em projetos de pesquisa financiados com recursos públicos, desde que não haja restrições de segurança ou dados sensíveis.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Evita a duplicação de esforços e investimentos, especialmente na coleta ou tratamento de dados.</li>
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Viabiliza o compartilhamento de dados, fomentando a colaboração aberta e impulsionando avanços na pesquisa.</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">Ferramentas de elaboração <span class="dualcolor"> de PGD</span></h3>
+								</div>
+
+								<p>Diversas plataformas disponibilizam modelos/templates de PGD que atendem aos requisitos dos principais financiadores da pesquisa científica. Alguns exemplos são:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-4 mb-5">
+								<div class="card card--in">
+									<div class="card-thumb">
+										<img src="../media/modulo4/aula6-logo1.png" alt="">
+									</div>
+
+									<div class="card-header">
+										<span class="fonte"><a href="https://dmponline.dcc.ac.uk/" target="_blank">https://dmponline.dcc.ac.uk/</a></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-4 mb-5">
+								<div class="card card--in">
+									<div class="card-thumb">
+										<img src="../media/modulo4/aula6-logo2.png" alt="">
+									</div>
+
+									<div class="card-header">
+										<span class="fonte"><a href="https://dmptool.org/" target="_blank">https://dmptool.org/</a></span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-4 mb-5">
+								<div class="card card--in">
+									<div class="card-thumb">
+										<img src="../media/modulo4/aula6-logo3.png" alt="">
+									</div>
+
+									<div class="card-header">
+										<span class="fonte"><a href="https://argos.openaire.eu/home" target="_blank">https://argos.openaire.eu/home</a></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-10 col-lg-4 mb-5">
+								<div class="card card--in">
+									<div class="card-thumb">
+										<img src="../media/modulo4/aula6-logo4.png" alt="">
+									</div>
+
+									<div class="card-header">
+										<span class="fonte"><a href="https://fiodmp.fiocruz.br/" target="_blank">https://fiodmp.fiocruz.br/</a></span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Conheça suas principais características: </p>
+
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Registro livre e gratuito: acesso sem custos para todos os usuários.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Guias de preenchimento: disponibiliza orientações formuladas pelos financiadores para a elaboração dos PGDs.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Exemplos práticos: apresenta modelos de PGDs já preenchidos como referência.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Fases de desenvolvimento: abrange todas as etapas para o desenvolvimento da pesquisa, desde antes da coleta até o relatório final do projeto.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Ferramentas de colaboração: permite a elaboração on-line com recursos para trabalho em equipe.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Exportação em diversos formatos: facilita a exportação dos documentos em múltiplos formatos.</li>
+
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<!-- Box de Para Assistir -->
+								<div class="box" data-box="Para Assistir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Assistir</span>
+										</div>
+										<div class="card-body">
+											<p>Entenda no vídeo a seguir a elaboração de um Plano de gestão.</p>
+											<div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/oxwemsKcB2o?si=AZD9aZeCxSeoH_JS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Fim do Box de Para Assistir -->
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4"> E o Plano de Gestão<span class="dualcolor"> de Dados da Fiocruz?</span></h3>
+								</div>
+
+								<p>Desde 2017 a Fiocruz tem promovido uma série de debates coletivos sobre a adoção da Ciência Aberta. Publicou em 2020 a <em>Política de Gestão, Compartilhamento e Abertura de Dados para Pesquisa</em>, que envolve o desenvolvimento de um modelo/template próprio de Plano de Gestão de Dados.</p>
+
+								<p>A proposta de PGD para a Fiocruz foi elaborada pela equipe do Instituto de Comunicação e Informação Científica e Tecnológica em Saúde (Icict), em colaboração com o Grupo de Trabalho de Ciência Aberta (GTCA), coordenado pela vice-presidência de Educação, Informação e Comunicação (VPEIC).</p>
+
+								<p>Essa ferramenta foi testada por pesquisadores das diversas áreas do conhecimento nas quais a fundação atua. Em outubro de 2022 foi lançado o FioDMP, sistema que contém formulários com diversas perguntas que auxiliam o pesquisador na organização e na gestão de dados ao longo de todo o ciclo de vida da pesquisa. Atualmente, além da Fiocruz, ele é utilizado por diversas instituições no Brasil. </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Box de Para Assistir -->
+								<div class="box" data-box="Para Assistir">
+									<div class="card ">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Para Assistir</span>
+										</div>
+										<div class="card-body">
+											<p>Observe o Plano de Gestão de Dados da Fiocruz</p>
+											<div class="ratio ratio-16x9">
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/QdBe06F3EEE?si=0PPV0U7xEmTfzukL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title h4">A futura geração de PGDs: <span class="dualcolor">acionáveis por máquina</span></h3>
+								</div>
+
+								<p>As ferramentas para a elaboração de PGDs normalmente disponibilizam perguntas abertas, que, uma vez respondida, são enviadas pelos pesquisadores aos financiadores.</p>
+
+								<p>São documentos administrativos que facilitam o planejamento e a organização da pesquisa, mas que ainda não são plenamente reconhecidos como parte dessa atividade </p>
+
+								<p>Nos últimos anos, cresce o entendimento de que os PDGs reúnem informações valiosas para todas as partes interessadas na pesquisa, incluindo:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Financiadores.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Comitês de ética.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Especialistas em Direito.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Pesquisadores.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Editores.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Operadores de repositórios.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Provedores de infraestrutura.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Equipe de apoio à pesquisa.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Administradores institucionais etc. </li>
+									</ol>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Como resultado, começam a surgir investimentos para torná-los acionáveis por máquina. Ou seja, estruturados de maneira mais automatizada de modo que todos os atores e sistemas envolvidos no processo de gestão de dados possam participar de forma colaborativa.</p>
+
+								<p>A futura geração de PGDs, que já está em desenvolvimento, irá incorporar fluxos de trabalho colaborativos, favorecendo a interoperabilidade entre ferramentas e sistemas de pesquisa, reduzindo tarefas manuais, e melhorando a qualidade das informações sobre gestão de dados.</p>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="container-fluid px-0">
+						<div class="destaque-parallax mb-5">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10 col-lg-8">
+
+
+										<div class="heading__block">
+											<h3 class="heading__title h4">10 princípios para um PGD ser <span class="dualcolor">acionável por máquina</span></h3>
+										</div>
+
+										<!-- Lista Ordenada -->
+										<div class="list">
+											<ol class="list-group list-group-numbered">
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Integrar o PGD aos fluxos de trabalho daqueles que participam do ecossistema de dados.</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ermitir a ação de sistemas automatizados em nome das "partes interessadas" (stakeholders).</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Elaborar políticas que sejam direcionadas tanto para máquinas quanto para pessoas.</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Descrever — para máquinas e humanos — os componentes do sistema de gestão de dados.</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Usar identificadores persistentes e vocabulários controlados.</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Adotar um modelo/template comum de dados para PGDs acionáveis por máquina.</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Disponibilizar PGD para uso humano e por máquina.</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Apoiar a avaliação e o monitoramento da gestão de dados.</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Tornar os PGDs documentos atualizáveis, vivos e versionáveis.</li>
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Tornar os PGDs acessíveis publicamente.</li>
+											</ol>
+											<p class="mt-5"><span class="fonte">Fonte: Miksa et al. (2019).</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>Apesar de todos os esforços para melhorar a eficácia dos PGDs, a literatura nacional e internacional vem apontando problemas na qualidade dos Planos elaborados pelos pesquisadores. Alguns indicadores de qualidade, identificados em estudos preliminares realizados por pesquisadores da Fiocruz, devem ser integrados à elaboração de PGDs. Entre eles podemos destacar maior envolvimento das agências de fomento, avaliação automática da qualidade dos PGDs, adoção de métricas FAIR e PGDs acionáveis por máquina. Essas ações são fundamentais para superar os desafios atuais e promover uma gestão eficaz de dados de pesquisa.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Saiba Mais -->
+								<div class="saiba-mais aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="saiba-mais__header">
+										<button class="fio-button button-md fio-button-primary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true">touch_app</span>Saiba mais</button>
+									</div>
+									<div class="saiba-mais__content collapse" id="saiba-mais1">
+										<p><strong>Acesse os Diálogos ABEC</strong></p>
+										<p><a href="https://www.youtube.com/watch?v=DTXC9jmnFAY" target="_blank">https://www.youtube.com/watch?v=DTXC9jmnFAY</a></p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header mb-5">
+											<h4>Como citar esta aula:</h4>
+										</div>
+										<div class="base-body">
+											<p>PRÍNCIPE, Pedro; VEIGA, Viviane Santos de Oliveira. Plano de Gestão de Dados. <em>In:</em> JORGE, Vanessa; CLINIO, Anne (coord.). Programa de Formação Modular em Ciência Aberta. Módulo, 4. Gestão, compartilhamento e abertura de dados. Aula 6 (2ª edição). Rio de Janeiro: Fiocruz, 2025. Disponível em: <a href='https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula6.html' target='_blank'>https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/modulo4/aula6.html</a>. Acesso em: 14 nov. 2025.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<a class="fio-button fio-button-primary" href="aula5.html" rel="prev"><span class="material-symbols-rounded">west</span> Aula 5</a>
+								<a class="fio-button fio-button-primary" href="aula7.html" rel="next">Aula 7 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-12">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz-campus-virtual.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-sus-35.svg" alt="Logo do SUS 35 anos" height="" />
+							</li>
+							<li>
+								<img class="img-fluid logo" src="../media/logos/footer-governo-federal.svg" alt="Marca do Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar(".sidebar", {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: ".main",
+			innerWrapperSelector: ".sidebar__inner",
+			minWidth: 991,
+		});
+	</script>
+
+	<!-- Swiper -->
+	<script src="../../assets/js/swiper-bundle.min.js"></script>
+	<script src="../../assets/js/swiper-init.js"></script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName("html")[0].className += " js";
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+
+
+</body>
+
+</html>

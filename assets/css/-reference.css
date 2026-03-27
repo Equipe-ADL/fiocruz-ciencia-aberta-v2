@@ -1,0 +1,79 @@
+/* REFERENCE VARIABLES */
+
+:root {
+	--fio-ref-color-success: 135, 60%;
+	--fio-ref-color-warning: 50, 100%;
+	--fio-ref-color-error: 5, 80%;
+
+	/* Palettes */
+	--fio-ref-color-success-0: hsl(var(--fio-ref-color-success), 0%);
+	--fio-ref-color-success-10: hsl(var(--fio-ref-color-success), 10%);
+	--fio-ref-color-success-20: hsl(var(--fio-ref-color-success), 20%);
+	--fio-ref-color-success-30: hsl(var(--fio-ref-color-success), 30%);
+	--fio-ref-color-success-40: hsl(var(--fio-ref-color-success), 40%);
+	--fio-ref-color-success-50: hsl(var(--fio-ref-color-success), 50%);
+	--fio-ref-color-success-60: hsl(var(--fio-ref-color-success), 60%);
+	--fio-ref-color-success-70: hsl(var(--fio-ref-color-success), 70%);
+	--fio-ref-color-success-80: hsl(var(--fio-ref-color-success), 80%);
+	--fio-ref-color-success-90: hsl(var(--fio-ref-color-success), 90%);
+	--fio-ref-color-success-95: hsl(var(--fio-ref-color-success), 95%);
+	--fio-ref-color-success-99: hsl(var(--fio-ref-color-success), 99%);
+	--fio-ref-color-success-100: hsl(var(--fio-ref-color-success), 100%);
+
+	--fio-ref-color-warning-0: hsl(var(--fio-ref-color-warning), 0%);
+	--fio-ref-color-warning-10: hsl(var(--fio-ref-color-warning), 10%);
+	--fio-ref-color-warning-20: hsl(var(--fio-ref-color-warning), 20%);
+	--fio-ref-color-warning-30: hsl(var(--fio-ref-color-warning), 30%);
+	--fio-ref-color-warning-40: hsl(var(--fio-ref-color-warning), 40%);
+	--fio-ref-color-warning-50: hsl(var(--fio-ref-color-warning), 50%);
+	--fio-ref-color-warning-60: hsl(var(--fio-ref-color-warning), 60%);
+	--fio-ref-color-warning-70: hsl(var(--fio-ref-color-warning), 70%);
+	--fio-ref-color-warning-80: hsl(var(--fio-ref-color-warning), 80%);
+	--fio-ref-color-warning-90: hsl(var(--fio-ref-color-warning), 90%);
+	--fio-ref-color-warning-95: hsl(var(--fio-ref-color-warning), 95%);
+	--fio-ref-color-warning-99: hsl(var(--fio-ref-color-warning), 99%);
+	--fio-ref-color-warning-100: hsl(var(--fio-ref-color-warning), 100%);
+
+	--fio-ref-color-error-0: hsl(var(--fio-ref-color-error), 0%);
+	--fio-ref-color-error-10: hsl(var(--fio-ref-color-error), 10%);
+	--fio-ref-color-error-20: hsl(var(--fio-ref-color-error), 20%);
+	--fio-ref-color-error-30: hsl(var(--fio-ref-color-error), 30%);
+	--fio-ref-color-error-40: hsl(var(--fio-ref-color-error), 40%);
+	--fio-ref-color-error-50: hsl(var(--fio-ref-color-error), 50%);
+	--fio-ref-color-error-60: hsl(var(--fio-ref-color-error), 60%);
+	--fio-ref-color-error-70: hsl(var(--fio-ref-color-error), 70%);
+	--fio-ref-color-error-80: hsl(var(--fio-ref-color-error), 80%);
+	--fio-ref-color-error-90: hsl(var(--fio-ref-color-error), 90%);
+	--fio-ref-color-error-95: hsl(var(--fio-ref-color-error), 95%);
+	--fio-ref-color-error-99: hsl(var(--fio-ref-color-error), 99%);
+	--fio-ref-color-error-100: hsl(var(--fio-ref-color-error), 100%);
+
+	/* --- SIZE --- */
+
+	--fio-ref-size-base: 16px;
+
+	--fio-ref-size-0: 0;
+	--fio-ref-size-1: calc(var(--fio-ref-size-base) * 0.0625); /* 1px */
+	--fio-ref-size-2: calc(var(--fio-ref-size-base) * 0.125); /* 2px */
+	--fio-ref-size-3: calc(var(--fio-ref-size-base) * 0.1875); /* 3px */
+	--fio-ref-size-4: calc(var(--fio-ref-size-base) * 0.25); /* 4px */
+	--fio-ref-size-8: calc(var(--fio-ref-size-base) * 0.5); /* 8px */
+	--fio-ref-size-12: calc(var(--fio-ref-size-base) * 0.75); /* 12px */
+	--fio-ref-size-16: calc(var(--fio-ref-size-base) * 1); /* 16px */
+	--fio-ref-size-20: calc(var(--fio-ref-size-base) * 1.25); /* 20px */
+	--fio-ref-size-24: calc(var(--fio-ref-size-base) * 1.5); /* 24px */
+	--fio-ref-size-28: calc(var(--fio-ref-size-base) * 1.75); /* 28px */
+	--fio-ref-size-32: calc(var(--fio-ref-size-base) * 2); /* 32px */
+	--fio-ref-size-36: calc(var(--fio-ref-size-base) * 2.25); /* 36px */
+	--fio-ref-size-40: calc(var(--fio-ref-size-base) * 2.5); /* 40px */
+	--fio-ref-size-48: calc(var(--fio-ref-size-base) * 3); /* 48px */
+	--fio-ref-size-64: calc(var(--fio-ref-size-base) * 4); /* 64px */
+	--fio-ref-size-80: calc(var(--fio-ref-size-base) * 5); /* 80px */
+	--fio-ref-size-96: calc(var(--fio-ref-size-base) * 6); /* 96px */
+	--fio-ref-size-128: calc(var(--fio-ref-size-base) * 8); /* 128px */
+	--fio-ref-size-160: calc(var(--fio-ref-size-base) * 10); /* 160px */
+
+	/* --- TYPOGRAPHY --- */
+
+	--fio-ref-typography-family-primary: Parkinsans;
+}
