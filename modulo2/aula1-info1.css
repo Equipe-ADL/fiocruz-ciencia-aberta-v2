@@ -374,7 +374,7 @@
 }
 
 
-  @keyframes move2 {
+@keyframes move2 {
 	from {
 		transform: translateY(0);
 		filter: drop-shadow(0 1px 1px rgba(11,41,39,.5));
