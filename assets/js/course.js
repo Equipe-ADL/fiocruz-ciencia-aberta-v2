@@ -25,7 +25,7 @@ const course = {
 				{ type: "link", icon: "lesson", title: "Ciência Aberta e a Propriedade Industrial: entre a divulgação e sigilo de informações", path: "/modulo2/aula5.html" },
 				{ type: "link", icon: "lesson", title: "Princípios que regem o direito de acesso à informação, restrições ao acesso às informações sigilosas, a segurança da informação e a proteção de dados pessais e a pesquisa científica", path: "/modulo2/aula6.html" },
 				{ type: "link", icon: "lesson", title: "As restrições ao acesso às informações sigilosas, a segurança da informação e a proteção de dados pessoais e a pesquisa científica", path: "/modulo2/aula7.html" },
-				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo2/apresentacao.html" },
+				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo2/encerramento.html" },
 			],
 		},
 		{
@@ -39,7 +39,7 @@ const course = {
 				{ type: "link", icon: "lesson", title: "Preprints", path: "/modulo3/aula4.html" },
 				{ type: "link", icon: "lesson", title: "Experiências latino-americanas do Acesso Aberto", path: "/modulo3/aula5.html" },
 				{ type: "link", icon: "lesson", title: "Acesso Aberto na Fiocruz", path: "/modulo3/aula6.html" },
-				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo3/apresentacao.html" },
+				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo3/encerramento.html" },
 			],
 		},
 		{
@@ -55,7 +55,7 @@ const course = {
 				{ type: "link", icon: "lesson", title: "Planos de Gestão de Dados (PGD)", path: "/modulo4/aula6.html" },
 				{ type: "link", icon: "lesson", title: "Requisitos de financiadores e revistas científicas, plataformas e repositórios de Dados, e data papers", path: "/modulo4/aula7.html" },
 				{ type: "link", icon: "lesson", title: "Integração de dados administrativos governamentais para pesquisa em saúde Pública", path: "/modulo4/aula8.html" },
-				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo4/apresentacao.html" },
+				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo4/encerramento.html" },
 			],
 		},
 		{
@@ -70,7 +70,7 @@ const course = {
 				{ type: "link", icon: "lesson", title: "O que são Recursos Educacionais Abertos", path: "/modulo5/aula5.html" },
 				{ type: "link", icon: "lesson", title: "Como criar REA?", path: "/modulo5/aula6.html" },
 				{ type: "link", icon: "lesson", title: "Como encontrar, usar e compartilhar REA", path: "/modulo5/aula7.html" },
-				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo5/apresentacao.html" },
+				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo5/encerramento.html" },
 			],
 		},
 
