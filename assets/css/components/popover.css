@@ -24,6 +24,8 @@ a[data-bs-toggle="popover"]:not([href]):not([class]):hover {
 .popover p, 
 .popover ul li {
     font-size: var(--fio-sys-typography-size--1) !important;
+    font-family: var(--fio-sys-typography-family-primary-medium);
+
 }
 
 @media (min-width:992px){
