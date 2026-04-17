@@ -14,16 +14,16 @@
 	--_sidebar-border: none;
 	--_sidebar-mobile-course-name-color: white;
 
-	--_sidebar-module-btn--active: var(--fio-sys-color-primary-normal);
+	--_sidebar-module-btn--active: var(--_sidebar-module-custom-color);
 	--_sidebar-module-btn--hover: white;
 	--_sidebar-module-btn-color: white;
 
-	--_sidebar-lesson-btn--active: var(--fio-sys-color-primary-normal);
+	--_sidebar-lesson-btn--active: var(--_sidebar-lesson-custom-color);
 	--_sidebar-lesson-btn--hover: white;
 	--_sidebar-lesson-btn-color: white;
 	--_sidebar-lesson-content-background-color: #872912;
 
-	--_sidebar-link-item--active: var(--fio-sys-color-primary-normal);
+	--_sidebar-link-item--active: var(--_sidebar-lesson-custom-color);
 	--_sidebar-link-item--hover: white;
 	--_sidebar-link-item-color: white;
 	--_sidebar-line-height: 1.25rem;
@@ -44,6 +44,31 @@
 	transform: translateX(-100%);
 	scrollbar-width: none;
 }
+
+#modulo1 #sidebar {
+	--_sidebar-module-custom-color: var(--fio-sys-color-secondary1-normal);
+	--_sidebar-lesson-custom-color: var(--fio-sys-color-secondary1-dark);
+}
+#modulo2 #sidebar {
+	--_sidebar-module-custom-color: var(--fio-sys-color-secondary2-normal);
+	--_sidebar-lesson-custom-color: var(--fio-sys-color-secondary2-dark);
+}
+#modulo3 #sidebar {
+	--_sidebar-module-custom-color: var(--fio-sys-color-secondary3-normal);
+	--_sidebar-lesson-custom-color: var(--fio-sys-color-secondary3-dark);
+}
+#modulo4 #sidebar {
+	--_sidebar-module-custom-color: var(--fio-sys-color-secondary4-normal);
+	--_sidebar-lesson-custom-color: var(--fio-sys-color-secondary4-dark);
+	--_sidebar-module-btn-color: black;
+	--_sidebar-lesson-btn-color: black;
+	--_sidebar-link-item-color: black;
+}
+#modulo5 #sidebar {
+	--_sidebar-module-custom-color: var(--fio-sys-color-secondary5-normal);
+	--_sidebar-lesson-custom-color: var(--fio-sys-color-secondary5-dark);
+}
+
 #sidebar .sidebar__inner {
 	background-color: var(--_sidebar-background-color);
 	min-height: 100vh;
@@ -162,7 +187,8 @@
 }
 #sidebar .sidebar__section .sidebar__section-accordion .accordion-header .accordion-button:not(.collapsed)::before {
 	transform: rotate(-180deg);
-	color: white;
+	color: var(--_sidebar-module-btn-color);
+	color: red;
 }
 #sidebar .accordion .accordion-item .accordion-header .accordion-button:hover {
 	outline: 1px solid var(--_sidebar-module-btn--hover);
@@ -170,7 +196,7 @@
 }
 #sidebar .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
 	background-color: var(--_sidebar-module-btn--active);
-	color: white;
+	color: var(--_sidebar-module-btn-color);
 	line-height: var(--_sidebar-line-height);
 }
 #sidebar .accordion .accordion-item .accordion-collapse {
