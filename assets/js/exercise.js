@@ -205,7 +205,7 @@ let exerciseCard = document.querySelectorAll('.exercise');
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--incorrect');
 					submitFeedback.classList.add('exercise__submit__feedback--correct');
 				} else {
-					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Você não selecionou a(s) resposta(s) correta(s)!</strong><br><span class="feedback__content">` + feedbackText + `</span></div>`;
+					submitFeedback.innerHTML = `<div><span class="material-symbols-rounded">cancel</span> <strong>Você não selecionou a resposta correta!</strong><br><span class="feedback__content">` + feedbackText + `</span></div>`;
 					submitFeedback.classList.remove('d-none', 'exercise__submit__feedback--correct');
 					submitFeedback.classList.add('exercise__submit__feedback--incorrect');
 				}
