@@ -641,93 +641,117 @@ const modalInfos = {
 
                 <div class="accordion-item">
                     <h5 class="accordion-header" id="heading1-item5">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="true" aria-controls="collapse1-item5">Módulo 5 (em breve)</button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="true" aria-controls="collapse1-item5">Módulo 5</button>
                     </h5>
                     <div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
                         <div class="accordion-body">
-                            <!-- <div class="list">
+                            <div class="list">
                                 <ul class="list-group">
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ALBAGLI, Sarita. Ciência aberta em questão. In: SEMINÁRIO INTERNACIONAL, OFICINAS E ENCONTRO DO GRUPO DE TRABALHO EM CIÊNCIA ABERTA, 2014, Rio de Janeiro. Anais [...]. Rio de Janeiro: IBICT, 2014. Disponível em: <a href='http://www.cienciaaberta.net/encontro2014/' target='_blank' rel='noopener noreferrer'>http://www.cienciaaberta.net/encontro2014/</a>. Acesso em: 18 mar. 2026.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ALMEIDA, Fernando; OLIVEIRA, José; CRUZ, José. Open standards and open source: enabling interoperability. International Journal of Software Engineering & Applications, v. 2, n. 1, p. 1–11, 2011. DOI: https://doi.org/10.5121/ijsea.2011.2101. Disponível em: <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.187.1934&rep=rep1&type=pdf' target='_blank' rel='noopener noreferrer'>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.187.1934&rep=rep1&type=pdf</a>. Acesso em: 15 jun. 2021.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ALMEIDA, Fernando José; ALMEIDA, Maria Elizabeth Bianconcini de; SILVA, Maria da Graça Moreira da. Educação aberta no Brasil: um compromisso com a realidade. Revista Diálogo Educacional, v. 23, n. 77, p. 760–777, 2023. DOI: https://doi.org/10.7213/1981-416X.23.077.DS07. Disponível em: <a href='https://periodicos.pucpr.br/dialogoeducacional/article/view/30027' target='_blank' rel='noopener noreferrer'>https://periodicos.pucpr.br/dialogoeducacional/article/view/30027</a>. Acesso em: 18 mar. 2026.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ATKINS, Daniel E.; BROWN, John Seely; HAMMOND, Allen L. A review of the Open Educational Resources (OER) movement: achievements, challenges, and new opportunities. [S.l.]: The William and Flora Hewlett Foundation, 2007.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BACICH, Lilian; MORAN, José. Metodologias ativas para uma educação inovadora: uma abordagem teórico-prática. Porto Alegre: Penso, 2018.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BACICH, Lilian; NETO, Adolfo Tanzi; TREVISANI, Fernando de Mello. Ensino híbrido: personalização e tecnologia na educação. Porto Alegre: Penso, 2015.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BALBINO, F. C.; BARBOSA, E. F. Práticas educacionais abertas mediadas por tecnologia na formação inicial docente. Revista Brasileira de Informática na Educação, v. 33, p. 472–507, 2025. DOI: https://doi.org/10.5753/rbie.2025.5264. Disponível em: <a href='https://journals-sol.sbc.org.br/index.php/rbie/article/view/5264' target='_blank' rel='noopener noreferrer'>https://journals-sol.sbc.org.br/index.php/rbie/article/view/5264</a>. Acesso em: 18 mar. 2026.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BATES, Tony. Trends in the use of audio-visual media in distance education systems. In: BATES, Tony. Distance education. New York: Routledge, 2020. p. 227–241.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BLESSINGER, Patrick; BLISS, T. J. Open education: international perspectives in higher education. Cambridge: Open Book Publishers, 2016. DOI: <a href='http://dx.doi.org/10.11647/OBP.0103' target='_blank' rel='noopener noreferrer'>http://dx.doi.org/10.11647/OBP.0103</a>.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. Ministério do Planejamento, Orçamento e Gestão. Modelo de Acessibilidade em Governo Eletrônico (e-MAG). Brasília, 2019. Disponível em: <a href='https://www.gov.br/governodigital/pt-br/acessibilidade-digital/modelo-de-acessibilidade' target='_blank' rel='noopener noreferrer'>https://www.gov.br/governodigital/pt-br/acessibilidade-digital/modelo-de-acessibilidade</a>. Acesso em: 15 jun. 2021.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">CARVALHO, Felipe; PIMENTEL, Mariano. Diferentes usos da computação na educação em tempo de ChatGPT. In: PORTO, Cristiane; SANTOS, Edméa; BOTTENTUIT JR., João Batista (org.). ChatGPT e outras inteligências artificiais: práticas educativas na cibercultura. São Luís: EDUFMA, 2024. p. 37–49. Disponível em: <a href='https://www.edufma.ufma.br/index.php/produto/chatgpt-e-outras-inteligencias-artificiais-praticas-educativas-na-cibercultura/' target='_blank' rel='noopener noreferrer'>https://www.edufma.ufma.br/index.php/produto/chatgpt-e-outras-inteligencias-artificiais-praticas-educativas-na-cibercultura/</a>. Acesso em: 17 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">CARVALHO, Felipe; PIMENTEL, Mariano. Estudar e aprender com o ChatGPT. Revista Educação e Cultura Contemporânea, v. 20, p. 1–21, 2023. Disponível em: <a href='https://mestradoedoutoradoestacio.periodicoscientificos.com.br/index.php/reeduc/article/view/11140' target='_blank' rel='noopener noreferrer'>https://mestradoedoutoradoestacio.periodicoscientificos.com.br/index.php/reeduc/article/view/11140</a>. Acesso em: 17 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">CARVALHO, J.; SANTANA, B. Software livre, soberania digital e inclusão educacional. Revista Brasileira de Políticas Públicas e Educação, v. 12, n. 2, 2022.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">CHEGG. Global student survey 2023. 2023. Disponível em: <a href='https://www.chegg.org/global-student-survey-2023' target='_blank' rel='noopener noreferrer'>https://www.chegg.org/global-student-survey-2023</a>. Acesso em: 11 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">CLARK, Donald. MOOCs: taxonomy of 8 types of MOOC. Donald Clark Plan B, 2013. Disponível em: <a href='http://donaldclarkplanb.blogspot.com/2013/04/moocs-taxonomy-of-8-types-of-mooc.html' target='_blank' rel='noopener noreferrer'>http://donaldclarkplanb.blogspot.com/2013/04/moocs-taxonomy-of-8-types-of-mooc.html</a>. Acesso em: 18 mar. 2026.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">FILATRO, Andrea. Design instrucional na prática. São Paulo: Pearson, 2008.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">FREIRE, Paulo. Pedagogia do oprimido. Rio de Janeiro: Paz e Terra, 1970.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">HARPER, Babette et al. Cuidado, escola!: desigualdade, domesticação e algumas saídas. São Paulo: Brasiliense, 1980.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">HENDRYCKS, Dan et al. Measuring mathematical problem solving with the MATH dataset. arXiv, 2021. Disponível em: <a href='https://arxiv.org/pdf/2103.03874v2' target='_blank' rel='noopener noreferrer'>https://arxiv.org/pdf/2103.03874v2</a>. Acesso em: 11 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">HOFFMAN, Liz; ALBERGOTTI, Reed. Microsoft eyes $10 billion bet on ChatGPT. Semafor, 2023. Disponível em: <a href='https://www.semafor.com/article/01/09/2023/microsoft-eyes-10-billion-bet-on-chatgpt' target='_blank' rel='noopener noreferrer'>https://www.semafor.com/article/01/09/2023/microsoft-eyes-10-billion-bet-on-chatgpt</a>. Acesso em: 11 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">HYLÉN, Jan. Open educational resources: opportunities and challenges. Paris: OECD-CERI, 2006.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">INEP. Microdados do Enem 2022. Brasília, 2022. Disponível em: <a href='https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem' target='_blank' rel='noopener noreferrer'>https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem</a>. Acesso em: 11 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">KHAN, Salman. How AI could save (not destroy) education. YouTube, 2023. Disponível em: <a href='https://www.youtube.com/watch?v=hJP5GqnTrNo' target='_blank' rel='noopener noreferrer'>https://www.youtube.com/watch?v=hJP5GqnTrNo</a>. Acesso em: 17 jul. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">KOLLER, Daphne et al. Retention and intention in massive open online courses. EDUCAUSE Review, 2013. Disponível em: <a href='https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses' target='_blank' rel='noopener noreferrer'>https://er.educause.edu/articles/2013/6/retention-and-intention-in-massive-open-online-courses</a>. Acesso em: 20 mar. 2026.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">LOPES, Ilza Leite. Estudos sobre qualidade da informação em saúde na web. Tempus: Actas de Saúde Coletiva, v. 2, n. 1, p. 1–23, 2008.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">MENDONÇA, Ana Paula Bernardo. Critérios de qualidade para sites de saúde: uma proposta. 2013. Dissertação (Mestrado em Saúde Pública) – Fundação Oswaldo Cruz, Rio de Janeiro, 2013. Disponível em: <a href='http://www6.ensp.fiocruz.br/repositorio/sites/default/files/arquivos/CriteriosQualidade.pdf' target='_blank' rel='noopener noreferrer'>http://www6.ensp.fiocruz.br/repositorio/sites/default/files/arquivos/CriteriosQualidade.pdf</a>. Acesso em: 15 jun. 2021.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">NIELSEN, Jakob. 10 usability heuristics for user interface design. 1994. Disponível em: <a href='https://www.nngroup.com/articles/ten-usability-heuristics/' target='_blank' rel='noopener noreferrer'>https://www.nngroup.com/articles/ten-usability-heuristics/</a>. Acesso em: 15 jun. 2021.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">OECD. Digital education outlook 2021: pushing the frontiers with artificial intelligence, blockchain and robots. Paris: OECD Publishing, 2021. Disponível em: <a href='https://www.oecd.org/education/digital-education-outlook/' target='_blank' rel='noopener noreferrer'>https://www.oecd.org/education/digital-education-outlook/</a>. Acesso em: 20 mar. 2026.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">OPENAI. GPT-4 technical report. 2023. Disponível em: <a href='https://arxiv.org/pdf/2303.08774v5' target='_blank' rel='noopener noreferrer'>https://arxiv.org/pdf/2303.08774v5</a>. Acesso em: 11 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PAPADAKIS, Stamatios. MOOCs 2012–2022: an overview. Advances in Mobile Learning Educational Research, v. 3, n. 1, p. 1–10, 2023. Disponível em: <a href='https://www.syncsci.com/journal/AMLER/article/view/AMLER.2023.01.017' target='_blank' rel='noopener noreferrer'>https://www.syncsci.com/journal/AMLER/article/view/AMLER.2023.01.017</a>. Acesso em: 20 mar. 2026.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PIMENTEL, Mariano; CARVALHO, Felipe. ChatGPT: concepções epistêmico-didático-pedagógicas dos usos na educação. SBC Horizontes, 2023. Disponível em: <a href='http://horizontes.sbc.org.br/index.php/2023/06/chatgpt-concepcoes/' target='_blank' rel='noopener noreferrer'>http://horizontes.sbc.org.br/index.php/2023/06/chatgpt-concepcoes/</a>. Acesso em: 17 jul. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PIMENTEL, Mariano; CARVALHO, Felipe. Cibertecnicismo. Revista de Educação Pública, v. 31, p. 1–22, 2022. Disponível em: <a href='https://periodicoscientificos.ufmt.br/ojs/index.php/educacaopublica/article/view/13919' target='_blank' rel='noopener noreferrer'>https://periodicoscientificos.ufmt.br/ojs/index.php/educacaopublica/article/view/13919</a>. Acesso em: 17 jul. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PIRES, Ramon; ALMEIDA, Thales Sales; ABONIZIO, Hugo; NOGUEIRA, Rodrigo. Evaluating GPT-4’s vision capabilities on Brazilian university admission exams. arXiv, 2023. Disponível em: <a href='https://arxiv.org/pdf/2311.14169' target='_blank' rel='noopener noreferrer'>https://arxiv.org/pdf/2311.14169</a>. Acesso em: 11 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PRETTO, Nelson De Luca. Educação, redes e tecnologias: uma revolução em curso? Salvador: EDUFBA, 2012. Disponível em: <a href='https://books.scielo.org/id/3x6qk/pdf/pretto-9788523211882.pdf' target='_blank' rel='noopener noreferrer'>https://books.scielo.org/id/3x6qk/pdf/pretto-9788523211882.pdf</a>. Acesso em: 20 mar. 2026.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PRETTO, Nelson De Luca; SILVEIRA, Sérgio Amadeu da (org.). Além das redes de colaboração: internet, diversidade cultural e tecnologias do poder. Salvador: EDUFBA, 2008.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ROOSE, Kevin. The brilliance and weirdness of ChatGPT. The New York Times, 2022. Disponível em: <a href='https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html' target='_blank' rel='noopener noreferrer'>https://www.nytimes.com/2022/12/05/technology/chatgpt-ai-twitter.html</a>. Acesso em: 11 jun. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ROSSINI, Carolina; PRETTO, Nelson De Luca (org.). Recursos educacionais abertos: práticas colaborativas e políticas públicas. Salvador: EDUFBA; São Paulo: Casa da Cultura Digital, 2012.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SABINO, Vanessa Cristina. Um estudo sistemático de licenças de software livre. 2011. Dissertação (Mestrado em Ciência da Computação) – Universidade de São Paulo, São Paulo, 2011. DOI: <a href='https://doi.org/10.11606/D.45.2011.tde-14032012-003454' target='_blank' rel='noopener noreferrer'>https://doi.org/10.11606/D.45.2011.tde-14032012-003454</a>. Acesso em: 08 jan. 2024.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SANTAELLA, Lucia. Aprendizagem ubíqua. In: MILL, Daniel (org.). Dicionário crítico de educação e tecnologias e de educação a distância. Campinas: Papirus, 2018.</li>
 
-                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"></li>
+                                    <li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SANTAELLA, Lucia. Comunicação ubíqua: repercussões na cultura e na educação. São Paulo: Paulus, 2013.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SANTAELLA, Lucia. Navegar no ciberespaço: o perfil cognitivo do leitor imersivo. São Paulo: Paulus, 2004.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SILVEIRA, Sérgio Amadeu da. Software livre: a luta pela liberdade do conhecimento. São Paulo: Fundação Perseu Abramo, 2004.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">TAKAHASHI, Tadao (org.). Sociedade da informação no Brasil: livro verde. Brasília: Ministério da Ciência e Tecnologia, 2000.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">UNESCO. Making sense of MOOCs: a guide for policy makers in developing countries. Paris: UNESCO, 2016. Disponível em: <a href='https://unesdoc.unesco.org/ark:/48223/pf0000245122' target='_blank' rel='noopener noreferrer'>https://unesdoc.unesco.org/ark:/48223/pf0000245122</a>. Acesso em: 20 mar. 2026.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">UNESCO. Recommendation on Open Educational Resources (OER). Paris: UNESCO, 2019. Disponível em: <a href='https://unesdoc.unesco.org/ark:/48223/pf0000370936' target='_blank' rel='noopener noreferrer'>https://unesdoc.unesco.org/ark:/48223/pf0000370936</a>. Acesso em: 20 mar. 2026.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">VALENTE, José Armando. Computadores e conhecimento: repensando a educação. Campinas: Unicamp, 1993.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">VALENTE, José Armando. Diferentes usos do computador na educação. In: VALENTE, José Armando (org.). Computadores e conhecimento: repensando a educação. Campinas: Unicamp, 1993. p. 1–28.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">VINCHON, Florent et al. Artificial intelligence & creativity: a manifesto for collaboration. The Journal of Creative Behavior, v. 57, n. 4, p. 472–484, 2023. DOI: <a href='https://doi.org/10.1002/jocb.597' target='_blank' rel='noopener noreferrer'>https://doi.org/10.1002/jocb.597</a>. Acesso em: 23 jun. 2024.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WATTERS, Audrey. Teaching machines: a brief history of “teaching at scale”. 2014. Disponível em: <a href='https://hackeducation.com/2014/09/10/teaching-machines-teaching-at-scale' target='_blank' rel='noopener noreferrer'>https://hackeducation.com/2014/09/10/teaching-machines-teaching-at-scale</a>. Acesso em: 17 jul. 2024.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WILLIAMS, Sam. Free as in freedom: Richard Stallman’s crusade for free software. Sebastopol: O’Reilly, 2002.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WILEY, David. The access compromise and the 5Rs of openness. 2014. Disponível em: <a href='https://opencontent.org/blog/archives/3221' target='_blank' rel='noopener noreferrer'>https://opencontent.org/blog/archives/3221</a>. Acesso em: 20 mar. 2026.</li>
+
+									<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WILEY, David; HILTON, John. Defining OER-enabled pedagogy. International Review of Research in Open and Distributed Learning, v. 19, n. 4, 2018.</li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
