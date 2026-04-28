@@ -16,7 +16,7 @@
 }
 
 .header > *:last-child {
-	flex: 1;
+	flex: auto;
 }
 
 .header .mobile-toggle-open {
@@ -24,7 +24,7 @@
 	border-right: 1px solid var(--fio-sys-color-neutral-light);
 	display: flex;
 	justify-content: center;
-	padding: 0px 20px;
+	padding: 0 20px 0 0;
 }
 
 .header:not(.header--sticky) .mobile-toggle-open .mobile-toggle__button {
@@ -74,8 +74,8 @@
 
 .header .nav {
 	display: none;
-	flex: none;
-	gap: 10px;
+	flex: auto;
+	/* gap: 10px; */
 	align-items: center;
 	justify-content: end;
 	/* padding-right: 20px; */
@@ -106,6 +106,10 @@
 .header .nav .nav-item .nav-link .material-symbols-rounded,
 .header .nav .nav-item .nav-link:visited .material-symbols-rounded {
 	color: var(--fio-sys-color-neutral-light);
+}
+
+.header .nav .desktop-toggle {
+	display: none;
 }
 
 /* Sticky */
@@ -152,7 +156,7 @@
 .header.header--sticky .nav .nav-item .nav-link .material-symbols-rounded,
 .header.header--sticky .nav .nav-item .nav-link:visited .material-symbols-rounded {
 	color: var(--fio-sys-color-accent-medium);
-}
+} */
 
 @media (min-width: 992px) {
 	.header {
@@ -161,14 +165,22 @@
 	}
 
 	.header .brand .logo-black {
-    	display: none;
+		display: none;
 	}
 
 	.header .brand .logo-white {
-    	display: block;
+		display: block;
 	}
 
-	.header.header--sticky {
+	.header .nav .desktop-toggle {
+		display: block;
+	}
+
+	.header .title {
+		display: block;
+	}
+
+	/* .header.header--sticky {
 		height: 80px;
 	}
 
@@ -177,21 +189,17 @@
 	}
 
 	.header.header--sticky .brand .logo-white {
-    display: none;
-} */
+    display: none; */
 
-.header .mobile-toggle-open {
-	display: none;
+	.header .mobile-toggle-open {
+		display: none;
+	}
 }
 
 .header .brand {
 	/* width: 360px; */
 	height: 100%;
 	padding-left: 0px;
-}
-
-.header .title {
-	display: block;
 }
 
 .header .nav {
@@ -202,10 +210,10 @@
 	color: var(--fio-sys-color-neutral-light);
 }
 
-.header .nav.nav-pills .nav-item {
-	border-right: 1px solid var(--fio-sys-color-neutral-light);
+.header .nav.nav-pills .nav-item.desktop-toggle {
+	border-left: 1px solid var(--fio-sys-color-neutral-light);
 }
 
-.header .nav.nav-pills .nav-item:last-child {
+.header .nav.nav-pills .nav-item:first-child {
 	border: none;
 }

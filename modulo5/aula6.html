@@ -61,15 +61,15 @@
 		/* Selecione todos os elementos que são destinos de âncora */
 		/* Ajuste o valor 150px de acordo com a altura total do seu menu fixo + margem desejada */
 		[id^="etapa"] {
-			scroll-margin-top: 150px; 
+			scroll-margin-top: 150px;
 		}
 
 		/* Mobile only */
-		@media(max-width:572px) {
+		@media (max-width: 572px) {
 			/* Selecione todos os elementos que são destinos de âncora */
 			/* Ajuste o valor 150px de acordo com a altura total do seu menu fixo + margem desejada */
 			[id^="etapa"] {
-				scroll-margin-top: 200px; 
+				scroll-margin-top: 200px;
 			}
 		}
 	</style>
@@ -91,7 +91,16 @@
 			<ul class="nav nav-pills">
 				<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
 				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+				<li class="nav-item desktop-toggle"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</a></li>
+
+				<li class="nav-item dropdown mobile-only">
+					<a href="#" class="nav-link" dropdown-toggle="" type="button" id="viewMore" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,10"><span class="material-symbols-rounded">more_vert</span></a>
+
+					<ul class="dropdown dropdown-menu" aria-labelledby="viewMore" style="">
+						<li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</button></li>
+						<li><button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modal-bibliografia">Bibliografia</button></li>
+					</ul>
+				</li>
 			</ul>
 		</header>
 		<div class="main">
@@ -920,35 +929,39 @@
 									</div>
 								</div>
 
-								<div class="row justify-content-center sticky-top" style="position: sticky; top: 80px; padding: 0; z-index: 99;">
+								<div class="row justify-content-center sticky-top" style="position: sticky; top: 80px; padding: 0; z-index: 99">
 									<div class="col-12 col-md-10 col-lg-8 mb-0">
 										<div class="row text-center align-items-center">
 											<div class="col-6 col-md-3" style="background: #ac599c">
 												<a style="background-color: transparent !important" href="#etapa1" rel="noopener noreferrer"
-													><p style="line-height: 1.2; color: #fff; font-size:16px;">
+													><p style="line-height: 1.2; color: #fff; font-size: 16px">
 														<strong>Como<br />encontrar</strong>
-													</p></a>
+													</p></a
+												>
 											</div>
 
 											<div class="col-6 col-md-3" style="background: #6496bc">
 												<a style="background-color: transparent !important" href="#etapa2" rel="noopener noreferrer"
-													><p style="line-height: 1.2; color: #fff; font-size:16px;">
+													><p style="line-height: 1.2; color: #fff; font-size: 16px">
 														<strong>Como<br />usar</strong>
-													</p></a>
+													</p></a
+												>
 											</div>
 
 											<div class="col-6 col-md-3" style="background: #00a47a">
 												<a style="background-color: transparent !important" href="#etapa3" rel="noopener noreferrer"
-													><p style="line-height: 1.2; color: #fff; font-size:16px;">
+													><p style="line-height: 1.2; color: #fff; font-size: 16px">
 														<strong>Como<br />criar</strong>
-													</p></a>
+													</p></a
+												>
 											</div>
 
 											<div class="col-6 col-md-3" style="background: #e7756f">
 												<a style="background-color: transparent !important" href="#etapa4" rel="noopener noreferrer"
-													><p style="line-height: 1.2; color: #fff; font-size:16px;">
+													><p style="line-height: 1.2; color: #fff; font-size: 16px">
 														<strong>Como<br />compartilhar</strong>
-													</p></a>
+													</p></a
+												>
 											</div>
 										</div>
 									</div>
@@ -2458,7 +2471,7 @@
 													<span class="label">Dica</span>
 												</div>
 												<div class="card-body">
-													<p>Para edição de som, uma boa opção é o <a href='https://www.audacityteam.org/download/' target='_blank' rel='noopener noreferrer'>Audacity</a>, um software livre, que oferece uma extensa gama de recursos, incluindo redução de ruídos. É uma boa pedida para quem se interessa pelo assunto e quer aprender mais. Outra opção de software livre para edição e captura profissional de áudio gratuito e de código aberto é o <a href='https://ardour.org/' target='_blank' rel='noopener noreferrer'>Ardour</a>.</p>
+													<p>Para edição de som, uma boa opção é o <a href="https://www.audacityteam.org/download/" target="_blank" rel="noopener noreferrer">Audacity</a>, um software livre, que oferece uma extensa gama de recursos, incluindo redução de ruídos. É uma boa pedida para quem se interessa pelo assunto e quer aprender mais. Outra opção de software livre para edição e captura profissional de áudio gratuito e de código aberto é o <a href="https://ardour.org/" target="_blank" rel="noopener noreferrer">Ardour</a>.</p>
 												</div>
 											</div>
 										</div>
@@ -2898,17 +2911,19 @@
 													<!-- Lista Não-Ordenada -->
 													<div class="list">
 														<ul class="list-group">
-															<li class="list-group-item" list-style="default">Webconferências/Webinar:
+															<li class="list-group-item" list-style="default">
+																Webconferências/Webinar:
 																<ul class="list-group">
 																	<li class="list-group-item" list-style="none"><a href="https://meet.jit.si/" target="_blank" rel="noopener noreferrer">Jitsi</a></li>
 
 																	<li class="list-group-item" list-style="none"><a href="https://www.mumble.info/" target="_blank" rel="noopener noreferrer">Mumble</a></li>
 
-																	<li class="list-group-item" list-style="none"><a href="https://bigbluebutton.org/" target="_blank" rel="noopener noreferrer">Bigbluebutton</a></li>	
+																	<li class="list-group-item" list-style="none"><a href="https://bigbluebutton.org/" target="_blank" rel="noopener noreferrer">Bigbluebutton</a></li>
 																</ul>
 															</li>
 
-															<li class="list-group-item" list-style="default">Colaboração on-line:
+															<li class="list-group-item" list-style="default">
+																Colaboração on-line:
 																<ul class="list-group">
 																	<li class="list-group-item" list-style="none"><a href="https://pt.wikipedia.org/wiki/Wikimedia_Commons" target="_blank" rel="noopener noreferrer">Wikimedia</a></li>
 
@@ -2918,7 +2933,8 @@
 																</ul>
 															</li>
 
-															<li class="list-group-item" list-style="default">Editor de imagens/Infográficos:
+															<li class="list-group-item" list-style="default">
+																Editor de imagens/Infográficos:
 																<ul class="list-group">
 																	<li class="list-group-item" list-style="none"><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">Gimp</a></li>
 
@@ -2926,21 +2942,22 @@
 																</ul>
 															</li>
 
-															<li class="list-group-item" list-style="default">Portfólio/Diário de Aprendizagem:
+															<li class="list-group-item" list-style="default">
+																Portfólio/Diário de Aprendizagem:
 																<ul class="list-group">
 																	<li class="list-group-item" list-style="none"><a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer">Wordpress</a></li>
 																</ul>
 															</li>
 
-
-															<li class="list-group-item" list-style="default">Apresentações interativas, Quiz:
+															<li class="list-group-item" list-style="default">
+																Apresentações interativas, Quiz:
 																<ul class="list-group">
 																	<li class="list-group-item" list-style="none"><a href="https://h5p.org/" target="_blank" rel="noopener noreferrer">H5P</a></li>
-
 																</ul>
 															</li>
 
-															<li class="list-group-item" list-style="default">Ferramenta de autoria:
+															<li class="list-group-item" list-style="default">
+																Ferramenta de autoria:
 																<ul class="list-group">
 																	<li class="list-group-item" list-style="none"><a href="https://exelearning.org/" target="_blank" rel="noopener noreferrer">Exelearning</a></li>
 
@@ -2949,7 +2966,6 @@
 																	<li class="list-group-item" list-style="none"><a href="https://xerte.org.uk/index.php/en/" target="_blank" rel="noopener noreferrer">Xerte</a></li>
 																</ul>
 															</li>
-
 														</ul>
 													</div>
 												</div>
