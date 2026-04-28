@@ -1,5 +1,5 @@
 const course = {
-	title: "Ciência Aberta.",
+	title: "Ciência Aberta",
 	modules: [
 		{
 			type: "accordion",
