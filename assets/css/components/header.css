@@ -27,7 +27,7 @@
 	padding: 0 20px 0 0;
 }
 
-.header:not(.header--sticky) .mobile-toggle-open .mobile-toggle__button {
+.header .mobile-toggle-open .mobile-toggle__button {
 	color: var(--fio-sys-color-neutral-light);
 	background: none;
 }

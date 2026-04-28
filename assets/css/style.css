@@ -145,6 +145,7 @@ body {
 
 section {
 	padding: var(--fio-sys-size-margin-xl) 0;
+	overflow: hidden;
 }
 
 .row > div:last-child {
