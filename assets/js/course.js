@@ -38,7 +38,7 @@ const course = {
 				{ type: "link", icon: "lesson", title: "Aula 3: Revisão aberta por pares", path: "/modulo3/aula3.html" },
 				{ type: "link", icon: "lesson", title: "Aula 4: Preprints", path: "/modulo3/aula4.html" },
 				{ type: "link", icon: "lesson", title: "Aula 5: Experiências latino-americanas do Acesso Aberto", path: "/modulo3/aula5.html" },
-				{ type: "link", icon: "lesson", title: "Aula 6: Acesso Aberto na Fiocruz", path: "/modulo3/aula6.html" },
+				// { type: "link", icon: "lesson", title: "Aula 6: Acesso Aberto na Fiocruz", path: "/modulo3/aula6.html" },
 				{ type: "link", icon: "closing", title: "Encerramento", path: "/modulo3/encerramento.html" },
 			],
 		},
