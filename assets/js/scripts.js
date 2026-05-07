@@ -297,7 +297,7 @@ const modalInfos = {
 					<span class="h5 mb-3 d-block">Coordenação do Acadêmica</span>
 					
 					<div class="mb-5">
-						<p class="mb-1">Anne Clio</p>
+						<p class="mb-1">Anne Clinio</p>
 						<p class="mb-1">Vanessa Jorge</p>
 					</div>
 
