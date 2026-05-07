@@ -351,6 +351,7 @@ const modalInfos = {
 						<p class="mb-1"><strong>Módulo 5: Educação Aberta e Recursos Educacionais Abertos</strong></p>
 
 						<p class="mb-1">Ana Cristina da Matta Furniel</p>
+						<p class="mb-1">Ana Paula Bernardo Mendonça</p>
 						<p class="mb-1">Felipe da Silva Ponte de Carvalho</p>
 						<p class="mb-1">Mariano Gomes Pimentel</p>
 						<p class="mb-1">Rosane Mendes</p>
